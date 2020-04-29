@@ -5,7 +5,6 @@
 html, body {
   margin: 0;
   scroll-behavior: smooth;
-  /* font-family: 'Open Sans', sans-serif; */
   font-family: 'Raleway', sans-serif;
   letter-spacing: 1px;
   font-size: 1rem;
@@ -34,20 +33,37 @@ main.container {
   transform-style: flat;
   transform: scale(1);
   transition: all 0.2s ease;
+  z-index: 4;
 }
 
 .project-container > li:hover {
-  transform: scale(1.1);
+  transform: scale(2);
   transition: all 0.2s ease;
+  z-index: 5;
+  cursor: pointer;
 }
 
 .project {
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 120px;
   margin: 5px;
   border-radius: 5px;
   display: block;
   animation: fadein 1s;
+  box-shadow: 0 2px 4px -2px var(--box-shadow-mid);
+}
+
+.project .details {
+  position: absolute;
+  height: 25px;
+  width: inherit;
+  background: #fff;
+  bottom: 0;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  padding: 4px 8px;
+  font-size: 0.675rem;
+  font-family: 'Open Sans', sans-serif;
 }
 
 @keyframes fadein {
@@ -106,7 +122,7 @@ main.container {
   transition: all 0.2s ease;
   cursor: pointer;
   border-bottom-left-radius: 0;
-  box-shadow: 0 2px 4px -2px #666666cc;
+  box-shadow: 0 2px 4px -2px var(--box-shadow-mid);
 }
 
 /* .tags > li > a::before {
@@ -152,8 +168,8 @@ main.container {
   min-height: 600px;
   border-radius: 3px;
   background-color: #fff;
-  padding: 10px;
-  box-shadow: 0 3px 5px 2px #00000011;
+  padding: 20px;
+  box-shadow: 0 3px 5px 2px var(--box-shadow);
 }
 
 .section.about {
@@ -176,7 +192,7 @@ main.container {
 h1, h2, h3, h4, h5 {
   font-family: 'Raleway', sans-serif;
   color: var(--highlight-colour);
-  margin: 5px 0;
+  margin: 10px 0;
 }
 
 h2 {

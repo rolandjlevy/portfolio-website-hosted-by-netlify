@@ -169,13 +169,12 @@
   visibility: visible;
   transition: all 0.5s ease;
   /* transform-style: preserve-3d; */
-  z-index: 1;
+  z-index: 10;
 }
 
 .navbar {
   background-color: none;
-
-    z-index: 1;
+  z-index: 10;
 }
 
 .navbar > .links > ul {
@@ -216,7 +215,7 @@
     opacity: 1;
     visibility: visible;
     transition: all 0.5s ease;
-    z-index: 1;
+    z-index: 15;
   }
 
   .navbg {

@@ -182,7 +182,13 @@ main.container {
 }
 
 .section.contact {
-  background: var(--deep-grey);
+  background-color: #333333dd !important;
+  background-image: url('/images/unsplash-red-painting.jpg');
+  background-blend-mode: multiply;
+  background-size: cover;
+
+  /* background: linear-gradient(to bottom, #333333dd 0%,#33333333 100%),url("/images/unsplash-red-painting.jpg") */
+
 }
 
 /********************/

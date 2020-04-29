@@ -1,0 +1,228 @@
+/*/////////////////
+// burger        // 
+/////////////////*/
+
+.burger-checkbox ~ .burger-side-panel {
+  transform: translate(78px, -77px) scale(0.22, 0.22);
+  border-radius: 50%;
+  background: #aaaaaa66;
+  transition: all 0.3s ease;
+  right: -25px;
+  top: -25px;
+}
+
+.burger-checkbox:checked ~ .burger-side-panel {
+  transform: translate(0, 0) scale(1, 1);
+  border-radius: 5px;
+  background: #fff;
+  transition: all 0.3s ease;
+  right: -10px;
+  top: -5px;
+} 
+
+.burger-checkbox ~ .burger-side-panel > ul  {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+} 
+
+.burger-checkbox ~ .fa-hamburger {
+  color: #fff;
+}
+
+.burger-checkbox:checked ~ .fa-hamburger {
+  color: var(--accent-colour);
+}
+
+.burger-checkbox ~ .fa-hamburger:hover {
+  text-shadow: 0 0 10px #000000cc;
+}
+
+.burger-checkbox:checked ~ .fa-hamburger:hover {
+  text-shadow: none;
+}
+
+.burger-checkbox:checked ~ .burger-side-panel > ul  {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+} 
+.burger-checkbox {
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  margin: 0;
+}
+
+.burger {
+  opacity: 0;
+  cursor: pointer;
+  float: right;
+  position: fixed;
+  visibility: hidden;
+  font-size: 1.5rem;
+  color: var(--accent-colour);
+  right: 0;
+  top: 0;
+  margin: 20px;
+  text-align: left;
+  transition: all 0.5s ease;
+}
+
+/* .burger > .fa-hamburger::before {
+  content: '';
+  width: 45px;
+  height: 45px;
+  background-color: red; */
+  /* background-color: var(--nav-bg-colour);  */
+  /* box-shadow: 0 0 15px 3px #999; */
+  /* display: block;
+  position: absolute;
+  top: -4px;
+  right: -10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 5;
+} */
+
+/* .burger > .fa-hamburger:hover::before {
+  background-color: var(--nav-bg-hover-colour); 
+  transition: all 0.3s ease;
+} */
+
+.burger > .burger-side-panel {
+  z-index: -1;
+  color: var(--nav-text-colour);
+  padding: 15px;
+  overflow: hidden;
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  /* box-shadow: 0 3px 8px -2px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 3px 5px 0 #00000011;
+  pointer-events: none;
+}
+
+.burger > .burger-side-panel ul {
+  padding: 30px 0 10px 0;
+  margin: 0;
+}
+
+.burger > .burger-side-panel li {
+  list-style: none;
+  margin: 10px 5px;
+}
+
+.burger > .burger-side-panel li > a {
+  color: inherit;
+  font-size: 1.5rem;
+  pointer-events: auto;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.burger > .burger-side-panel li > a:hover {
+  background: var(--light-grey);
+  transition: all 0.3s ease;
+}
+
+.burger > .fa-hamburger {
+  font-size: 2rem;
+  color: var(--accent-colour-light);
+}
+
+/* :target {
+  border: 2px solid #D4D4D4;
+  background-color: #e5eecc;
+} */
+
+/*/////////////////
+// navbar        // 
+/////////////////*/
+
+.navbar, .navbg {
+  overflow: hidden;
+  color: var(--nav-text-colour);
+  position: fixed;
+  top: 0; 
+  width: 100%; 
+  padding: 16.5px;
+  display: block;
+}
+
+.navbar, .navbg, .navbar-top {
+  height: 80px;
+}
+
+.navbar-top {
+  background-color: var(--deep-grey);
+}
+
+.navbg {
+  background-color: var(--nav-bg-colour);
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.5s ease;
+  /* transform-style: preserve-3d; */
+  z-index: 1;
+}
+
+.navbar {
+  background-color: none;
+
+    z-index: 1;
+}
+
+.navbar > .links > ul {
+  margin: 0;
+}
+
+.navbar > .links > ul > li {
+  display: inline;
+}
+
+.navbar > .links > ul > li > a {
+  color: inherit;
+  padding-left: 15px;
+  text-align: center;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 3px;
+  transition: all 0.2s ease;
+}
+
+.navbar > .links > ul > li > a:hover {
+  background: rgb(255, 255, 255);
+  color: black;
+  transition: all 0.2s ease;
+}
+
+/*/////////////////
+// media queries // 
+/////////////////*/
+
+@media screen and (max-width: 600px) {
+
+  .navbar {
+    display: none;
+  }
+
+  .burger {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .navbg {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease;
+  }
+
+}

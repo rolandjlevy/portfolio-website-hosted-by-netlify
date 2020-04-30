@@ -46,7 +46,8 @@
   opacity: 1;
   visibility: visible;
   transition: all 0.3s ease;
-} 
+}
+
 .burger-checkbox {
   visibility: hidden;
   opacity: 0;
@@ -179,10 +180,12 @@
 
 .navbar > .links > ul {
   margin: 0;
+  padding: 15px 0;
 }
 
 .navbar > .links > ul > li {
   display: inline;
+  font-weight: 700;
 }
 
 .navbar > .links > ul > li > a {

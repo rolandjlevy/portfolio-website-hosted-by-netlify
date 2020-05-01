@@ -270,6 +270,14 @@ h2 {
   font-size: 0.75rem;
 }
 
+.display-none {
+  display: none;
+}
+
+.display-block {
+  display: block;
+}
+
 /*/////////////////
 // media queries // 
 /////////////////*/

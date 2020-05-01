@@ -1,44 +1,54 @@
+  ////////////////////////////
+  // Filter projects by id  //
+  ////////////////////////////
+
 document.addEventListener('DOMContentLoaded', (event) => {
 
-  /////////////////////////////////////
-  // filtering projects based on id  //
-  /////////////////////////////////////
-  const software = {};
   const projects = document.querySelectorAll('.project');
-  const projectContainer = document.querySelector('.project-container');
-  const projectContainerInnerHTML = document.querySelector('.project-container').innerHTML;
-  const languages = ['javascript', 'node', 'express', 'mysql', 'vue', 'react', 'bootstrap', 'css'];
-  languages.forEach(item => {
-    document.querySelector(`#${item}`).addEventListener('click', (e) => {
+
+  const languages = {
+    javascript: false, 
+    node: false,
+    express: false,
+    mysql: false,
+    vue: false,
+    react: false,
+    bootstrap: false,
+    css: false
+  };
+  
+  Object.keys(languages).forEach(key => {
+    document.querySelector(`#${key}`).addEventListener('click', (e) => {
       setProjectFilter(e);
-      updateProjectsSelection(e);
+      updateProjectsSelection();
     });
   });
 
   function setProjectFilter(e) {
     const id = e.currentTarget.id;
-    if (software[id]) {
+    if (languages[id]) {
       e.currentTarget.classList.remove('selected');
-      delete software[id];
+      languages[id] = false;
     } else {
       e.currentTarget.classList.add('selected');
-      software[id] = getProjectByName(id);
+      languages[id] = true;
     }
   }
 
   function updateProjectsSelection() {
-    if (!Object.values(software).length) {
-      projectContainer.innerHTML = projectContainerInnerHTML;
-      return;
-    }
-    projectContainer.innerHTML = Object.values(software)
-    .filter(a => !!a)
-    .map(b => b.map(c => c.outerHTML).join(''))
-    .join('');
+    projects.forEach(item => {
+      const id = getLangFromClassList(item.classList);
+      if (languages[id] || allFalse()) item.style.display = 'block';
+      if (!languages[id] && !allFalse()) item.style.display = 'none';
+    });
   }
 
-  function getProjectByName(name) {
-    return Array.from(projects).filter(item => item && item.classList && item.classList.value.includes(name));
-  }
+  const allFalse = () => Object.values(languages).every(item => !item);
+
+  const getLangFromClassList = (classList) => {
+    return Array.from(classList)
+    .filter(item => item !== "project")
+    .shift();
+  };
 
 });

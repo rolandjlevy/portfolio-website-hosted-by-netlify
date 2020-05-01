@@ -28,3 +28,5 @@ https://alligator.io/js/resize-observer/
 - https://worldvectorlogo.com/downloaded/react
 - https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
 - https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity
+- https://css-tricks.com/full-width-containers-limited-width-parents/
+- https://stackoverflow.com/questions/450903/how-can-i-make-a-div-not-larger-than-its-contents

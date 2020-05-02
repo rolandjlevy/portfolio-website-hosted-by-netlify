@@ -3,11 +3,13 @@
 
 ### Ideas
 - integrate screen shots of react projects
+- improve project tag hover colour
 - make filtering work properly: each project has multiple languages
 - create layout in Figma
 - make first background section rotate 5 degrees
 - look at BBC screen shot for footer idea
 - Save favourite projects in localStorage
+- background images / paintings: Jr Korpa https://unsplash.com/photos/cRUZICCU_Xg
 
 ### Fonts
 - Google sans

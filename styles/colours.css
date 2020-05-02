@@ -4,6 +4,7 @@
   --deep-blue: #003750;
   --dark-grey: #444;
   --deep-grey: #333;
+  --lightest-grey: #fcfcfc;
   --light-grey: #f3f3f3;
   --mid-light-grey: #ececec;
   --mid-grey: #ccc;
@@ -13,4 +14,5 @@
   --highlight-colour: #e00095;
   --box-shadow-mid: rgba(100, 100, 100, 0.8);
   --box-shadow-light: rgba(0, 0, 0, 0.07);
+  --nav-height: 80px;
 }

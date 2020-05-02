@@ -2,9 +2,10 @@
 
 
 ### Ideas
-- move anchor links to the bottom of each section?
+- integrate screen shots of react projects
+- make filtering work properly: each project has multiple languages
+- create layout in Figma
 - make first background section rotate 5 degrees
-- limit width of content area
 - look at BBC screen shot for footer idea
 - Save favourite projects in localStorage
 
@@ -30,3 +31,4 @@ https://alligator.io/js/resize-observer/
 - https://scotch.io/tutorials/how-to-change-a-css-background-images-opacity
 - https://css-tricks.com/full-width-containers-limited-width-parents/
 - https://stackoverflow.com/questions/450903/how-can-i-make-a-div-not-larger-than-its-contents
+- https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function

@@ -34,3 +34,5 @@ https://alligator.io/js/resize-observer/
 - https://css-tricks.com/full-width-containers-limited-width-parents/
 - https://stackoverflow.com/questions/450903/how-can-i-make-a-div-not-larger-than-its-contents
 - https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function
+- https://stackoverflow.com/questions/35302301/close-modal-by-clicking-outside-the-box
+- https://cubic-bezier.com/#0,.72,1,.27

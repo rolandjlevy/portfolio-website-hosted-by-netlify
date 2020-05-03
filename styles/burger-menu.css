@@ -70,16 +70,17 @@
 .burger-checkbox-class ~ .burger > .burger-side-panel {
   transform: translate(90px, -90px) scale(0.22, 0.22);
   border-radius: 50%;
-  transition: all 0.3s ease;
+  /* transition: all 0.2s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3); */
+  transition: all 0.2s 0.2s ease;
   box-shadow: none;
   opacity: 0;
 }
 
 .burger-checkbox-class:checked ~ .burger > .burger-side-panel  {
   transform: translate(0, 0) scale(1, 1);
-  border-radius: 5px;
+  border-radius: 8px;
   background: #fff;
-  transition: all 0.3s ease;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.3, 1.275);
   opacity: 1;
 } 
 

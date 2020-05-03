@@ -96,7 +96,7 @@
 }
 
 .burger-checkbox-class ~ .hamburger-label:hover ~ .burger > .burger-side-panel {
-  background: var(--light-grey);
+  background: var(--lightest-grey);
   opacity: 1;
 }
 

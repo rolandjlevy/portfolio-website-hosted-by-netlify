@@ -7,6 +7,7 @@
     <link href="styles/root-vars.css" rel="stylesheet" type="text/css" />
     <link href="styles/main.css" rel="stylesheet" type="text/css" />
     <link href="styles/nav.css" rel="stylesheet" type="text/css" />
+    <link href="styles/burger-menu.css" rel="stylesheet" type="text/css" />
     <link href="styles/imports.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
@@ -23,10 +24,14 @@
         </ul>
       </section>
     </nav>
-    <label class="burger" for="burger-checkbox">
-      <input type="checkbox" class="burger-checkbox" id="burger-checkbox" />
-      <i class="fas fa-hamburger"></i>
+
+    <input type="checkbox" id="burger-checkbox" class="burger-checkbox-class" />
+    <label for="burger-checkbox" class="hamburger-label"><i class="fas fa-hamburger"></i></label>
+    <label for="burger-checkbox" class="modal-overlay"></label>
+    
+    <div class="burger">
       <div class="burger-side-panel">
+        <!-- <label for="burger-checkbox" class="modal-close-button">&times;</label> -->
         <ul>
           <li><a href="#about">About 👨</a></li>
           <li><a href="#projects">Projects 👨‍💻</a></li>
@@ -35,7 +40,7 @@
           <li><a href="#contact">Contact 👋</a></li>
         </ul>
       </div>
-    </label>
+    </div>
 
     <main class="container">
       <section class="section-anchor about">

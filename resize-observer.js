@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   ///////////////////////////////////////////////
 
   const mediaQueryMobile = 585;
-  const burgerCheckBox = document.querySelector('.burger-checkbox');
-  const navbg = document.querySelector('.navbg');
+  const burgerCheckBox = document.querySelector('.burger-checkbox-class');
   const body = document.querySelector('body');
 
   const myObserver = new ResizeObserver(entries => {

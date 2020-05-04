@@ -235,9 +235,9 @@ main.container {
 }
 
 .tags > li > a:hover {
-  background-color: var(--mid-grey);
+  background-color: var(--mid-darker-grey);
   transition: all 0.2s ease;
-  color: var(--dark-grey);
+  color: #fff;
 }
 
 /* .tags > li > a::before {
@@ -266,6 +266,7 @@ h1, h2, h3, h4, h5 {
 
 h2 {
   font-size: 2.5rem;
+  font-weight: 700;
 }
 
 .m-t-20 {

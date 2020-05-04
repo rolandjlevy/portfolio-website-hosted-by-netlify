@@ -16,7 +16,7 @@ function currentYPosition() {
 }
 
 function smoothScroll(id) {
-  // for Chrome and Firefox use CSS smooth-scroll
+  // for Chrome and Firefox use CSS, scroll-behavior: smooth;
   if (scrollBehavior) return;
   // for IE and Safari use JS for smooth scroll
   var startY = currentYPosition();

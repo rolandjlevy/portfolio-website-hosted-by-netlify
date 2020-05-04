@@ -4,16 +4,11 @@
 ### Ideas
 - create layout in Figma
 - integrate screen shots of react projects
-- improve project tag hover colour
 - make filtering work properly: each project has multiple languages
 - make first background section rotate 5 degrees
 - look at BBC screen shot for footer idea
 - Save favourite projects in localStorage
 - background images / paintings: Jr Korpa https://unsplash.com/photos/cRUZICCU_Xg
-
-### Ideas for later
-- smooth scroll polyfill: http://iamdustan.com/smoothscroll/
-- see https://embed.plnkr.co/plunk/29jeYo
 
 ### Fonts
 - Google sans

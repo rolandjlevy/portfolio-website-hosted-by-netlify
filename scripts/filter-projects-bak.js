@@ -37,14 +37,18 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   function updateProjectsSelection() {
     projects.forEach(item => {
-      const projectLanguages = item.dataset.lang.split(',');
-      const exists = projectLanguagesExist(projectLanguages);
-      if (exists || allFalse()) item.style.display = 'block';
-      if (!exists && !allFalse()) item.style.display = 'none';
+      const id = getLangFromClassList(item.classList);
+      if (languages[id] || allFalse()) item.style.display = 'block';
+      if (!languages[id] && !allFalse()) item.style.display = 'none';
     });
   }
 
   const allFalse = () => Object.values(languages).every(item => !item);
-  const projectLanguagesExist = (projectLanguages) => projectLanguages.some(id => languages[id]);
+
+  const getLangFromClassList = (classList) => {
+    return Array.from(classList)
+    .filter(item => item !== "project")
+    .shift();
+  };
 
 });

@@ -109,6 +109,7 @@ main.container {
   display: block;
   animation: fadein 1s;
   box-shadow: 0 2px 4px -2px var(--box-shadow-mid);
+  background-color: #aaa;
   /* background-image: url(images/better-change-2.png);
   background-size: cover;
   background-repeat: no-repeat; 
@@ -125,25 +126,59 @@ main.container {
 
 .project > .details {
   position: absolute;
-  height: 25px;
+  height: 0;
   width: inherit;
   background: #fff;
   bottom: 0;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
-  padding: 4px 8px;
-  font-size: 0.675rem;
+  padding: 4px 6px;
+  font-size: 0.5rem;
   font-family: 'Open Sans', sans-serif;
-  opacity: 1;
-  transition: all 0.6s ease;  
+  opacity: 0;
+  transition: all 0.3s 0.5s ease;
+  overflow: hidden;
+  text-transform: capitalize;
   /* transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3); */
 }
 
 .project:hover > .details {
   height: calc(100% - 25px);
   opacity: 0.8;
-  /* transition: all 0.6s ease; */
-  transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3);
+  transition: all 0.5s 0.2s ease;
+  /* transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3); */
+}
+
+.project > .view:before {
+  content: 'i';
+  font-family: 'Inconsolata', monospace;
+  font-size: 0.675rem;
+  color: #fff;
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+
+.project > .view {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-color: #0066ff;
+  left: 6px;
+  bottom: 6px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s 0.2s ease;
+  z-index: 1;
+}
+
+.project:hover > .view {
+  opacity: 0.8;
+  transition: opacity 0.8s 0.5s ease;
+}
+
+.project > .view:hover {
+  background-color: #0050c9;
 }
 
 @keyframes fadein {

@@ -37,6 +37,7 @@ https://alligator.io/js/resize-observer/
 - https://cubic-bezier.com/#0,.72,1,.27
 - https://www.smashingmagazine.com/2014/04/understanding-css-timing-functions/
 - reset vs normalise: https://codepen.io/zachwolf/details/bdZMZj
+- https://css-tricks.com/reboot-resets-reasoning/
 
 ### Demo and code
 - Live demo: https://css-portfolio-website--rjlevy.repl.co

@@ -17,11 +17,11 @@
     <nav class="navbar">
       <section class="links limit">
         <ul>
-          <li><img src="/images/roland-levy-medium.jpg" class="profile-image"><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><img src="/images/roland-levy-medium.jpg" class="profile-image"><a href="#about" onclick="smoothScroll('about');">About</a></li>
+          <li><a href="#projects" onclick="smoothScroll('projects');">Projects</a></li>
           <li><a href="https://github.com/rolandjlevy" target="_blank">Github</a></li>
           <li><a href="/images/Roland-Levy-CV-May-2020.pdf" download>Download CV</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="smoothScroll('contact');">Contact</a></li>
         </ul>
       </section>
     </nav>
@@ -108,6 +108,6 @@
 <script src="/scripts/script.js"></script>
     <script src="/scripts/resize-observer.js"></script>
     <script src="/scripts/filter-projects.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/iamdustan-smoothscroll/0.4.0/smoothscroll.min.js"></script> -->
+    <script src="/scripts/smooth-scroll-polyfill.js"></script>
   </body>
 </html>

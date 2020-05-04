@@ -2,14 +2,17 @@
 
 
 ### Ideas
+- smooth scrolling polyfill
+- add css reset and normalise
+- create layout in Figma
 - integrate screen shots of react projects
 - improve project tag hover colour
 - make filtering work properly: each project has multiple languages
-- create layout in Figma
 - make first background section rotate 5 degrees
 - look at BBC screen shot for footer idea
 - Save favourite projects in localStorage
 - background images / paintings: Jr Korpa https://unsplash.com/photos/cRUZICCU_Xg
+- smooth scroll polyfill: http://iamdustan.com/smoothscroll/
 
 ### Fonts
 - Google sans
@@ -36,3 +39,10 @@ https://alligator.io/js/resize-observer/
 - https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function
 - https://stackoverflow.com/questions/35302301/close-modal-by-clicking-outside-the-box
 - https://cubic-bezier.com/#0,.72,1,.27
+- https://www.smashingmagazine.com/2014/04/understanding-css-timing-functions/
+- reset vs normalise: https://codepen.io/zachwolf/details/bdZMZj
+
+### Demo and code
+- Live demo: https://css-portfolio-website--rjlevy.repl.co
+- Source code: https://repl.it/@rjlevy/CSS-portfolio-website
+- Github: https://github.com/rolandjlevy/portfolio-website

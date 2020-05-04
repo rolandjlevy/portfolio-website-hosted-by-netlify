@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   // collapse burger menu panel in mobile view //
   ///////////////////////////////////////////////
 
-  const mediaQueryMobile = 585;
+  const mediaQueryMobile = 600;
   const burgerCheckBox = document.querySelector('.burger-checkbox-class');
   const body = document.querySelector('body');
 

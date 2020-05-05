@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     vue: false,
     react: false,
     bootstrap: false,
+    sass: false,
     css: false
   };
   

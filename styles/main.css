@@ -102,25 +102,27 @@ main.container {
 }
 
 .project {
-  width: 75px;
-  height: 100px;
+  width: 90px;
+  height: 120px;
   margin: 10px;
   border-radius: 5px;
+  letter-spacing: 0.3px;
   display: block;
   animation: fadein 1s;
   box-shadow: 0 2px 4px -2px var(--box-shadow-mid);
   background-color: #aaa;
-  /* background-image: url(images/better-change-2.png);
   background-size: cover;
   background-repeat: no-repeat; 
-  background-blend-mode: luminosity; */
+  background-blend-mode: initial;
+  transition: all 0.5s ease;
 }
 
 .project:hover {
-  transform: scale(1.3);
+  transform: scale(1.5);
   transition: all 0.5s ease;
   z-index: 5;
   cursor: pointer;
+  background-blend-mode: multiply;
   box-shadow: 0 3px 12px -1px var(--box-shadow-mid);
 }
 
@@ -128,8 +130,11 @@ main.container {
   position: absolute;
   height: 0;
   width: inherit;
-  background: #fff;
+  background: var(--accent-colour);
+  color: #fff;
   bottom: 0;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   padding: 4px 6px;
@@ -142,9 +147,13 @@ main.container {
   /* transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3); */
 }
 
+.project > .details > li:first-child {
+  font-weight: 700;
+}
+
 .project:hover > .details {
-  height: calc(100% - 25px);
-  opacity: 0.8;
+  height: calc(100%);
+  opacity: 0.9;
   transition: all 0.5s 0.2s ease;
   /* transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3); */
 }

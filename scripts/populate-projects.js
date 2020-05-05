@@ -2,85 +2,71 @@
 // Populate project nodes //
 ////////////////////////////
 
-const projectData = [
-  {
-    id: 'better-change',
-    image: 'https://rolandlevy.co.uk/images/better-change-slide.png',
-    heading: 'Better Change',
-    languages: 'react,node,express,sass'
-   },
-  { 
-    id: 'ourbnb',
-    image: 'https://rolandlevy.co.uk/images/ourbnb-slide.png',
-    heading: 'OurBnB',
-    languages: 'react,node,express,sass'
-   },
-  { 
-    id: 'lovely-grubbly',
-    image: 'https://rolandlevy.co.uk/images/lovely-grubbly-slide.png',
-    heading: 'Lovely Grubbly',
-    languages: 'react,node,express,sass'
-   },
-  { 
-    id: 'which-city',
-    image: 'https://rolandlevy.co.uk/images/which-city-slide.png',
-    heading: 'Which City?',
-    languages: 'react,sass'
-   },
-  { 
-    id: 'moviewer',
-    image: 'https://rolandlevy.co.uk/images/moviewer-slide.png',
-    heading: 'Moviewer',
-    languages: 'react,node,css'
-   }
-];
-
-const getProjectById = (id) => {
-  return projectData.find(project => project.id === id);
+class Project {
+  constructor(id, image, heading, languages) {
+    this.id = id;
+    this.image = image;
+    this.heading = heading;
+    this.languages = languages;
+  }
+  getList() {
+    return this.languages.split(',').map(li => `<li>${li}</li>`).join('');
+  }
+  getInnerHtml() {
+    return `
+      <li id="${this.id}" class="project" style="background-image:url(${this.image})" data-lang="${this.languages}">
+        <div class="view"></div>
+        <ul class="details"><li>${this.heading}</li>${this.getList()}</ul>
+      </li>
+    `;
+  }
 }
 
-const getList = (array) => array.split(',').map(li => `<li>${li}</li>`).join('');
+const projectData = [];
+
+projectData.push(new Project(
+  'better-change', 
+  'https://rolandlevy.co.uk/images/better-change-slide.png',
+  'Better Change',
+  'react,node,express,sass'
+));
+
+projectData.push(new Project(
+  'ourbnb', 
+  'https://rolandlevy.co.uk/images/ourbnb-slide.png',
+  'OurBnB',
+  'react,node,express,sass'
+));
+
+projectData.push(new Project(
+  'lovely-grubbly',
+  'https://rolandlevy.co.uk/images/lovely-grubbly-slide.png',
+  'Lovely Grubbly',
+  'react,node,express,sass'
+));
+
+projectData.push(new Project(
+  'which-city',
+  'https://rolandlevy.co.uk/images/which-city-slide.png',
+  'Which City?',
+  'react,sass'
+));
+
+projectData.push(new Project(
+  'moviewer',
+  'https://rolandlevy.co.uk/images/moviewer-slide.png',
+  'Moviewer',
+  'react,node,css'
+));
 
 document.addEventListener('DOMContentLoaded', (event) => {
 
   const projectContainer = document.querySelector('.project-container');
 
-  let liNode = document.createElement('li');
-  liNode.insertAdjacentHTML('afterbegin', getProjectHtml('better-change'));
-  projectContainer.appendChild(liNode.firstElementChild); 
-
-  liNode = document.createElement('li');
-  liNode.insertAdjacentHTML('afterbegin', getProjectHtml('ourbnb'));
-  projectContainer.appendChild(liNode.firstElementChild);
-
-  liNode = document.createElement('li');
-  liNode.insertAdjacentHTML('afterbegin', getProjectHtml('lovely-grubbly'));
-  projectContainer.appendChild(liNode.firstElementChild); 
-
-  liNode = document.createElement('li');
-  liNode.insertAdjacentHTML('afterbegin', getProjectHtml('which-city'));
-  projectContainer.appendChild(liNode.firstElementChild);
-
-  liNode = document.createElement('li');
-  liNode.insertAdjacentHTML('afterbegin', getProjectHtml('moviewer'));
-  projectContainer.appendChild(liNode.firstElementChild); 
-
-  function getProjectHtml(id) {
-    const project = getProjectById(id);
-    const list = getList(project.languages);
-    const str = `
-      <li id="${project.id}" class="project" style="background-image:url(${project.image})" data-lang="${project.languages}">
-        <div class="view"></div>
-        <ul class="details"><li>${project.heading}</li>${list}</ul>
-      </li>
-    `;
-    return str;
-  }
-
-  // const liNode = document.createElement('li');
-  // liNode.id = 'ourbnb';
-  // liNode.classList.add('project');
-  // liNode.style.backgroundImage = "url(https://rolandlevy.co.uk/images/ourbnb-slide.png)";
- 
+  projectData.forEach(project => {
+    const liNode = document.createElement('li');
+    liNode.insertAdjacentHTML('afterbegin', project.getInnerHtml());
+    projectContainer.appendChild(liNode.firstElementChild); 
+  });
 
 });

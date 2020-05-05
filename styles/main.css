@@ -86,7 +86,8 @@ main.container {
 /* projects         */
 /********************/
 
-.project-container {
+.project-container,
+.project-container-test {
   margin: 10px 0;
   display: flex;
   flex-wrap: wrap;
@@ -94,7 +95,8 @@ main.container {
   padding: 0;
 }
 
-.project-container > .project {
+.project-container > .project,
+.project-container-test > .project {
   transform-style: flat;
   transform: scale(1);
   transition: all 0.3s ease;

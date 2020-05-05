@@ -40,7 +40,7 @@ main.container {
 .limit {
   margin-left: auto;
   margin-right: auto;
-  max-width: 640px;
+  max-width: 720px;
 }
 
 .section.about {
@@ -102,8 +102,8 @@ main.container {
 }
 
 .project {
-  width: 90px;
-  height: 120px;
+  width: 150px;
+  height: 200px;
   margin: 10px;
   border-radius: 5px;
   letter-spacing: 0.3px;
@@ -130,15 +130,18 @@ main.container {
   position: absolute;
   height: 0;
   width: inherit;
-  background: var(--accent-colour);
+  /* background: var(--accent-colour); */
+  background: linear-gradient(to bottom, var(--accent-colour) 20%, #000 80%) no-repeat;
+  /* background-size: calc(100% - 100px) calc(100% - 100px); */
+  background-position: center;
   color: #fff;
   bottom: 0;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
-  padding: 4px 6px;
-  font-size: 0.5rem;
+  padding: 8px 12px;
+  font-size: 0.75rem;
   font-family: 'Open Sans', sans-serif;
   opacity: 0;
   transition: all 0.3s 0.5s ease;
@@ -149,6 +152,7 @@ main.container {
 
 .project > .details > li:first-child {
   font-weight: 700;
+  font-size: 0.875rem;
 }
 
 .project:hover > .details {
@@ -173,8 +177,8 @@ main.container {
   width: 15px;
   height: 15px;
   background-color: #0066ff;
-  left: 6px;
-  bottom: 6px;
+  left: 12px;
+  bottom: 12px;
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.3s 0.2s ease;

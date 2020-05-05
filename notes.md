@@ -2,6 +2,8 @@
 
 
 ### Ideas
+- Create a data structure that holds the project image urls, languages and headers. Use this to populate child project nodes: li.project
+- Fix icon margins in tag buttons
 - create layout in Figma
 - integrate screen shots of react projects
 - make filtering work properly: each project has multiple languages

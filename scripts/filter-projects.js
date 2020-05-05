@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   const allFalse = () => Object.values(languages).every(item => !item);
+  
   const projectLanguagesExist = (projectLanguages) => projectLanguages.some(id => languages[id]);
 
 });

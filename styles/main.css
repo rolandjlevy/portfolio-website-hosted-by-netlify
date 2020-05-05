@@ -105,7 +105,7 @@ main.container {
 
 .project {
   width: 150px;
-  height: 200px;
+  height: 150px;
   margin: 10px;
   border-radius: 5px;
   letter-spacing: 0.3px;
@@ -255,7 +255,7 @@ main.container {
 .tags > li > a {
   position: relative;
   display: inline-block;
-  padding: 8px 8px 6px 30px;
+  padding: 8px 8px 6px 33px;
   background-color: var(--mid-light-grey);
   color: var(--dark-grey);
   border-radius: 10px;
@@ -268,13 +268,13 @@ main.container {
 
 .tags > li > a > img {
   position: absolute;
-  bottom: 7px;
+  bottom: 10px;
   left: 8px;
   width: 18px;
 }
 
 .tags > li > a > span {
-  padding-left: 22px;
+  padding-left: 24px;
 }
 
 .tags > li > a.selected,

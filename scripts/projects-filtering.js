@@ -1,10 +1,8 @@
-  ////////////////////////////
-  // Filter projects by id  //
-  ////////////////////////////
+////////////////////////////
+// Filter projects by id  //
+////////////////////////////
 
 document.addEventListener('DOMContentLoaded', (event) => {
-
-  const projects = document.querySelectorAll('.project');
 
   const languages = {
     javascript: false, 
@@ -17,6 +15,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
     sass: false,
     css: false
   };
+
+  const projectContainer = document.querySelector('.project-container');
+
+  projectData.forEach(project => {
+    const liNode = document.createElement('li');
+    liNode.insertAdjacentHTML('afterbegin', project.getInnerHtml());
+    projectContainer.appendChild(liNode.firstElementChild);
+  });
+
+  const projects = document.querySelectorAll('.project');
   
   Object.keys(languages).forEach(key => {
     document.querySelector(`#${key}`).addEventListener('click', (e) => {
@@ -37,13 +45,15 @@ document.addEventListener('DOMContentLoaded', (event) => {
   }
 
   function updateProjectsSelection() {
-    projects.forEach(item => {
-      const projectLanguages = item.dataset.lang.split(',');
-      const exists = projectLanguagesExist(projectLanguages);
-      if (exists || allFalse()) item.style.display = 'block';
-      if (!exists && !allFalse()) item.style.display = 'none';
+    projects.forEach(project => {
+      const data = getProjectById(project.id);
+      const exists = projectLanguagesExist(data.languages);
+      if (exists || allFalse() && project.style.display !== 'block') project.style.display = 'block';
+      if (!exists && !allFalse() && project.style.display !== 'none') project.style.display = 'none';
     });
   }
+
+  const getProjectById = (id) => projectData.find(project => project.id == id);
 
   const allFalse = () => Object.values(languages).every(item => !item);
   

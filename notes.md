@@ -2,11 +2,8 @@
 
 
 ### Ideas
-- Use project id to get languages array instead of using data-languages attribute
-- Fix icon margins in tag buttons
 - create layout in Figma
 - integrate screen shots of react projects
-- make filtering work properly: each project has multiple languages
 - make first background section rotate 5 degrees
 - look at BBC screen shot for footer idea
 - Save favourite projects in localStorage

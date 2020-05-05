@@ -113,7 +113,7 @@ main.container {
   background-color: #aaa;
   background-size: cover;
   background-repeat: no-repeat; 
-  background-blend-mode: initial;
+  /* background-blend-mode: initial; */
   transition: all 0.5s ease;
 }
 
@@ -122,7 +122,7 @@ main.container {
   transition: all 0.5s ease;
   z-index: 5;
   cursor: pointer;
-  background-blend-mode: multiply;
+  /* background-blend-mode: multiply; */
   box-shadow: 0 3px 12px -1px var(--box-shadow-mid);
 }
 
@@ -131,7 +131,7 @@ main.container {
   height: 0;
   width: inherit;
   /* background: var(--accent-colour); */
-  background: linear-gradient(to bottom, var(--accent-colour) 20%, #000 80%) no-repeat;
+  background: linear-gradient(to bottom, #000 0%, #fd60c9dd 30%);
   /* background-size: calc(100% - 100px) calc(100% - 100px); */
   background-position: center;
   color: #fff;

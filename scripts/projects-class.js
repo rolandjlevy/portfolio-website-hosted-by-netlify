@@ -15,7 +15,9 @@ class Project {
   getInnerHtml() {
     return `
       <li id="${this.id}" class="project" style="background-image:url(${this.image})">
-        <div class="view"></div>
+        <input id="${this.id}-checkbox" class="toggle" type="checkbox" />
+        <label for="${this.id}-checkbox" class="toggle-overlay"></label>
+        <div class="view-icon"></div>
         <ul class="details"><li>${this.heading}</li>${this.getList()}</ul>
       </li>
     `;

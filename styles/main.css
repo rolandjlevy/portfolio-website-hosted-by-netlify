@@ -124,11 +124,30 @@ main.container {
   transition: all 0.5s ease;
   z-index: 5;
   cursor: pointer;
-  /* background-blend-mode: multiply; */
   box-shadow: 0 3px 12px -1px var(--box-shadow-mid);
 }
 
-.project > .details {
+.project > .toggle-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.project > .toggle  {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.project > .toggle ~ .details {
   position: absolute;
   height: 0;
   width: inherit;
@@ -146,9 +165,16 @@ main.container {
   font-size: 0.75rem;
   font-family: 'Open Sans', sans-serif;
   opacity: 0;
-  transition: all 0.3s 0.5s ease;
+  transition: all 0.5s 0.5s ease;
   overflow: hidden;
   text-transform: capitalize;
+  /* transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3); */
+}
+
+.project > .toggle:checked ~ .details {
+  height: calc(100%);
+  opacity: 0.9;
+  transition: all 0.5s 0.2s ease;
   /* transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3); */
 }
 
@@ -157,14 +183,13 @@ main.container {
   font-size: 0.875rem;
 }
 
-.project:hover > .details {
+/* .project:hover > .details {
   height: calc(100%);
   opacity: 0.9;
   transition: all 0.5s 0.2s ease;
-  /* transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3); */
-}
+} */
 
-.project > .view:before {
+.project > .view-icon:before {
   content: 'i';
   font-family: 'Inconsolata', monospace;
   font-size: 0.675rem;
@@ -174,7 +199,7 @@ main.container {
   top: 0;
 }
 
-.project > .view {
+.project > .view-icon {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -187,12 +212,12 @@ main.container {
   z-index: 1;
 }
 
-.project:hover > .view {
+.project:hover > .view-icon {
   opacity: 0.8;
   transition: opacity 0.8s 0.5s ease;
 }
 
-.project > .view:hover {
+.project > .view-icon:hover {
   background-color: #0050c9;
 }
 

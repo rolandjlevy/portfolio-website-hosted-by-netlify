@@ -25,7 +25,6 @@
   opacity: 1;
   visibility: visible;
   transition: all 0.5s ease;
-  /* transform-style: preserve-3d; */
   z-index: 10;
 }
 

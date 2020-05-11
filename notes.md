@@ -2,6 +2,7 @@
 
 
 ### Ideas
+- integrate align-content: stretch for rows / cols: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - create layout in Figma
 - integrate screen shots of react projects
 - make first background section rotate 5 degrees
@@ -16,10 +17,11 @@
 - Raleway
 
 ### Inspiration
+- https://css.gg
 - https://www.pluralsight.com
 - https://stripe.com
 - https://deliveroo.co.uk
-- https://www.airbnb.co.uk/
+- https://www.airbnb.co.uk
 - Footer: https://www.bbc.co.uk/news/world-us-canada-52465172
 
 ### Reference
@@ -38,6 +40,7 @@ https://alligator.io/js/resize-observer/
 - reset vs normalise: https://codepen.io/zachwolf/details/bdZMZj
 - https://css-tricks.com/reboot-resets-reasoning/
 - https://grrr.tech/posts/create-dom-node-from-html-string/
+- https://gomakethings.com/converting-a-nodelist-to-an-array-with-vanilla-javascript/
 
 ### Demo and code
 - Live demo: https://css-portfolio-website--rjlevy.repl.co

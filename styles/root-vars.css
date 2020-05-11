@@ -1,5 +1,5 @@
 :root {
-  --nav-text-colour: #fd60c9;
+  --nav-text-colour: #ff3d77;
   --nav-bg-colour: #000;
   --deep-blue: #003750;
   --dark-grey: #444;
@@ -9,9 +9,10 @@
   --mid-light-grey: #ececec;
   --mid-grey: #ccc;
   --mid-dark-grey: #888;
-  --mid-darker-grey: #777;
+  --mid-darker-grey: #666;
   --accent-colour-light: #ffa1e0;
-  --accent-colour: #fd60c9;
+  --accent-colour: #ff3d77;
+  /* --accent-colour: #fd60c9; */
   --highlight-colour: #e00095;
   --box-shadow-mid: rgba(100, 100, 100, 0.8);
   --box-shadow-light: rgba(0, 0, 0, 0.07);

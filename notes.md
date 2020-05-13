@@ -1,7 +1,8 @@
 # Roland Levy's personal website
 
-
 ### Ideas
+- apply fluid grid effect from repl
+- Get icons for nav from https://css.gg
 - integrate align-content: stretch for rows / cols: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 - create layout in Figma
 - integrate screen shots of react projects
@@ -17,6 +18,9 @@
 - Raleway
 
 ### Inspiration
+- https://milkisnice.com
+- https://stiltmedia.com
+- http://azumbrunnen.me
 - https://css.gg
 - https://www.pluralsight.com
 - https://stripe.com
@@ -46,3 +50,7 @@ https://alligator.io/js/resize-observer/
 - Live demo: https://css-portfolio-website--rjlevy.repl.co
 - Source code: https://repl.it/@rjlevy/CSS-portfolio-website
 - Github: https://github.com/rolandjlevy/portfolio-website
+
+### Reference
+- transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3);
+- background-size: calc(100% - 100px) calc(100% - 100px);

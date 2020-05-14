@@ -45,6 +45,9 @@ https://alligator.io/js/resize-observer/
 - https://css-tricks.com/reboot-resets-reasoning/
 - https://grrr.tech/posts/create-dom-node-from-html-string/
 - https://gomakethings.com/converting-a-nodelist-to-an-array-with-vanilla-javascript/
+- https://www.sitepoint.com/css3-background-repeat-space-round/
+- https://css-tricks.com/almanac/properties/b/background-repeat/
+- https://www.sitepoint.com/css3-transform-background-image/
 
 ### Demo and code
 - Live demo: https://css-portfolio-website--rjlevy.repl.co

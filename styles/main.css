@@ -58,22 +58,16 @@ main.container {
   max-width: calc(var(--project-container-w) + var(--project-padding) * 2);
 }
 
-.section.about {
+.about {
   background-color: var(--deep-grey);
-  /* transform: rotate(-5deg); */
 }
 
-.section.projects {
+.projects {
   background-color: var(--light-grey);
 }
 
-.section.contact {
+.contact {
   background-color: var(--deep-grey);
-  /* background-color: #333333dd !important;
-  background-image: url('/images/unsplash-red-painting.jpg');
-  background-blend-mode: multiply;
-  background-size: cover;
-  background: linear-gradient(to bottom, #333333dd 0%,#33333333 100%),url("/images/unsplash-red-painting.jpg") */
 }
 
 .section-anchor {
@@ -83,18 +77,6 @@ main.container {
   margin: 0;
   border: 0;
   transition: all 0.3s ease;
-}
-
-.section-anchor.about {
-  background: var(--deep-grey);
-}
-
-.section-anchor.projects {
-  background: var(--deep-grey);
-}
-
-.section-anchor.contact {
-  background: var(--light-grey);
 }
 
 /********************/

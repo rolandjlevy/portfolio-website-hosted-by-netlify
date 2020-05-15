@@ -9,6 +9,7 @@
 	<link href="styles/reset.css" rel="stylesheet" type="text/css" />
 	<link href="styles/normalize.css" rel="stylesheet" type="text/css" />
 	<link href="styles/root-vars.css" rel="stylesheet" type="text/css" />
+	<link href="styles/backgrounds.css" rel="stylesheet" type="text/css" />
 	<link href="styles/main.css" rel="stylesheet" type="text/css" />
 	<link href="styles/nav.css" rel="stylesheet" type="text/css" />
 	<link href="styles/burger-menu.css" rel="stylesheet" type="text/css" />
@@ -48,49 +49,55 @@
 
     <main class="container">
 
-      <section class="section-anchor about">
-        <div id="about"></div>
-      </section>
-      <section class="section about">
-        <h2 class="limit">Roland Levy</h2>
-      </section>
+      <div class="about-bg">
+        <section class="section-anchor">
+          <div id="about"></div>
+        </section>
+        <section class="section">
+          <h2 class="limit">Roland Levy</h2>
+        </section>
+      </div>
 
-      <section class="section-anchor projects">
-        <div id="projects"></div>
-      </section>
-      <section class="section projects">
-        <h2 class="limit">Projects</h2>
-        <div class="content-area limit">
-          <ul class="tags">
-            <li><a id="javascript"><img alt="JavaScript" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg">JavaScript</a></li>
-            <li><a id="node"><img alt="Node.js" src="https://repl.it/public/images/languages/nodejs.svg">Node</a></li>
-            <li><a id="express"><img alt="Express.js" src="https://c7.uihere.com/files/925/447/818/express-js-node-js-javascript-mongodb-node-js.jpg">Express</a></li>
-            <li><a id="mysql"><img alt="MySql" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/mysql-workbench-icon.png">MySql</a></li>
-            <li><a id="vue"><img alt="Vue.js" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg">Vue</a></li>
-            <li><a id="react"><img alt="React.js" src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg">React</a></li>
-            <li><a id="bootstrap"><img alt="Bootstrap" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg">Bootstrap</a></li>
-            <li><a id="sass"><img alt="Sass"  src="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png">Sass</a></li>
-            <li><a id="css"><img alt="CSS"  src="https://ya-webdesign.com/transparent450_/css-3-logo-png-7.png">CSS</a></li>
+      <div class="projects-bg">
+        <section class="section-anchor">
+          <div id="projects"></div>
+        </section>
+        <section class="section">
+          <h2 class="limit">Projects</h2>
+          <div class="content-area limit">
+            <ul class="tags">
+              <li><a id="javascript"><img alt="JavaScript" src="https://upload.wikimedia.org/wikipedia/commons/9/99/Unofficial_JavaScript_logo_2.svg">JavaScript</a></li>
+              <li><a id="node"><img alt="Node.js" src="https://repl.it/public/images/languages/nodejs.svg">Node</a></li>
+              <li><a id="express"><img alt="Express.js" src="https://c7.uihere.com/files/925/447/818/express-js-node-js-javascript-mongodb-node-js.jpg">Express</a></li>
+              <li><a id="mysql"><img alt="MySql" src="https://icons.iconarchive.com/icons/papirus-team/papirus-apps/256/mysql-workbench-icon.png">MySql</a></li>
+              <li><a id="vue"><img alt="Vue.js" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg">Vue</a></li>
+              <li><a id="react"><img alt="React.js" src="https://upload.wikimedia.org/wikipedia/commons/4/47/React.svg">React</a></li>
+              <li><a id="bootstrap"><img alt="Bootstrap" src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg">Bootstrap</a></li>
+              <li><a id="sass"><img alt="Sass"  src="https://sass-lang.com/assets/img/styleguide/seal-color-aef0354c.png">Sass</a></li>
+              <li><a id="css"><img alt="CSS"  src="https://ya-webdesign.com/transparent450_/css-3-logo-png-7.png">CSS</a></li>
+            </ul>
+            <ul class="project-container"></ul>
+          </div>
+        </section>
+      </div>
+
+      <div class="contact-bg">
+        <section class="section-anchor">
+          <div id="contact"></div>
+        </section>
+        <section class="section">
+          <h2 class="limit">Contact</h2>
+          <ul class="footer-boxes limit">
+            <li class="m-r-10"><i class="gg-file-document"></i>LinkedIn<img src="/images/unsplash-red-painting.jpg"></li>
+            <li class="m-r-10"><i class="gg-userlane"></i>Contact form<img src="/images/unsplash-red-painting.jpg"></li>
+            <li>Github <i class="gg-mail"></i><img src="/images/unsplash-red-painting.jpg"></li>
+            <li>
+              <span class="gg-icon"><span><i class="gg-software-download"></i></span>
+  Downloads</span></li>
           </ul>
-          <ul class="project-container"></ul>
-        </div>
-      </section>
-
-      <section class="section-anchor contact">
-        <div id="contact"></div>
-      </section>
-      <section class="section contact">
-        <h2 class="limit">Contact</h2>
-        <ul class="footer-boxes limit">
-          <li class="m-r-10"><i class="gg-file-document"></i>LinkedIn<img src="/images/unsplash-red-painting.jpg"></li>
-          <li class="m-r-10"><i class="gg-userlane"></i>Contact form<img src="/images/unsplash-red-painting.jpg"></li>
-          <li>Github <i class="gg-mail"></i><img src="/images/unsplash-red-painting.jpg"></li>
-          <li>
-            <span class="gg-icon"><span><i class="gg-software-download"></i></span>
- Downloads</span></li>
-        </ul>
-      </section>
-
+        </section>
+      </div>
+      
     </main>
 
     <script src="/scripts/script.js"></script>

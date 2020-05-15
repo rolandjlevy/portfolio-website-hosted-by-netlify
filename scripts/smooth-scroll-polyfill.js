@@ -1,5 +1,14 @@
 // From https://embed.plnkr.co/plunk/29jeYo
 
+const navlinks = document.querySelectorAll('.navlink');
+
+navlinks.forEach(item => {
+  item.addEventListener('click', (e) => {
+    const link = e.currentTarget.href.split('#')[1];
+    smoothScroll(link);
+  });
+});
+
 // detect scroll-behavior
 const body = document.querySelector('body');
 const scrollBehavior = getComputedStyle(body).scrollBehavior;

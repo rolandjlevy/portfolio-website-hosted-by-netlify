@@ -17,6 +17,38 @@
   transition: all 0.5s ease;
 }
 
+.burger-icon {
+  display: block;
+  cursor: pointer;
+  width: 42px;
+  padding: 5px 0;
+}
+
+.burger-icon > img:nth-child(1) {
+  transform: rotate(0deg) translateX(0);
+  transition: all 0.3s ease;
+}
+
+.burger-icon > img:nth-child(3) {
+  transform: rotate(0deg) translateX(0);
+  transition: all 0.3s ease;
+}
+
+.burger-icon:hover > img:nth-child(1) {
+  transform: rotate(90deg) translateX(10px);
+}
+
+.burger-icon:hover > img:nth-child(3) {
+  transform: rotate(90deg) translateX(-10px);
+}
+
+.burger-icon > img {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2px;
+  padding: 0;
+}
+
 .burger-side-panel {
   color: var(--nav-text-colour);
   padding: 15px;

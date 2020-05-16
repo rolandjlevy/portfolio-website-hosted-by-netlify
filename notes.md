@@ -1,15 +1,12 @@
 # Roland Levy's personal website
 
 ### Ideas
-- apply fluid grid effect from repl
+- Tweak 3d background shapes
+- create new burger menu icon with 3 divs with each div is a 3d svg
 - Get icons for nav from https://css.gg
-- integrate align-content: stretch for rows / cols: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
-- create layout in Figma
 - integrate screen shots of react projects
 - make first background section rotate 5 degrees
-- look at BBC screen shot for footer idea
 - Save favourite projects in localStorage
-- background images / paintings: Jr Korpa https://unsplash.com/photos/cRUZICCU_Xg
 
 ### Fonts
 - Google sans
@@ -27,6 +24,8 @@
 - https://deliveroo.co.uk
 - https://www.airbnb.co.uk
 - Footer: https://www.bbc.co.uk/news/world-us-canada-52465172
+- background images / paintings: Jr Korpa https://unsplash.com/photos/cRUZICCU_Xg
+- fresh colours: https://www.forexwebinar.co.uk/auto-webinar-registration-3179165831822049
 
 ### Reference
 - https://coolors.co/palettes/trending

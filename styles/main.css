@@ -1,20 +1,4 @@
-* {
-  box-sizing: border-box;
-}
 
-:root {
-  --project-container-w: 960px;
-  --project-padding: 20px;
-}
-
-html, body {
-  margin: 0;
-  scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
-  letter-spacing: 1px;
-  font-size: 1rem;
-  background-color: var(--light-grey);
-}
 
 main.container {
   height: 100%;

@@ -2,7 +2,7 @@
 
 ### Ideas
 - Tweak 3d background shapes
-- create new burger menu icon with 3 divs with each div is a 3d svg
+- create new burger menu icon with 3 divs with each div is a 3d svg. See: https://repl.it/@rjlevy/CSS-burger-menu-from-memory
 - Get icons for nav from https://css.gg
 - integrate screen shots of react projects
 - make first background section rotate 5 degrees

@@ -58,9 +58,8 @@
   transition: all 0.2s ease;
 }
 
-.navbar > .links > ul > li > img {
-    width: 40px;
-    border-radius: 50%;
+.navbar > .links > ul > li > img.logo {
+    width: 30px;
     margin-right: 10px;
     vertical-align: middle;
 }

@@ -1,6 +1,7 @@
 # Roland Levy's personal website
 
 ### Ideas
+- create a jotform: https://www.jotform.com/form-templates/feedback-form
 - Tweak 3d background shapes
 - create new burger menu icon with 3 divs with each div is a 3d svg. See: https://repl.it/@rjlevy/CSS-burger-menu-from-memory
 - Get icons for nav from https://css.gg
@@ -15,6 +16,13 @@
 - Raleway
 
 ### Inspiration
+- nice banner: https://business.instagram.com/advertising/
+- fresh colours: https://www.forexwebinar.co.uk/auto-webinar-registration-3179165831822049
+- reveal details of each project: https://themes.woocommerce.com/bistro/
+- Footer: https://www.bbc.co.uk/news/world-us-canada-52465172
+- background images / paintings: Jr Korpa https://unsplash.com/photos/cRUZICCU_Xg
+
+### Other great websites
 - https://milkisnice.com
 - https://stiltmedia.com
 - http://azumbrunnen.me
@@ -23,9 +31,6 @@
 - https://stripe.com
 - https://deliveroo.co.uk
 - https://www.airbnb.co.uk
-- Footer: https://www.bbc.co.uk/news/world-us-canada-52465172
-- background images / paintings: Jr Korpa https://unsplash.com/photos/cRUZICCU_Xg
-- fresh colours: https://www.forexwebinar.co.uk/auto-webinar-registration-3179165831822049
 
 ### Reference
 - https://coolors.co/palettes/trending

@@ -19,15 +19,14 @@
 .project > img {
   object-fit: cover;
   /* object-position: 100%; */
-  border: 1px solid red;
   width: 100%;
   height: 100%;
-  opacity: 1;
+  /* opacity: 1; */
   transition: all 0.5s ease;
 }
 
 .project:hover > img {
-  opacity: 0.3;
+  /* opacity: 0.3; */
   /* object-position: 0; */
   cursor: pointer;
   transition: all 0.5s ease;
@@ -37,10 +36,36 @@
   position: absolute;
   top: 0;
   right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1;
+  width: 25px;
+  height: 25px;
+  background-color: hsl(342, 100%, 20%);
+  /* bottom: 0;
+  left: 0; */
+  z-index: 10;
   cursor: pointer;
+}
+
+.project > .toggle ~ .toggle-overlay {
+  opacity: 0.3;
+  transition: all 0.2s ease;
+}
+
+.project > .toggle ~ .toggle-overlay:hover {
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+
+.project > .toggle:checked ~ .toggle-overlay {
+  opacity: 1;
+  transition: all 0.2s ease;
+}
+
+.project > .toggle-overlay > .fa-thumbtack {
+  color: #fff;
+  transform: rotate(45deg);
+  float: right;
+  margin-top: 6px;
+  margin-right: 6px;
 }
 
 .project > .toggle  {
@@ -55,9 +80,10 @@
 
 .project > .toggle ~ .details {
   position: absolute;
-  height: 20%;
+  height: 35px;
   width: 100%;
-  background: linear-gradient(to bottom, #000 0%, #fd60c9dd 30%);
+  /* background: linear-gradient(to bottom, #000 0%, #fd60c9dd 30%); */
+  background: var(--accent-colour);
   background-position: center;
   color: #fff;
   bottom: 0;
@@ -68,7 +94,7 @@
   padding: 8px 12px;
   font-size: 0.75rem;
   font-family: 'Open Sans', sans-serif;
-  opacity: 1;
+  /* opacity: 1; */
   transition: all 0.5s 0.5s ease;
   overflow: hidden;
   text-transform: capitalize;
@@ -76,13 +102,13 @@
 
 .project > .toggle:checked ~ .details {
   height: calc(100%);
-  opacity: 1;
+  /* opacity: 1; */
   transition: all 0.5s 0.2s ease;
 }
 
 .project > .details > li:first-child {
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 1rem;
 }
 
 .project > .view-icon:before {
@@ -117,11 +143,11 @@
   background-color: #0050c9;
 }
 
-/* .project:hover > .details {
+.project:hover > .details {
   height: calc(100%);
-  opacity: 0.9;
+  /* opacity: 0.8; */
   transition: all 0.5s 0.2s ease;
-} */
+}
 
 @keyframes fadein {
   from {

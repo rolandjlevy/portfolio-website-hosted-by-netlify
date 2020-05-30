@@ -17,7 +17,7 @@ class Project {
       <li id="${this.id}" class="project">
         <img src="${this.image}" />
         <input id="${this.id}-checkbox" class="toggle" type="checkbox" />
-        <label for="${this.id}-checkbox" class="toggle-overlay"></label>
+        <label for="${this.id}-checkbox" class="toggle-overlay"><i class="fas fa-thumbtack"></i></label>
         <div class="view-icon"></div>
         <ul class="details"><li>${this.heading}</li>${this.getList()}</ul>
       </li>

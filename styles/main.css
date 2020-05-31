@@ -116,6 +116,19 @@ main.container {
   color: #fff;
 }
 
+
+/********************/
+/* footer           */
+/********************/
+
+footer {
+  padding: 30px;
+}
+
+footer > p {
+  text-align: center;
+}
+
 .footer-boxes > li {
   display: inline-block;
   color: #fff;

@@ -57,7 +57,7 @@ projectData.push(new Project(
 
 projectData.push(new Project(
   'colour-swatch-maker', 
-  './images/colour-swatch-maker.gif',
+  './images/colour-swatch-maker-4.gif',
   'Colour Swatch Maker',
   ['vue','css'],
   [

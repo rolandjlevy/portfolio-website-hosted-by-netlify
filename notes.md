@@ -9,6 +9,8 @@
 - make first background section rotate 5 degrees
 - Save favourite projects in localStorage
 
+- latest commit: Added demo, github and code buttons to each project
+
 ### Fonts
 - Google sans
 - Open sans

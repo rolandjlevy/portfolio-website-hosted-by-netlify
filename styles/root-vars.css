@@ -6,14 +6,13 @@
   --deep-grey: #333;
   --lightest-grey: #fcfcfc;
   --light-grey: #f0f0f0;
-  --mid-light-grey: #ececec;
+  --mid-light-grey: #eaeaea;
   --mid-grey: #ccc;
   --mid-dark-grey: #888;
   --mid-darker-grey: #666;
   --accent-colour-light: #ffa1e0;
   --accent-colour: #ff3d77;
   --deep-wine: #66001e;
-  /* --accent-colour: #fd60c9; */
   --highlight-colour: #e00095;
   --box-shadow-mid: rgba(100, 100, 100, 0.8);
   --box-shadow-light: rgba(0, 0, 0, 0.07);

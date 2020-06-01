@@ -1,6 +1,8 @@
 # Roland Levy's personal website
 
 ### Ideas
+- maintain aspect ratio: https://jsfiddle.net/marcandrews/qaez1mLw/
+- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_aspect_ratio_43
 - create a jotform: https://www.jotform.com/form-templates/feedback-form
 - Tweak 3d background shapes
 - create new burger menu icon with 3 divs with each div is a 3d svg. See: https://repl.it/@rjlevy/CSS-burger-menu-from-memory

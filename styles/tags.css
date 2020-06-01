@@ -1,0 +1,53 @@
+/********************/
+/* project tags     */
+/********************/
+
+.tags {
+  padding: 0;
+  margin: 0;
+}
+
+.tags > li {
+  display: inline-block;
+  margin: 10px 4px;
+  font-weight: 600;
+}
+
+.tags > li > a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 8px 6px 33px;
+  background-color: var(--mid-light-grey);
+  color: var(--dark-grey);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border-bottom-left-radius: 0;
+  line-height: 1.5;
+  /* box-shadow: 0 2px 4px -2px var(--box-shadow-mid); */
+}
+
+.tags > li > a > img {
+  position: absolute;
+  bottom: 10px;
+  left: 8px;
+  width: 18px;
+}
+
+.tags > li > a > span {
+  padding-left: 24px;
+}
+
+.tags > li > a.selected,
+.tags > li > a:active {
+  background-color: var(--mid-dark-grey);
+  transition: all 0.2s ease;
+  color: #fff;
+}
+
+.tags > li > a:hover {
+  background-color: var(--mid-darker-grey);
+  transition: all 0.2s ease;
+  color: #fff;
+}

@@ -9,12 +9,12 @@
 .project {
   position: relative;
   display: block;
-  width: 25%;
-  height: 200px;
   margin: 0;
   letter-spacing: 0.3px;
   transition: all 0.3s ease;
   border-top: 2px solid #fff;
+  width: 25%;
+  height: 200px;
 }
 
 .project > img {
@@ -23,6 +23,11 @@
   height: 100%;
   transition: all 0.5s ease;
   /* object-position: 100%; */
+  /*position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;*/
 }
 
 .project:hover > img {
@@ -77,21 +82,19 @@
 
 .project > .toggle ~ .details {
   position: absolute;
-  height: 35px;
+  height: 45px;
   width: 100%;
   background: rgba(0, 0, 0, 0.8);
   background-position: center;
   color: #fff;
   bottom: 0;
-  /* border-top: 2px solid #fff; */
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
-  padding: 4px 12px 8px 12px;
+  padding: 10px 15px 15px 15px;
   font-size: 0.75rem;
   font-family: 'Open Sans', sans-serif;
-  /* opacity: 1; */
   transition: all 0.5s 0.5s ease;
   overflow: hidden;
   text-transform: capitalize;
@@ -109,7 +112,8 @@
 .project > .details > li:first-child {
   font-weight: 700;
   font-size: 1rem;
-  line-height: 1.75;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
 .project:hover > .details {
@@ -131,7 +135,7 @@
   width: 20px;
   height: 20px;
   background-color: #fff;
-  bottom: 40px;
+  bottom: 45px;
   left: 12px;
   border-radius: 2px;
   z-index: 1;

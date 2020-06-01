@@ -22,14 +22,15 @@
 	<nav class="navbar">
 		<section class="links limit">
 			<ul>
+				<li><a href="#home" class="navlink">Home</a></li>
 				<li><a href="#about" class="navlink">About</a></li>
-          <li><a href="#projects" class="navlink">Projects</a></li>
-          <li><a href="https://github.com/rolandjlevy" target="_blank">Github</a></li>
-          <li><a href="/images/Roland-Levy-CV-May-2020.pdf" download>Download CV</a></li>
-          <li><a href="#contact" class="navlink">Contact</a></li>
-        </ul>
-      </section>
-    </nav>
+        <li><a href="#projects" class="navlink">Projects</a></li>
+        <li><a href="https://github.com/rolandjlevy" target="_blank">Github</a></li>
+        <!-- <li><a href="/images/Roland-Levy-CV-May-2020.pdf" download>Download CV</a></li> -->
+        <li><a href="#contact" class="navlink">Contact</a></li>
+      </ul>
+    </section>
+  </nav>
 
     <input type="checkbox" id="burger-checkbox" class="burger-checkbox-class" />
     <label for="burger-checkbox" class="hamburger-label"><i class="fas fa-hamburger"></i></label>
@@ -39,10 +40,11 @@
       <div class="burger-side-panel">
         <!-- <label for="burger-checkbox" class="modal-close-button">&times;</label> -->
         <ul>
+          <li><a href="#home" class="navlink">Home 🏠</a></li>
           <li><a href="#about" class="navlink">About 👨</a></li>
           <li><a href="#projects" class="navlink">Projects 👨‍💻</a></li>
           <li><a href="https://github.com/rolandjlevy" target="_blank">Github 😺</a></li>
-          <li><a href="/images/Roland-Levy-CV-May-2020.pdf" download>Download CV 📁</a></li>
+          <!-- <li><a href="/images/Roland-Levy-CV-May-2020.pdf" download>Download CV 📁</a></li> -->
           <li><a href="#contact" class="navlink">Contact 👋</a></li>
         </ul>
       </div>
@@ -50,12 +52,28 @@
 
     <main class="container">
 
-      <div class="about-bg">
+      <div class="home-bg">
         <section class="section-anchor">
-          <div id="about"></div>
+          <div id="home"></div>
         </section>
         <section class="section">
-          <h2 class="limit">Roland Levy</h2>
+          <div class="paragraph limit">
+            <h2 class="limit">Hi, I'm Roland 👋</h2>
+            <p>a full-stack software developer specialising in front-end</p>
+          </div>
+
+          <!-- <div class="vertical-align" style="height:100px;background:#999">
+            <div style="color:#fff">Hello!</div>
+            <div><img src="/images/send-arrow-pink.png"></div>
+          </div> -->
+
+          <div class="limit m-t-30">
+            <a href="#" class="btn vertical-align">
+              <div>Get in touch</div>
+              <div><img src="/images/send-arrow-pink.png"></div>
+            </a>
+          </div>
+
 
           <div class="burger-icon display-none">
             <img src="/images/svgs/pink-3d-bar-filled.svg" height="8" width="42" alt="3d bar for burger menu icon"/>

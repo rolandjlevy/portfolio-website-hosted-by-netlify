@@ -18,7 +18,7 @@
   --box-shadow-mid: rgba(100, 100, 100, 0.8);
   --box-shadow-light: rgba(0, 0, 0, 0.07);
   --nav-height: 80px;
-  --project-container-w: 960px;
+  --project-container-w: 720px;
   --project-padding: 20px;
 }
 
@@ -29,7 +29,7 @@
 html, body {
   margin: 0;
   scroll-behavior: smooth;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   letter-spacing: 1px;
   font-size: 1rem;
   background-color: var(--light-grey);

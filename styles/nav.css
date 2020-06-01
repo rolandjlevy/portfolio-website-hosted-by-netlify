@@ -16,16 +16,17 @@
   height: var(--nav-height);
 }
 
-.navbar-top {
+/* .navbar-top {
   background-color: var(--deep-grey);
-}
+} */
 
 .navbg {
-  background-color: var(--nav-bg-colour);
+  background-color: black;
   opacity: 1;
   visibility: visible;
   transition: all 0.5s ease;
   z-index: 10;
+  border-bottom: 2px solid #ff3d7744;
 }
 
 .navbar {

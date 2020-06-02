@@ -44,6 +44,30 @@ class Project {
 const projectData = [];
 
 projectData.push(new Project(
+  'google-translator', 
+  './images/projects/google-translator.jpg',
+  'Google Translator',
+  ['express','javascript','css'],
+  [
+    { play: 'https://express-google-translate-api-with-ejs--rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/express-google-translate-api-with-ejs'},
+    { code: 'https://repl.it/@rjlevy/express-google-translate-api-with-ejs'}
+  ]
+));
+
+projectData.push(new Project(
+  'photo-finder', 
+  './images/projects/photo-finder.jpg',
+  'Photo Finder',
+  ['express','javascript','css'],
+  [
+    { play: 'https://express-photo-finder-using-unsplash-api--rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/express-photo-finder-using-unsplash-api'},
+    { code: 'https://repl.it/@rjlevy/express-photo-finder-using-unsplash-api'}
+  ]
+));
+
+projectData.push(new Project(
   'pixel-grid-draw', 
   './images/projects/pixels.gif',
   'Pixel Grid Draw',
@@ -66,8 +90,6 @@ projectData.push(new Project(
     { code: 'https://repl.it/@rjlevy/vue-rgb-sliders-and-swatch-maker/'}
   ]
 ));
-
-https://repl.it/@rjlevy/vue-rgb-sliders-and-swatch-maker
 
 projectData.push(new Project(
   'better-change', 

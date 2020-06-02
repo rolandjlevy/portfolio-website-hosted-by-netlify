@@ -48,9 +48,16 @@
   color: inherit;
   text-align: center;
   text-decoration: none;
-  padding: 4px 8px;
+  padding: 2px 8px;
   border-radius: 3px;
   transition: all 0.2s ease;
+}
+
+ul > li > a.new-window::after {
+  font-family: "Font Awesome 5 Free"; 
+  font-weight: 900; 
+  content: "\f35d";
+  margin-left: 5px;
 }
 
 .navbar > .links > ul > li > a:hover {

@@ -59,7 +59,7 @@
 
 .section-anchor {
   width: 100%;
-  height: var(--nav-height);
+  height: calc(var(--nav-height) - 20px);
   padding: 0;
   margin: 0;
   border: 0;

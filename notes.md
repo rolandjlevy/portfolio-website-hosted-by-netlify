@@ -1,6 +1,7 @@
 # Roland Levy's personal website
 
 ### Ideas
+- copy project style from here: https://www.theguardian.com/us-news/2020/jun/01/george-floyd-donald-trump-black-lives-matter
 - make grid draw mobile friendly: https://stackoverflow.com/questions/20927759/html5-drag-and-drop-for-mobile
 - maintain aspect ratio: https://jsfiddle.net/marcandrews/qaez1mLw/
 - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_aspect_ratio_43

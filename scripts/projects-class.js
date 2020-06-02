@@ -97,7 +97,7 @@ projectData.push(new Project(
 
 projectData.push(new Project(
   'which-city',
-  './images/projects/which-city.jpg',
+  './images/projects/louvre.jpg',
   'Which City?',
   ['react','sass']
 ));

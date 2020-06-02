@@ -59,7 +59,7 @@ projectData.push(new Project(
   'google-translator', 
   './images/projects/google-translator.jpg',
   'Google Translator',
-  ['express','javascript','css'],
+  ['express','bootstrap','css'],
   [
     { play: 'https://express-google-translate-api-with-ejs--rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/express-google-translate-api-with-ejs'},
@@ -71,7 +71,7 @@ projectData.push(new Project(
   'photo-finder', 
   './images/projects/photo-finder.jpg',
   'Photo Finder',
-  ['express','javascript','css'],
+  ['express','bootstrap','css'],
   [
     { play: 'https://express-photo-finder-using-unsplash-api--rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/express-photo-finder-using-unsplash-api'},

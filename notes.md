@@ -1,6 +1,7 @@
 # Roland Levy's personal website
 
 ### Ideas
+- make grid draw mobile friendly: https://stackoverflow.com/questions/20927759/html5-drag-and-drop-for-mobile
 - maintain aspect ratio: https://jsfiddle.net/marcandrews/qaez1mLw/
 - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_aspect_ratio_43
 - create a jotform: https://www.jotform.com/form-templates/feedback-form
@@ -56,6 +57,7 @@ https://alligator.io/js/resize-observer/
 - https://www.sitepoint.com/css3-background-repeat-space-round/
 - https://css-tricks.com/almanac/properties/b/background-repeat/
 - https://www.sitepoint.com/css3-transform-background-image/
+- inset drop-shadow: https://stackoverflow.com/questions/26844289/how-to-add-inset-box-shadow-to-image
 
 ### Demo and code
 - Live demo: https://css-portfolio-website--rjlevy.repl.co

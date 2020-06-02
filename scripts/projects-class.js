@@ -45,7 +45,7 @@ const projectData = [];
 
 projectData.push(new Project(
   'pixel-grid-draw', 
-  './images/pixel-grid-draw.gif',
+  './images/projects/pixels.gif',
   'Pixel Grid Draw',
   ['vue','css'],
   [
@@ -57,7 +57,7 @@ projectData.push(new Project(
 
 projectData.push(new Project(
   'colour-swatch-maker', 
-  './images/colour-swatch-maker-4.gif',
+  './images/projects/swatches.jpg',
   'Colour Swatch Maker',
   ['vue','css'],
   [
@@ -71,7 +71,7 @@ https://repl.it/@rjlevy/vue-rgb-sliders-and-swatch-maker
 
 projectData.push(new Project(
   'better-change', 
-  'https://rolandlevy.co.uk/images/better-change-slide.png',
+  './images/projects/better-change.jpg',
   'Better Change',
   ['react','node','express','sass'],
   [
@@ -83,28 +83,28 @@ projectData.push(new Project(
 
 projectData.push(new Project(
   'ourbnb', 
-  'https://rolandlevy.co.uk/images/ourbnb-slide.png',
+  './images/projects/beach.jpg',
   'OurBnB',
   ['react','node','express','sass']
 ));
 
 projectData.push(new Project(
   'lovely-grubbly',
-  'https://rolandlevy.co.uk/images/lovely-grubbly-slide.png',
+  './images/projects/italian-bread.jpg',
   'Lovely Grubbly',
   ['react','node','express','sass']
 ));
 
 projectData.push(new Project(
   'which-city',
-  'https://rolandlevy.co.uk/images/which-city-slide.png',
+  './images/projects/which-city.jpg',
   'Which City?',
   ['react','sass']
 ));
 
 projectData.push(new Project(
   'moviewer',
-  'https://rolandlevy.co.uk/images/moviewer-slide.png',
+  './images/projects/moviewer-popcorn.jpg',
   'Moviewer',
   ['react','node','css']
 ));

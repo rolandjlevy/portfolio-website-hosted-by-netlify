@@ -1,19 +1,15 @@
 # Roland Levy's personal website
 
 ### Ideas
+- Contact form submission with netlify: https://repl.it/@rjlevy/HTML-Contact-form-with-Netlify
 - copy project style from here: https://www.theguardian.com/us-news/2020/jun/01/george-floyd-donald-trump-black-lives-matter
-- make grid draw mobile friendly: https://stackoverflow.com/questions/20927759/html5-drag-and-drop-for-mobile
 - maintain aspect ratio: https://jsfiddle.net/marcandrews/qaez1mLw/
 - https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_aspect_ratio_43
-- create a jotform: https://www.jotform.com/form-templates/feedback-form
 - Tweak 3d background shapes
 - create new burger menu icon with 3 divs with each div is a 3d svg. See: https://repl.it/@rjlevy/CSS-burger-menu-from-memory
 - Get icons for nav from https://css.gg
-- integrate screen shots of react projects
 - make first background section rotate 5 degrees
 - Save favourite projects in localStorage
-
-- latest commit: Added demo, github and code buttons to each project
 
 ### Fonts
 - Google sans

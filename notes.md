@@ -1,7 +1,7 @@
 # Roland Levy's personal website
 
 ### Ideas
-- remove bottom tab so its just the image, no border or tab
+- change github repo in Netlify so domain points to this repo. Instructions here: https://docs.netlify.com/configure-builds/repo-permissions-linking/#install-with-a-new-site
 - Contact form submission with netlify: https://repl.it/@rjlevy/HTML-Contact-form-with-Netlify
 - copy project style from here: https://www.theguardian.com/us-news/2020/jun/01/george-floyd-donald-trump-black-lives-matter
 - maintain aspect ratio: https://jsfiddle.net/marcandrews/qaez1mLw/

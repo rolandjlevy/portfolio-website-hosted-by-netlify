@@ -118,6 +118,7 @@ footer > p {
   border-radius: 5px;
   width: fit-content;
   transition: all 0.2s ease;
+  font-weight: 600;
 }
 
 .btn.dark {
@@ -126,7 +127,8 @@ footer > p {
 }
 
 .btn.light {
-  background-color: #fcfcfc;
+  background-color: #fdfdfd;
+  box-shadow: 0 5px 5px -5px #aaa;
 }
 
 .btn img  {
@@ -149,8 +151,10 @@ footer > p {
 }
 
 .btn.light:hover {
-  background-color: #dadada;
+  background-color: #666;
+  color: #fff;
   transition: all 0.2s ease;
+  box-shadow: 0 10px 10px -5px #aaa;
 }
 
 /******************/

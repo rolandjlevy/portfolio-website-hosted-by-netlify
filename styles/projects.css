@@ -84,11 +84,11 @@
   position: absolute;
   height: 30px;
   width: 100%;
-  background: #eee;
+  background: #000000cc;
   /* background: var(--accent-colour); */
   opacity: 1;
   background-position: center;
-  color: #000;
+  color: #fff;
   bottom: 0;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;

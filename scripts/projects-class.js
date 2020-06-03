@@ -34,8 +34,8 @@ class Project {
         <img src="${this.image}" />
         <input id="${this.id}-checkbox" class="toggle" type="checkbox" />
         <label for="${this.id}-checkbox" class="toggle-overlay"><i class="fas fa-thumbtack"></i></label>
-        ${this.getInfoButton()}
         <ul class="details"><li>${this.heading}</li>${this.getList()}</ul>
+        ${this.getInfoButton()}
       </li>
     `;
   }

@@ -29,7 +29,7 @@
   min-height: 400px;
 }
 
-.about-bg {
+.about-bg, footer {
   background-color: #f1f1f1;
 }
 

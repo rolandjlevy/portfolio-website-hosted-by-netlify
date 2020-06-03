@@ -54,7 +54,7 @@
 
 .projects-bg::before {
   transform: rotate(-90deg);
-  opacity: 0.02;
+  opacity: 0.03;
 }
 
 .contact-bg::before {

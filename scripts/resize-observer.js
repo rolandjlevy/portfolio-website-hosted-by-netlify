@@ -19,4 +19,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
   myObserver.observe(body);
 
+  // const myframe = document.getElementById("myiFrame");
+  // let content = (myframe.contentWindow || myframe.contentDocument);
+  // if (content.document) content = content.document;
+  // content.body.innerHTML = content.body.innerHTML + 
+  // `<style>
+  //   h2 {
+  //     color: blue;
+  //   }
+  //   body {
+  //     background: yellow;
+  //   }
+  // </style>
+  // `;
+  
+
 });

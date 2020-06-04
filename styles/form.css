@@ -50,3 +50,17 @@ input[type=text]:focus, textarea:focus {
   }
   
 }
+
+.rc-anchor-light.rc-anchor-normal {
+  border: 1px solid #666;
+}
+
+.rc-anchor-light {
+  background: #333;
+  color: #fff;
+}
+
+.recaptcha-checkbox-border {
+  background-color: #333;
+  border: 2px solid #666;
+}

@@ -3,16 +3,6 @@
   background: var(--deep-grey);
 }
 
-.gg-icon {
-  display: flex;
-  flex-direction: row;
-}
-
-.gg-icon > span {
-  margin-top: 4px;
-  margin-right: 4px;
-}
-
 /********************/
 /* sections         */
 /********************/
@@ -207,8 +197,8 @@ h1, h2, h3, h4, h5 {
 }
 
 h2 {
-  font-size: 2.3rem;
-  font-weight: 700;
+  font-size: 2.5rem;
+  font-weight: 800;
   margin: 0;
   color: var(--accent-colour);
   /* background: linear-gradient(-45deg,#ffa63d,#ff3d77,#b933f9,#5f19dd); background-clip: text;

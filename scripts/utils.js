@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
-  ///////////////////////////////////////////////
-  // collapse burger menu panel in mobile view //
-  ///////////////////////////////////////////////
+  // collapse burger menu panel in mobile view 
 
   const mediaQueryMobile = 600;
   const burgerCheckBox = document.querySelector('.burger-checkbox-class');
@@ -19,19 +17,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
   
   myObserver.observe(body);
 
-  // const myframe = document.getElementById("myiFrame");
-  // let content = (myframe.contentWindow || myframe.contentDocument);
-  // if (content.document) content = content.document;
-  // content.body.innerHTML = content.body.innerHTML + 
-  // `<style>
-  //   h2 {
-  //     color: blue;
-  //   }
-  //   body {
-  //     background: yellow;
-  //   }
-  // </style>
-  // `;
+  // change recaptcha to dark by setting the data-theme attribute
+  const recaptcha = document.querySelector('.g-recaptcha');
+  recaptcha.setAttribute("data-theme", "dark");
   
 
 });

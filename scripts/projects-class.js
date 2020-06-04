@@ -60,6 +60,18 @@ projectData.push(new Project(
 ));
 
 projectData.push(new Project(
+  'portfolio-website', 
+  './images/projects/portfolio-website.jpg',
+  'Portfolio Website',
+  ['javascript','css'],
+  [
+    { play: 'https://rolandlevy.co.uk/'},
+    { github: 'https://github.com/rolandjlevy/portfolio-website'},
+    { code: 'https://repl.it/@rjlevy/portfolio-website'}
+  ]
+));
+
+projectData.push(new Project(
   'google-translator', 
   './images/projects/google-translator.jpg',
   'Google Translator',
@@ -77,7 +89,7 @@ projectData.push(new Project(
   'Swatch Generator',
   ['javascript','css'],
   [
-    { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co/'},
+    { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/js-random-hex-colour-swatch-generator-oop'},
     { code: 'https://repl.it/@rjlevy/JS-random-hex-colour-swatch-generator-oop'}
   ]

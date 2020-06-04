@@ -24,6 +24,10 @@
   background-position: left top;
 }
 
+.projects-bg::before {
+  background-image: none;
+}
+
 .home-bg {
   background-color: #000;
   min-height: 400px;
@@ -76,6 +80,7 @@ footer > p {
 
   .home-bg {
     min-height: 300px;
+    padding-top: 50px;
   }
     
 }

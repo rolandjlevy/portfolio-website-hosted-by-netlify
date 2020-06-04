@@ -60,3 +60,15 @@ input:-webkit-autofill {
   /* -webkit-box-shadow: 0 0 0px 1000px white inset; */
   background-color: transparent;
 }
+
+:root {
+  --color-bg: #ffffff;
+}
+
+.component {
+  background-color: var(--color-bg);
+}
+
+[data-theme="dark"] {
+  --color-bg: #000000;
+}

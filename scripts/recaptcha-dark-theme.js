@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (event) => {
 
   const iframe = document.querySelector('.g-recaptcha iframe');
-  
+
   let content = (iframe.contentWindow || iframe.contentDocument);
   if (content.document) {
     content = content.document;

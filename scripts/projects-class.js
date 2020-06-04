@@ -41,17 +41,21 @@ class Project {
   }
 }
 
+/////////////////////////
+// Initialize Projects //
+/////////////////////////
+
 const projectData = [];
 
 projectData.push(new Project(
-  'swatch-generator', 
-  './images/projects/swatch-generator.jpg',
-  'Swatch Generator',
-  ['javascript','css'],
+  'photo-finder', 
+  './images/projects/photo-finder.jpg',
+  'Photo Finder',
+  ['express','bootstrap','css'],
   [
-    { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co/'},
-    { github: 'https://github.com/rolandjlevy/js-random-hex-colour-swatch-generator-oop'},
-    { code: 'https://repl.it/@rjlevy/JS-random-hex-colour-swatch-generator-oop'}
+    { play: 'https://express-photo-finder-using-unsplash-api--rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/express-photo-finder-using-unsplash-api'},
+    { code: 'https://repl.it/@rjlevy/express-photo-finder-using-unsplash-api'}
   ]
 ));
 
@@ -68,14 +72,14 @@ projectData.push(new Project(
 ));
 
 projectData.push(new Project(
-  'photo-finder', 
-  './images/projects/photo-finder.jpg',
-  'Photo Finder',
-  ['express','bootstrap','css'],
+  'swatch-generator', 
+  './images/projects/swatch-generator.jpg',
+  'Swatch Generator',
+  ['javascript','css'],
   [
-    { play: 'https://express-photo-finder-using-unsplash-api--rjlevy.repl.co/'},
-    { github: 'https://github.com/rolandjlevy/express-photo-finder-using-unsplash-api'},
-    { code: 'https://repl.it/@rjlevy/express-photo-finder-using-unsplash-api'}
+    { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/js-random-hex-colour-swatch-generator-oop'},
+    { code: 'https://repl.it/@rjlevy/JS-random-hex-colour-swatch-generator-oop'}
   ]
 ));
 

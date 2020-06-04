@@ -62,6 +62,16 @@
   opacity: 0.16;
 }
 
+footer {
+  padding: 20px 30px;
+  background: #111;
+  color: #999;
+}
+
+footer > p {
+  text-align: center;
+}
+
 @media screen and (max-width: 600px) {
 
   .home-bg {

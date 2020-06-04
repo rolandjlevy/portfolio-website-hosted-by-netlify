@@ -30,6 +30,10 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   border: 1px solid var(--accent-colour);
 }
 
+input[type=text]:blur, input[type=email]:blur, textarea:blur {
+  border: 1px solid transparent;
+}
+
 ::-webkit-input-placeholder { /* Edge */
   color: #999;
 }
@@ -42,6 +46,17 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
   color: #999;
 }
 
+input:-webkit-autofill, 
+input:-webkit-autofill:focus,
+input:-internal-autofill-selected,
+textarea:-webkit-autofill, 
+textarea:-webkit-autofill:focus,
+textarea:-internal-autofill-selected  {
+  -webkit-box-shadow: 0 0 0 50px #333 inset; 
+  -webkit-text-fill-color: #999;
+  box-shadow: 0 0 0 50px #333 inset;
+}
+
 @media screen and (max-width: 600px) {
 
   input[type=text], input[type=email] {
@@ -49,26 +64,4 @@ input[type=text]:focus, input[type=email]:focus, textarea:focus {
     display: block;
   }
   
-}
-
-/* input:-internal-autofill-selected {
-  background: none;
-} */
-
-
-input:-webkit-autofill {
-  /* -webkit-box-shadow: 0 0 0px 1000px white inset; */
-  background-color: transparent;
-}
-
-:root {
-  --color-bg: #ffffff;
-}
-
-.component {
-  background-color: var(--color-bg);
-}
-
-[data-theme="dark"] {
-  --color-bg: #000000;
 }

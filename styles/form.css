@@ -1,4 +1,4 @@
-input[type=text], textarea {
+input[type=text], input[type=email], textarea {
   -webkit-transition: all 0.30s ease-in-out;
   -moz-transition: all 0.30s ease-in-out;
   -ms-transition: all 0.30s ease-in-out;
@@ -14,7 +14,7 @@ input[type=text], textarea {
   color: #fff;
 }
 
-input[type=text] {
+input[type=text], input[type=email] {
   width: calc(50% - 10px);
   display: inline-block;
 }
@@ -25,7 +25,7 @@ textarea {
   height: 150px;
 }
  
-input[type=text]:focus, textarea:focus {
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
   box-shadow: 0 0 5px 2px var(--accent-colour);
   border: 1px solid var(--accent-colour);
 }
@@ -44,9 +44,19 @@ input[type=text]:focus, textarea:focus {
 
 @media screen and (max-width: 600px) {
 
-  input[type=text] {
+  input[type=text], input[type=email] {
     width: calc(100%);
     display: block;
   }
   
+}
+
+/* input:-internal-autofill-selected {
+  background: none;
+} */
+
+
+input:-webkit-autofill {
+  /* -webkit-box-shadow: 0 0 0px 1000px white inset; */
+  background-color: transparent;
 }

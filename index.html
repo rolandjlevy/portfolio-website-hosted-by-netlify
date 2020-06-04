@@ -154,21 +154,21 @@
           <form name="contact" method="POST" data-netlify="true" action="/success.html">
 
             <div class="limit border-radius-5px m-t-20 mb-20">
-              <input type="text" id="name" name="name" placeholder="name" class="m-r-15">
-              <input type="text" id="email" name="email" placeholder="email">
-              <textarea id="message" name="message" placeholder="message..."></textarea>
-              <div data-theme="dark" class="m-b-20" data-netlify-recaptcha="true"></div>
+              <input type="text" id="name" name="name" placeholder="name" required class="m-r-15">
+              <input type="email" id="email" name="email" placeholder="email" required>
+              <textarea id="message" name="message" placeholder="message..." required></textarea>
+              <div data-netlify-recaptcha="true" class="m-b-20"></div>
             </div>
 
             <div class="limit m-t-30">
               <button class="btn dark vertical-align" type="submit">
-                Get in touch <img src="/images/send-arrow-pink.png">
+                Send <img src="/images/send-arrow-pink.png">
               </button>
             </div>
 
         </form>
 
-        <style>
+        <!-- <style>
 
           .rc-anchor-light.rc-anchor-normal {
             border: 1px solid #666 !important;
@@ -183,7 +183,7 @@
             background-color: #333 !important;
             border: 2px solid #666 !important;
           }
-        </style>
+        </style> -->
 
         </section>
       </div>

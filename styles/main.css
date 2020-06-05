@@ -139,6 +139,11 @@ button.btn img  {
   font-size: 1.3rem;
 }
 
+.btn i.left  {
+  margin-left: 0;
+  margin-right: 10px;
+}
+
 .btn.dark:hover {
   background-color: #444;
   transition: all 0.2s ease;
@@ -216,6 +221,14 @@ h2 {
 .vertical-align {
   display: flex;
   align-items: center;
+}
+
+.vertical-align-all {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .border-radius-5px {

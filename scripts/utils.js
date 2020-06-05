@@ -19,7 +19,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // change recaptcha to dark by setting the data-theme attribute
   const recaptcha = document.querySelector('.g-recaptcha');
-  recaptcha.setAttribute("data-theme", "dark");
-  
+  if (recaptcha) {
+    recaptcha.setAttribute("data-theme", "dark");
+  }
 
 });

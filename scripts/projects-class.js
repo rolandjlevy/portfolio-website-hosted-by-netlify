@@ -3,17 +3,22 @@
 ///////////////////
 
 class Project {
-  constructor(id, image, heading, languages, infoButtons) {
+  constructor(id, image, heading, details, languages, infoButtons) {
     this.id = id;
     this.image = image;
     this.heading = heading;
+    this.details = details;
     this.languages = languages;
     this.infoButtons = infoButtons;
   }
-  getList() {
-    return this.languages.map(li => `<li>${li}</li>`).join('');
+  amendCase = (word) => {
+    if (word.toLowerCase() === 'ejs' || word.toLowerCase() === 'css') return word.toUpperCase();
+    return word[0].toUpperCase() + word.slice(1, word.length).toLowerCase();
   }
-  getInfoButton() {
+  getLanguages() {
+    return this.languages.map(word => this.amendCase(word)).join(', ');
+  }
+  getInfoButtons() {
     if (!this.infoButtons) return '';
     let html = `<ul class="info">`;
     this.infoButtons.forEach(item => {
@@ -33,9 +38,15 @@ class Project {
       <li id="${this.id}" class="project">
         <img src="${this.image}" />
         <input id="${this.id}-checkbox" class="toggle" type="checkbox" />
-        <label for="${this.id}-checkbox" class="toggle-overlay"><i class="fas fa-thumbtack"></i></label>
-        <ul class="details"><li>${this.heading}</li>${this.getList()}</ul>
-        ${this.getInfoButton()}
+        <label for="${this.id}-checkbox" class="toggle-overlay">
+          <i class="fas fa-thumbtack"></i>
+        </label>
+        <ul class="details">
+          <li>${this.heading}</li>
+          <li><strong>Details</strong>: ${this.details}.</li>
+          <li><strong>Made with</strong>: ${this.getLanguages()}.</li>
+        </ul>
+        ${this.getInfoButtons()}
       </li>
     `;
   }
@@ -51,7 +62,8 @@ projectData.push(new Project(
   'photo-finder', 
   './images/projects/photo-finder.jpg',
   'Photo Finder',
-  ['express','bootstrap','css'],
+  'uses the Unsplash API to search for and favourite photos',
+  ['express','ejs','bootstrap'],
   [
     { play: 'https://express-photo-finder-using-unsplash-api--rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/express-photo-finder-using-unsplash-api'},
@@ -63,6 +75,7 @@ projectData.push(new Project(
   'portfolio-website', 
   './images/projects/portfolio-website.jpg',
   'Portfolio Website',
+  'showcasing my projects. Coded without frameworks or CMS',
   ['javascript','css'],
   [
     { play: 'https://rolandlevy.co.uk/'},
@@ -75,7 +88,8 @@ projectData.push(new Project(
   'google-translator', 
   './images/projects/google-translator.jpg',
   'Google Translator',
-  ['express','bootstrap','css'],
+  'uses an API to translate phrases into 14 languages',
+  ['express', 'node', 'ejs', 'bootstrap'],
   [
     { play: 'https://express-google-translate-api-with-ejs--rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/express-google-translate-api-with-ejs'},
@@ -87,6 +101,7 @@ projectData.push(new Project(
   'swatch-generator', 
   './images/projects/swatch-generator.jpg',
   'Swatch Generator',
+  'Swatch Generator description',
   ['javascript','css'],
   [
     { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co'},
@@ -99,6 +114,7 @@ projectData.push(new Project(
   'pixel-grid-draw', 
   './images/projects/pixels.gif',
   'Pixel Grid Draw',
+  'Pixel Grid Draw description',
   ['vue','css'],
   [
     { play: 'https://vue-pixel-grid-draw--rjlevy.repl.co/'},
@@ -111,6 +127,7 @@ projectData.push(new Project(
   'colour-swatch-maker', 
   './images/projects/swatches.jpg',
   'Colour Swatch Maker',
+  'Colour Swatch Maker description',
   ['vue','css'],
   [
     { play: 'https://vue-rgb-sliders-and-swatch-maker--rjlevy.repl.co/'},
@@ -123,6 +140,7 @@ projectData.push(new Project(
   'better-change', 
   './images/projects/better-change.jpg',
   'Better Change',
+  'Better Change description',
   ['react','node','express','sass'],
   [
     { play: 'http://www.betterchange.net/'},
@@ -135,6 +153,7 @@ projectData.push(new Project(
   'ourbnb', 
   './images/projects/beach.jpg',
   'OurBnB',
+  'OurBnB description',
   ['react','node','express','sass']
 ));
 
@@ -142,6 +161,7 @@ projectData.push(new Project(
   'lovely-grubbly',
   './images/projects/italian-bread.jpg',
   'Lovely Grubbly',
+  'Lovely Grubbly description',
   ['react','node','express','sass']
 ));
 
@@ -149,6 +169,7 @@ projectData.push(new Project(
   'which-city',
   './images/projects/louvre.jpg',
   'Which City?',
+  'Which City? description',
   ['react','sass']
 ));
 
@@ -156,5 +177,6 @@ projectData.push(new Project(
   'moviewer',
   './images/projects/moviewer-popcorn.jpg',
   'Moviewer',
+  'Moviewer description',
   ['react','node','css']
 ));

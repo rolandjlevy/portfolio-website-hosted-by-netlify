@@ -84,8 +84,8 @@
 
 .project > .toggle ~ .details {
   position: absolute;
-  height: 0;
-  bottom: -30px;
+  height: 40px;
+  bottom: 0;
   width: 100%;
   background: #000000cc;
   opacity: 1;

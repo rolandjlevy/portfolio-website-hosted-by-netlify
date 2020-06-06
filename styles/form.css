@@ -26,7 +26,7 @@ textarea {
 }
  
 input[type=text]:focus, input[type=email]:focus, textarea:focus {
-  box-shadow: 0 0 5px 2px var(--accent-colour);
+  /* box-shadow: 0 0 5px 2px var(--accent-colour); */
   border: 1px solid var(--accent-colour);
 }
 
@@ -53,7 +53,7 @@ textarea:-webkit-autofill,
 textarea:-webkit-autofill:focus,
 textarea:-internal-autofill-selected  {
   -webkit-box-shadow: 0 0 0 50px #333 inset; 
-  -webkit-text-fill-color: #999;
+  -webkit-text-fill-color: #fff;
   box-shadow: 0 0 0 50px #333 inset;
 }
 

@@ -43,7 +43,7 @@
   right: 0;
   width: 25px;
   height: 25px;
-  border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 0.35rem;
   background-color: var(--accent-colour);
   cursor: pointer;
   z-index: 5;
@@ -146,7 +146,7 @@
   position: relative;
   width: 30px;
   height: 30px;
-  background-color: #fff;
+  background-color: #000; /* change */
   bottom: 60px;
   left: 12px;
   border-radius: 2px;
@@ -154,12 +154,23 @@
   margin: 0 5px;
   /* opacity: 0; */
   transition: all 0.2s ease;
+  /* box-shadow: 0 0 0 1px #999; */
 }
 
 .project > .info > li:hover {
   transition: all 0.2s ease;
-  box-shadow: 0 0 0 2px var(--accent-colour);
+  /* box-shadow: 0 0 0 1px var(--accent-colour); */
+  background-color: var(--accent-colour);; /* change */
 }
+
+.project > .info > li > a > i {
+  color: #fff;
+}
+
+.project > .info > li:hover > a > i {
+  color: #fff;
+}
+
 
 /* .project:hover > .info > li:nth-child(1) {
   transition-delay: 0.3s;
@@ -172,10 +183,6 @@
 .project:hover > .info > li:nth-child(3) {
   transition-delay: 0.4s;
 } */
-
-.project:hover > .info > li > a > i {
-  color: #000;
-}
 
 .project > .info > .play > a > i {
   position: absolute;
@@ -206,6 +213,10 @@
   to {
     opacity: 1;
   }
+}
+
+p > .fa-github {
+  font-size: 1.2rem;
 }
 
 /*/////////////////

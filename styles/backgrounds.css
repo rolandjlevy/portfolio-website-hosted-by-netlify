@@ -37,7 +37,16 @@
 .home-bg {
   background-color: #000;
   min-height: 350px;
-  padding-top: 50px;
+}
+
+.home-bg > .section-anchor {
+  height: 75px;
+}
+
+@media screen and (max-width: 600px) {
+  .home-bg > .section {
+    padding-top: 75px;
+  }
 }
 
 .about-bg, footer {

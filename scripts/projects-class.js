@@ -72,19 +72,6 @@ projectData.push(new Project(
 ));
 
 projectData.push(new Project(
-  'portfolio-website', 
-  './images/projects/portfolio-website.jpg',
-  'Portfolio Website',
-  'showcasing my projects. Coded without frameworks or CMS',
-  ['javascript','css'],
-  [
-    { play: 'https://rolandlevy.co.uk/'},
-    { github: 'https://github.com/rolandjlevy/portfolio-website'},
-    { code: 'https://repl.it/@rjlevy/portfolio-website'}
-  ]
-));
-
-projectData.push(new Project(
   'google-translator', 
   './images/projects/google-translator.jpg',
   'Google Translator',
@@ -98,19 +85,6 @@ projectData.push(new Project(
 ));
 
 projectData.push(new Project(
-  'swatch-generator', 
-  './images/projects/swatch-generator.jpg',
-  'Swatch Generator',
-  'Swatch Generator description',
-  ['javascript','css'],
-  [
-    { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co'},
-    { github: 'https://github.com/rolandjlevy/js-random-hex-colour-swatch-generator-oop'},
-    { code: 'https://repl.it/@rjlevy/JS-random-hex-colour-swatch-generator-oop'}
-  ]
-));
-
-projectData.push(new Project(
   'pixel-grid-draw', 
   './images/projects/pixels.gif',
   'Pixel Grid Draw',
@@ -120,6 +94,32 @@ projectData.push(new Project(
     { play: 'https://vue-pixel-grid-draw--rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/vue-pixel-grid-draw/'},
     { code: 'https://repl.it/@rjlevy/vue-pixel-grid-draw/'}
+  ]
+));
+
+projectData.push(new Project(
+  'portfolio-website', 
+  './images/projects/portfolio-website.jpg',
+  'Portfolio Website',
+  'showcasing my projects. Coded without frameworks or CMS',
+  ['javascript','css'],
+  [
+    { play: 'https://rolandlevy.co.uk/'},
+    { github: 'https://github.com/rolandjlevy/portfolio-website'},
+    { code: 'https://repl.it/@rjlevy/portfolio-website'}
+  ]
+));
+
+projectData.push(new Project(
+  'swatch-generator', 
+  './images/projects/swatch-generator.jpg',
+  'Swatch Generator',
+  'Swatch Generator description',
+  ['javascript','css'],
+  [
+    { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/js-random-hex-colour-swatch-generator-oop'},
+    { code: 'https://repl.it/@rjlevy/JS-random-hex-colour-swatch-generator-oop'}
   ]
 ));
 
@@ -154,7 +154,12 @@ projectData.push(new Project(
   './images/projects/beach.jpg',
   'OurBnB',
   'OurBnB description',
-  ['react','node','express','sass']
+  ['react','node','express','sass'],
+  [
+    { play: 'http://www.betterchange.net/'},
+    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'},
+    { code: 'https://github.com/Benefit-ConstructorLabs/benefit'}
+  ]
 ));
 
 projectData.push(new Project(
@@ -162,7 +167,12 @@ projectData.push(new Project(
   './images/projects/italian-bread.jpg',
   'Lovely Grubbly',
   'Lovely Grubbly description',
-  ['react','node','express','sass']
+  ['react','node','express','sass'],
+  [
+    { play: 'http://www.betterchange.net/'},
+    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'},
+    { code: 'https://github.com/Benefit-ConstructorLabs/benefit'}
+  ]
 ));
 
 projectData.push(new Project(
@@ -170,7 +180,12 @@ projectData.push(new Project(
   './images/projects/louvre.jpg',
   'Which City?',
   'Which City? description',
-  ['react','sass']
+  ['react','sass'],
+  [
+    { play: 'http://www.betterchange.net/'},
+    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'},
+    { code: 'https://github.com/Benefit-ConstructorLabs/benefit'}
+  ]
 ));
 
 projectData.push(new Project(
@@ -178,5 +193,10 @@ projectData.push(new Project(
   './images/projects/moviewer-popcorn.jpg',
   'Moviewer',
   'Moviewer description',
-  ['react','node','css']
+  ['react','node','css'],
+  [
+    { play: 'http://www.betterchange.net/'},
+    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'},
+    { code: 'https://github.com/Benefit-ConstructorLabs/benefit'}
+  ]
 ));

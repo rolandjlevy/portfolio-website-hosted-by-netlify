@@ -154,7 +154,7 @@
 
             <div class="limit border-radius-5px m-t-20 mb-20">
               <input type="text" id="name" name="name" placeholder="name" required class="m-r-15">
-              <input type="email" id="email" name="email" placeholder="email" required>
+              <input type="email" id="email" name="email" placeholder="email" required  oninvalid="this.setCustomValidity('Please enter valid email')" oninput="setCustomValidity('')">
               <textarea id="message" name="message" placeholder="message..." required></textarea>
               <div data-theme="dark" data-netlify-recaptcha="true" class="m-b-20"></div>
             </div>

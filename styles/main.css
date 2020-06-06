@@ -57,41 +57,8 @@
 }
 
 .section-anchor.home {
-  height: 95px;
+  height: 45px;
 }
-
-/********************/
-/* footer           */
-/********************/
-
-
-/* .footer-boxes > li {
-  display: inline-block;
-  color: #fff;
-  background: #000;
-  padding: 15px;
-  width: 210px;
-  height: 240px;
-  margin-bottom: 10px;
-}
-
-.footer-boxes > li > img {
-  object-fit: cover;
-  width: 180px;
-} */
-
-/* .tags > li > a::before {
-  content: '';
-  width: 5px;
-  height: 5px;
-  z-index: 5;
-  background-color: red;
-  position: relative;
-  right: 0;
-  color: #000000;
-  margin-right: 3px;
-  font-size: 2rem;
-} */
 
 /****************/
 /* buttons      */

@@ -234,11 +234,11 @@
   }
   
   li.project > .details > li {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
   li.project > .details > li:first-child {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   
   .project > .details {

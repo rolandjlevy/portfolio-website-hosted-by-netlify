@@ -43,8 +43,8 @@ class Project {
         </label>
         <ul class="details">
           <li>${this.heading}</li>
-          <li><strong>Details</strong>: ${this.details}.</li>
-          <li><strong>Made with</strong>: ${this.getLanguages()}.</li>
+          <li>${this.details}</li>
+          <li>Built with ${this.getLanguages()}.</li>
         </ul>
         ${this.getInfoButtons()}
       </li>
@@ -58,11 +58,12 @@ class Project {
 
 const projectData = [];
 
+// Photo Finder
 projectData.push(new Project(
   'photo-finder', 
   './images/projects/photo-finder.jpg',
   'Photo Finder',
-  'uses the Unsplash API to search for and favourite photos',
+  'Uses the Unsplash API to search for and favourite photos.',
   ['express','ejs','bootstrap'],
   [
     { play: 'https://express-photo-finder-using-unsplash-api--rjlevy.repl.co/'},
@@ -71,11 +72,12 @@ projectData.push(new Project(
   ]
 ));
 
+// Google Translator
 projectData.push(new Project(
   'google-translator', 
   './images/projects/google-translator.jpg',
   'Google Translator',
-  'uses an API to translate phrases into 14 languages',
+  'Uses an API to translate phrases into 14 languages.',
   ['express', 'node', 'ejs', 'bootstrap'],
   [
     { play: 'https://express-google-translate-api-with-ejs--rjlevy.repl.co/'},
@@ -84,11 +86,12 @@ projectData.push(new Project(
   ]
 ));
 
+// Pixel Grid Draw
 projectData.push(new Project(
   'pixel-grid-draw', 
   './images/projects/pixels.gif',
   'Pixel Grid Draw',
-  'Pixel Grid Draw description',
+  'Draw coloured pixels on a customizable grid.',
   ['vue','css'],
   [
     { play: 'https://vue-pixel-grid-draw--rjlevy.repl.co/'},
@@ -97,24 +100,12 @@ projectData.push(new Project(
   ]
 ));
 
-projectData.push(new Project(
-  'portfolio-website', 
-  './images/projects/portfolio-website.jpg',
-  'Portfolio Website',
-  'showcasing my projects. Coded without frameworks or CMS',
-  ['javascript','css'],
-  [
-    { play: 'https://rolandlevy.co.uk/'},
-    { github: 'https://github.com/rolandjlevy/portfolio-website'},
-    { code: 'https://repl.it/@rjlevy/portfolio-website'}
-  ]
-));
-
+// Swatch Generator
 projectData.push(new Project(
   'swatch-generator', 
   './images/projects/swatch-generator.jpg',
   'Swatch Generator',
-  'Swatch Generator description',
+  'Generates random swatches and displays colour values.',
   ['javascript','css'],
   [
     { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co'},
@@ -123,11 +114,26 @@ projectData.push(new Project(
   ]
 ));
 
+// Portfolio Website
 projectData.push(new Project(
-  'colour-swatch-maker', 
-  './images/projects/swatches.jpg',
-  'Colour Swatch Maker',
-  'Colour Swatch Maker description',
+  'portfolio-website', 
+  './images/projects/portfolio-website.jpg',
+  'Portfolio Website',
+  'Showcases my projects. All designed and coded from scratch, without frameworks.',
+  ['javascript','css'],
+  [
+    { play: 'https://rolandlevy.co.uk/'},
+    { github: 'https://github.com/rolandjlevy/portfolio-website'},
+    { code: 'https://repl.it/@rjlevy/portfolio-website'}
+  ]
+));
+
+// RGB Sliders
+projectData.push(new Project(
+  'rgb-sliders', 
+  './images/projects/rgb-sliders.jpg',
+  'RGB Sliders',
+  'RGB colour sliders create swatches with colour values displayed.',
   ['vue','css'],
   [
     { play: 'https://vue-rgb-sliders-and-swatch-maker--rjlevy.repl.co/'},
@@ -136,67 +142,67 @@ projectData.push(new Project(
   ]
 ));
 
+// Better Change
 projectData.push(new Project(
   'better-change', 
   './images/projects/better-change.jpg',
   'Better Change',
-  'Better Change description',
-  ['react','node','express','sass'],
+  'Enables contactless payments using QR codes. No card-reader needed.',
+  ['react', 'redux', 'node', 'express', 'sass'],
   [
     { play: 'http://www.betterchange.net/'},
-    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'},
-    { code: 'https://github.com/Benefit-ConstructorLabs/benefit'}
+    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'}
   ]
 ));
 
+// OurBnB
 projectData.push(new Project(
   'ourbnb', 
   './images/projects/beach.jpg',
   'OurBnB',
-  'OurBnB description',
-  ['react','node','express','sass'],
+  'Accommodation booking app for London, New York and Sydney.',
+  ['react', 'node', 'express', 'sass'],
   [
-    { play: 'http://www.betterchange.net/'},
-    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'},
-    { code: 'https://github.com/Benefit-ConstructorLabs/benefit'}
+    { play: 'https://ourbnb.herokuapp.com/'},
+    { github: 'https://github.com/OurBnB/OurBnB'}
   ]
 ));
 
-projectData.push(new Project(
-  'lovely-grubbly',
-  './images/projects/italian-bread.jpg',
-  'Lovely Grubbly',
-  'Lovely Grubbly description',
-  ['react','node','express','sass'],
-  [
-    { play: 'http://www.betterchange.net/'},
-    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'},
-    { code: 'https://github.com/Benefit-ConstructorLabs/benefit'}
-  ]
-));
-
-projectData.push(new Project(
-  'which-city',
-  './images/projects/louvre.jpg',
-  'Which City?',
-  'Which City? description',
-  ['react','sass'],
-  [
-    { play: 'http://www.betterchange.net/'},
-    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'},
-    { code: 'https://github.com/Benefit-ConstructorLabs/benefit'}
-  ]
-));
-
+// Moviewer
 projectData.push(new Project(
   'moviewer',
   './images/projects/moviewer-popcorn.jpg',
   'Moviewer',
-  'Moviewer description',
-  ['react','node','css'],
+  'A movie search engine which uses the Open Movie Database API.',
+  ['react', 'node', 'css'],
   [
-    { play: 'http://www.betterchange.net/'},
-    { github: 'https://github.com/Benefit-ConstructorLabs/benefit'},
-    { code: 'https://github.com/Benefit-ConstructorLabs/benefit'}
+    { play: 'https://moviewer.herokuapp.com/'},
+    { github: 'https://github.com/rolandjlevy/moviewer'}
+  ]
+));
+
+// Lovely Grubbly
+projectData.push(new Project(
+  'lovely-grubbly',
+  './images/projects/italian-bread.jpg',
+  'Lovely Grubbly',
+  'Online takeaway food delivery service.',
+  ['react','node','express','sass'],
+  [
+    { play: 'https://lovely-grubbly.herokuapp.com/'},
+    { github: 'https://github.com/rolandjlevy/lovely-grubbly'}
+  ]
+));
+
+// Which City?
+projectData.push(new Project(
+  'which-city',
+  './images/projects/louvre.jpg',
+  'Which City?',
+  'Quiz game involves browsing photos and trying to guess the city.',
+  ['react','sass'],
+  [
+    { play: 'https://github.com/rolandjlevy/which-city'},
+    { github: 'https://which-city.herokuapp.com/'}
   ]
 ));

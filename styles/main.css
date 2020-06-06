@@ -210,6 +210,10 @@ h2 {
   margin-right: 15px;
 }
 
+.m-r-5 {
+  margin-right: 5px;
+}
+
 .m-rl-10, .m-lr-10  {
   margin: 0 10px;
 }

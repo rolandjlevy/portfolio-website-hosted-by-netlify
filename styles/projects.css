@@ -126,6 +126,21 @@
   padding: 10px 15px 15px 15px;
 }
 
+/* heading angle down */
+.project > .details > li > .fa-angle-up {
+  font-size: 1rem;
+  transform: rotate(0);
+  transition: all 0.3s 0.5s ease;
+}
+
+/* heading angle down */
+.project:hover > .details > li > .fa-angle-up,
+.project > .toggle:checked ~ .details > li > .fa-angle-up
+ {
+  transform: rotate(180deg);
+  transition: all 0.3s 0.5s ease;
+}
+
 /************************/
 /* project info buttons */
 /************************/
@@ -254,6 +269,10 @@ p > .fa-github {
   
   .project > .details {
     min-height: 50px;
+  }
+
+  .project > .details > li > .fa-angle-up {
+    font-size: 1.5rem;
   }
 
 }

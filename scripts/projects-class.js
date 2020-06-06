@@ -42,7 +42,7 @@ class Project {
           <i class="fas fa-thumbtack"></i>
         </label>
         <ul class="details">
-          <li>${this.heading}</li>
+          <li><i class="fas fa-angle-up m-r-5"></i>${this.heading}</li>
           <li>${this.details}</li>
           <li>Built with ${this.getLanguages()}.</li>
         </ul>

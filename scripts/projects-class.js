@@ -146,7 +146,7 @@ projectData.push(new Project(
 projectData.push(new Project(
   'better-change', 
   './images/projects/better-change.jpg',
-  'Better Change',
+  'QR Code App',
   'Enables contactless payments using QR codes. No card-reader needed.',
   ['react', 'redux', 'node', 'express', 'sass'],
   [
@@ -172,7 +172,7 @@ projectData.push(new Project(
 projectData.push(new Project(
   'moviewer',
   './images/projects/moviewer-popcorn.jpg',
-  'Moviewer',
+  'Movie Explorer',
   'A movie search engine which uses the Open Movie Database API.',
   ['react', 'node', 'css'],
   [
@@ -185,7 +185,7 @@ projectData.push(new Project(
 projectData.push(new Project(
   'lovely-grubbly',
   './images/projects/italian-bread.jpg',
-  'Lovely Grubbly',
+  'Food Delivery',
   'Online takeaway food delivery service.',
   ['react','node','express','sass'],
   [
@@ -198,8 +198,8 @@ projectData.push(new Project(
 projectData.push(new Project(
   'which-city',
   './images/projects/louvre.jpg',
-  'Which City?',
-  'Quiz game involves browsing photos and trying to guess the city.',
+  'Quiz game',
+  'Which City? involves browsing photos and trying to guess the city.',
   ['react','sass'],
   [
     { play: 'https://github.com/rolandjlevy/which-city'},

@@ -47,6 +47,9 @@
   .home-bg > .section {
     padding-top: 75px;
   }
+  .home-bg > .section-anchor {
+    height: 0;
+  }
 }
 
 .about-bg, footer {

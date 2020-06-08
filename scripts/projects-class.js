@@ -128,17 +128,17 @@ projectData.push(new Project(
   ]
 ));
 
-// RGB Sliders
+// Colour Creator
 projectData.push(new Project(
-  'rgb-sliders', 
-  './images/projects/rgb-sliders.jpg',
-  'RGB Sliders',
-  'RGB colour sliders create swatches with colour values displayed.',
+  'colour-creator', 
+  './images/projects/colour-creator.jpg',
+  'Colour Creator',
+  'RGB colour sliders create swatches with rgb and hex colour values displayed.',
   ['vue','css'],
   [
-    { play: 'https://vue-rgb-sliders-and-swatch-maker--rjlevy.repl.co/'},
-    { github: 'https://github.com/rolandjlevy/vue-rgb-sliders-and-swatch-maker/'},
-    { code: 'https://repl.it/@rjlevy/vue-rgb-sliders-and-swatch-maker/'}
+    { play: 'https://vue-colour-creator--rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/vue-colour-creator/'},
+    { code: 'https://repl.it/@rjlevy/vue-colour-creator/'}
   ]
 ));
 

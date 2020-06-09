@@ -161,13 +161,13 @@
   position: relative;
   width: 30px;
   height: 30px;
-  background-color: var(--accent-colour); /* change */
+  background-color: #ff3d77bb; /* change */
   bottom: 60px;
   left: 12px;
   border-radius: 2px;
   cursor: pointer;
   margin: 0 5px;
-  opacity: 0.8;
+  /* opacity: 0.8; */
   transition: all 0.2s ease;
   /* box-shadow: 0 0 0 1px #999; */
 }
@@ -175,8 +175,8 @@
 .project > .info > li:hover {
   transition: all 0.2s ease;
   /* box-shadow: 0 0 0 1px var(--accent-colour); */
-  /* background-color: #ff3d7799; /* change */
-  opacity: 1;
+  background-color: var(--accent-colour); /* change */
+  /* opacity: 1; */
 }
 
 .project > .info > li > a > i {

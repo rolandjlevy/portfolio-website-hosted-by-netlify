@@ -161,22 +161,18 @@
   position: relative;
   width: 30px;
   height: 30px;
-  background-color: #ff3d77bb; /* change */
+  background-color: var(--accent-colour); /* change */
   bottom: 60px;
   left: 12px;
   border-radius: 2px;
   cursor: pointer;
   margin: 0 5px;
-  /* opacity: 0.8; */
   transition: all 0.2s ease;
-  /* box-shadow: 0 0 0 1px #999; */
 }
 
 .project > .info > li:hover {
   transition: all 0.2s ease;
-  /* box-shadow: 0 0 0 1px var(--accent-colour); */
-  background-color: var(--accent-colour); /* change */
-  /* opacity: 1; */
+  transform: scale(1.1);
 }
 
 .project > .info > li > a > i {
@@ -231,8 +227,26 @@
   }
 }
 
+
+p > .fa-play,
+p > .fa-github,
+p > .fa-code {
+  background-color: var(--accent-colour);
+  padding: 4px;
+  color: #fff;
+  border-radius: 3px;
+}
+
 p > .fa-github {
   font-size: 1.2rem;
+}
+
+p > .fa-code {
+  padding: 5px 3px
+}
+
+p > .fa-play {
+  padding: 5px 6px;
 }
 
 /*/////////////////

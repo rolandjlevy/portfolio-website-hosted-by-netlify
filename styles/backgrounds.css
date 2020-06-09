@@ -76,12 +76,12 @@
 }
 
 .about-bg::before {
-  transform: rotate(-45deg);
+  transform: rotate(-135deg);
   opacity: 0.05;
 }
 
 .projects-bg::before {
-  transform: rotate(-90deg);
+  transform: rotate(-45deg);
   opacity: 0.03;
 }
 

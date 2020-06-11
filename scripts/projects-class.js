@@ -64,7 +64,7 @@ projectData.push(new Project(
   './images/projects/photo-finder.jpg',
   'Photo Finder',
   'Uses the Unsplash API to search for and favourite photos.',
-  ['express','ejs','bootstrap'],
+  ['express','ejs','bootstrap','javascript'],
   [
     { play: 'https://express-photo-finder-using-unsplash-api--rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/express-photo-finder-using-unsplash-api'},

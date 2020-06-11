@@ -13,7 +13,7 @@
   letter-spacing: 0.3px;
   transition: all 0.3s ease;
   border: 5px solid #fff;
-  width: 25%;
+  width: 33.3%;
   overflow: hidden;
 }
 
@@ -253,21 +253,14 @@ p > .fa-play {
 // media queries // 
 /////////////////*/
 
-@media screen and (max-width: 760px) {
-  li.project {
-    width: 33.3%;
-    transition: all 0.3s ease;
-  }
-}
-
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   li.project {
     width: 50%;
     transition: all 0.3s ease;
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 480px) {
   
   li.project {
     width: 100%;
@@ -282,11 +275,11 @@ p > .fa-play {
     font-size: 1.3rem;
   }
   
-  .project > .details {
+  li.project > .details {
     min-height: 50px;
   }
 
-  .project > .details > li > .fa-angle-up {
+  li.project > .details > li > .fa-angle-up {
     font-size: 1.5rem;
   }
 

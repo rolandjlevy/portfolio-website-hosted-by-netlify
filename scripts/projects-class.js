@@ -142,6 +142,20 @@ projectData.push(new Project(
   ]
 ));
 
+// CSS Analogue Clock
+projectData.push(new Project(
+  'analogue-clock', 
+  './images/projects/analogue-clock.jpg',
+  'Analogue Clock',
+  'An analogue clock made mainly with CSS with a touch of JS',
+  ['javascript','css'],
+  [
+    { play: 'https://js-analogue-clock--rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
+    { code: 'https://repl.it/@rjlevy/CSS-analogue-clock/'}
+  ]
+));
+
 // Better Change
 projectData.push(new Project(
   'better-change', 

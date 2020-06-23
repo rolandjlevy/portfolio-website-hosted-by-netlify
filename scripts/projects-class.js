@@ -147,8 +147,8 @@ projectData.push(new Project(
   'analogue-clock', 
   './images/projects/analogue-clock.jpg',
   'Analogue Clock',
-  'An analogue clock made mainly with CSS with a touch of JS',
-  ['javascript','css'],
+  'An analogue clock which accurately shows the time using pure CSS and a tiny touch of JS',
+  ['css','javascript'],
   [
     { play: 'https://js-analogue-clock--rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},

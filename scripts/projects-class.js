@@ -25,9 +25,10 @@ class Project {
       const key = Object.keys(item).shift();
       const value = Object.values(item).shift();
       const fa = key === 'github' ? 'fab' : 'fas';
+      const theKey = key === 'play' ? 'external-link-alt' : key;
       html += `
       <li class="${key}">
-        <a href="${value}" target="_blank"><i class="${fa} fa-${key}"></i></a>
+        <a href="${value}" target="_blank"><i class="${fa} fa-${theKey}"></i></a>
       </li>`;
     });
     html += `</ul>`;

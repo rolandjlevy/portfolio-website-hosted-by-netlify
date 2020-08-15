@@ -101,6 +101,20 @@ projectData.push(new Project(
   ]
 ));
 
+// Text to Speech
+projectData.push(new Project(
+  'text-to-speech', 
+  './images/projects/text-to-speech.png',
+  'Text to Speech',
+  'Choose a language, type some text and hear it spoken',
+  ['javascript','css'],
+  [
+    { play: 'https://js-text-to-speech-api.rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/js-text-to-speech-api'},
+    { code: 'https://repl.it/@rjlevy/js-text-to-speech-api'}
+  ]
+));
+
 // Swatch Generator
 projectData.push(new Project(
   'swatch-generator', 
@@ -111,7 +125,7 @@ projectData.push(new Project(
   [
     { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/js-random-hex-colour-swatch-generator-oop'},
-    { code: 'https://repl.it/@rjlevy/JS-random-hex-colour-swatch-generator-oop'}
+    { code: 'https://repl.it/@rjlevy/js-random-hex-colour-swatch-generator-oop'}
   ]
 ));
 

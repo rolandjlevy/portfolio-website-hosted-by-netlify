@@ -87,6 +87,34 @@ projectData.push(new Project(
   ]
 ));
 
+// Text to Speech
+projectData.push(new Project(
+  'text-to-speech', 
+  './images/projects/text-to-speech.png',
+  'Text to Speech',
+  'Choose a language, type some text and hear it spoken',
+  ['javascript','css'],
+  [
+    { play: 'https://js-text-to-speech-api.rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/js-text-to-speech-api'},
+    { code: 'https://repl.it/@rjlevy/js-text-to-speech-api'}
+  ]
+));
+
+// Sliders Game
+projectData.push(new Project(
+  'sliders-game', 
+  './images/projects/sliders-game.png',
+  'Sliders Game',
+  'Slide pieces into the correct order in the fewest possible moves then add your score to the Leader Board',
+  ['javascript','css','firebase'],
+  [
+    { play: 'https://js-sliders-game.rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/js-sliders-game'},
+    { code: 'https://repl.it/@rjlevy/js-sliders-game'}
+  ]
+));
+
 // Pixel Grid Draw
 projectData.push(new Project(
   'pixel-grid-draw', 
@@ -101,17 +129,17 @@ projectData.push(new Project(
   ]
 ));
 
-// Text to Speech
+// CSS Analogue Clock
 projectData.push(new Project(
-  'text-to-speech', 
-  './images/projects/text-to-speech.png',
-  'Text to Speech',
-  'Choose a language, type some text and hear it spoken',
-  ['javascript','css'],
+  'analogue-clock', 
+  './images/projects/analogue-clock.jpg',
+  'Analogue Clock',
+  'An analogue clock which accurately shows the time using pure CSS and a tiny touch of JS',
+  ['css','javascript'],
   [
-    { play: 'https://js-text-to-speech-api.rjlevy.repl.co/'},
-    { github: 'https://github.com/rolandjlevy/js-text-to-speech-api'},
-    { code: 'https://repl.it/@rjlevy/js-text-to-speech-api'}
+    { play: 'https://js-analogue-clock--rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
+    { code: 'https://repl.it/@rjlevy/CSS-analogue-clock/'}
   ]
 ));
 
@@ -154,20 +182,6 @@ projectData.push(new Project(
     { play: 'https://vue-colour-creator--rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/vue-colour-creator/'},
     { code: 'https://repl.it/@rjlevy/vue-colour-creator/'}
-  ]
-));
-
-// CSS Analogue Clock
-projectData.push(new Project(
-  'analogue-clock', 
-  './images/projects/analogue-clock.jpg',
-  'Analogue Clock',
-  'An analogue clock which accurately shows the time using pure CSS and a tiny touch of JS',
-  ['css','javascript'],
-  [
-    { play: 'https://js-analogue-clock--rjlevy.repl.co/'},
-    { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
-    { code: 'https://repl.it/@rjlevy/CSS-analogue-clock/'}
   ]
 ));
 

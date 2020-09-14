@@ -115,6 +115,20 @@ projectData.push(new Project(
   ]
 ));
 
+// Solitaire Game
+projectData.push(new Project(
+  'solitaire-game', 
+  './images/projects/solitaire-game.png',
+  'Solitaire Game',
+  'A game of speed, logic and skill: start with 33 marbles and try to finish with just one marble left in the middle of the board to acheive \'Solitaire\'.',
+  ['javascript','css','firebase'],
+  [
+    { play: 'https://js-solitaire-33-game.rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/js-solitaire-33-game'},
+    { code: 'https://repl.it/@rjlevy/js-solitaire-33-game'}
+  ]
+));
+
 // Pixel Grid Draw
 projectData.push(new Project(
   'pixel-grid-draw', 

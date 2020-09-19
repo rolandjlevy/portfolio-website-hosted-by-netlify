@@ -26,11 +26,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const projects = document.querySelectorAll('.project');
 
-  const projectPanels = document.querySelectorAll('.project');
-  projectPanels.forEach(item => {
-    item.addEventListener('click', (e) => {
-      console.log(e.target);
-      // e.target.blur();
+  projects.forEach(div => {
+    div.addEventListener('click', (e) => {
+      e.currentTarget.classList.toggle('hover');
     });
   });
   

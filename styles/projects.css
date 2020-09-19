@@ -30,7 +30,7 @@
   right: 0;*/
 }
 
-.project:hover > img {
+.project.hover > img {
   transform: scale(1.1);
   filter: blur(2px) brightness(120%) saturate(120%);
   transition: all 0.3s ease;
@@ -121,24 +121,38 @@ Need to activate this class selector when clicked / active
   font-size: 0.875rem;
   line-height: 1.5;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
-.project:hover > .details {
+.project.hover > .details {
   height: 100%;
   bottom: 0;
-  transition: all 0.2s 0.1s ease;
   padding: 10px 15px 15px 15px;
+  transition: all 0.2s 0.1s ease;
 }
 
-/* heading angle down */
+/* details hading angle */
 .project > .details > li > .fa-angle-up {
   font-size: 1rem;
   transform: rotate(0);
   transition: all 0.2s 0.3s ease;
 }
 
-/* heading angle down */
-.project:hover > .details > li > .fa-angle-up,
+/* .project > .details > li:first-child:hover > .fa-angle-up,
+.project.hover > .details > li:first-child:hover > .fa-angle-up {
+  transform: rotate(90deg);
+  transition: all 0.2s 0.3s ease;
+}
+
+@media screen and (max-width: 640px) {
+  .project > .details > li:first-child:hover > .fa-angle-up,
+  .project.hover > .details > li:first-child:hover > .fa-angle-up {
+    transform: rotate(180deg);
+    transition: all 0.2s 0.3s ease;
+  }
+} */
+
+.project.hover > .details > li > .fa-angle-up,
 .project > .toggle:checked ~ .details > li > .fa-angle-up
  {
   transform: rotate(180deg);
@@ -153,11 +167,13 @@ Need to activate this class selector when clicked / active
   display: flex;
   flex-direction: row;
   opacity: 0;
+  pointer-events: none;
   transition: opacity 0.2s 0.1s ease;
 }
 
-.project:hover > .info {
+.project.hover > .info {
   opacity: 1;
+  pointer-events: initial;
   transition: opacity 0.2s 0.2s ease;
 }
 
@@ -165,8 +181,8 @@ Need to activate this class selector when clicked / active
   position: relative;
   width: 30px;
   height: 30px;
-  background-color: var(--accent-colour); /* change */
-  bottom: 60px;
+  background-color: var(--accent-colour);
+  bottom: 75px;
   left: 12px;
   border-radius: 2px;
   cursor: pointer;
@@ -205,6 +221,29 @@ Need to activate this class selector when clicked / active
   font-size: 1.25rem;
   top: 5px;
   left: 6px;
+}
+
+.project > .info > li::before {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--accent-colour);
+  position: absolute;
+  text-align: center;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.project > .info > .play::before {
+  content: 'Demo';
+}
+
+.project > .info > .github::before {
+  content: 'Git';
+}
+
+.project > .info > .code::before {
+  content: 'Code';
 }
 
 .project > .info > .github > a > i {

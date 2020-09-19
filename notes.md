@@ -5,10 +5,12 @@
 - Add EJS icon?
 - put projectData into it's own config.js file
 - add defer to script tags
-- in mobile view, allow black panel to close when you touch the project name. At the moment it's stuck
 - test in Safari
+- minor bug: when project is pinned and you click on .details the icons dissapear
 
-### Ideas
+### Done
+- Add Demo, Git and Code labels under details icons
+- in mobile view, allow black panel to close when you touch the project name. At the moment it's stuck
 - change github repo in Netlify so domain points to this repo. Instructions here: https://docs.netlify.com/configure-builds/repo-permissions-linking/#install-with-a-new-site
 - Contact form submission with netlify: https://repl.it/@rjlevy/HTML-Contact-form-with-Netlify
 - copy project style from here: https://www.theguardian.com/us-news/2020/jun/01/george-floyd-donald-trump-black-lives-matter

@@ -82,6 +82,10 @@
   left: 0;
 }
 
+/* 
+Need to activate this class selector when clicked / active
+.project > .toggle ~ .details, .project:active > .toggle ~ .details { */
+
 .project > .toggle ~ .details {
   position: absolute;
   height: 40px;

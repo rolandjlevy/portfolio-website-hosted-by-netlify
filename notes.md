@@ -1,5 +1,13 @@
 # Roland Levy's personal website
 
+## Fixes
+- Change scripts to modules
+- Add EJS icon?
+- put projectData into it's own config.js file
+- add defer to script tags
+- in mobile view, allow black panel to close when you touch the project name. At the moment it's stuck
+- test in Safari
+
 ### Ideas
 - change github repo in Netlify so domain points to this repo. Instructions here: https://docs.netlify.com/configure-builds/repo-permissions-linking/#install-with-a-new-site
 - Contact form submission with netlify: https://repl.it/@rjlevy/HTML-Contact-form-with-Netlify

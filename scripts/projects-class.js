@@ -11,7 +11,7 @@ class Project {
     this.languages = languages;
     this.infoButtons = infoButtons;
   }
-  amendCase = (word) => {
+  amendCase(word) {
     if (word.toLowerCase() === 'ejs' || word.toLowerCase() === 'css') return word.toUpperCase();
     return word[0].toUpperCase() + word.slice(1, word.length).toLowerCase();
   }
@@ -57,7 +57,7 @@ class Project {
 // Initialize Projects //
 /////////////////////////
 
-const projectData = [];
+window.projectData = [];
 
 // Photo Finder
 projectData.push(new Project(
@@ -205,7 +205,7 @@ projectData.push(new Project(
   './images/projects/better-change.jpg',
   'QR Code App',
   'Enables contactless payments using QR codes. No card-reader needed.',
-  ['react', 'redux', 'node', 'express', 'sass'],
+  ['react', 'redux', 'node', 'express', 'mysql', 'sass'],
   [
     { play: 'http://www.betterchange.net/'},
     { github: 'https://github.com/Benefit-ConstructorLabs/benefit'}
@@ -218,7 +218,7 @@ projectData.push(new Project(
   './images/projects/beach.jpg',
   'OurBnB',
   'Accommodation booking app for London, New York and Sydney.',
-  ['react', 'node', 'express', 'sass'],
+  ['react', 'node', 'express', 'mysql', 'sass'],
   [
     { play: 'https://ourbnb.herokuapp.com/'},
     { github: 'https://github.com/OurBnB/OurBnB'}
@@ -244,7 +244,7 @@ projectData.push(new Project(
   './images/projects/italian-bread.jpg',
   'Food Delivery',
   'Online takeaway food delivery service.',
-  ['react','node','express','sass'],
+  ['react', 'node', 'express', 'sass'],
   [
     { play: 'https://lovely-grubbly.herokuapp.com/'},
     { github: 'https://github.com/rolandjlevy/lovely-grubbly'}

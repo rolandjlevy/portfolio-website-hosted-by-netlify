@@ -25,6 +25,14 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 
   const projects = document.querySelectorAll('.project');
+
+  const projectPanels = document.querySelectorAll('.project');
+  projectPanels.forEach(item => {
+    item.addEventListener('click', (e) => {
+      console.log(e.target);
+      // e.target.blur();
+    });
+  });
   
   Object.keys(languages).forEach(key => {
     document.querySelector(`#${key}`).addEventListener('click', (e) => {

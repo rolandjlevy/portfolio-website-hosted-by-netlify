@@ -179,14 +179,14 @@ Need to activate this class selector when clicked / active
 
 .project > .info > li {
   position: relative;
-  width: 30px;
-  height: 30px;
+  width: 45px;
+  height: 45px;
   background-color: var(--accent-colour);
-  bottom: 75px;
+  bottom: 85px;
   left: 12px;
   border-radius: 2px;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 0 6px;
   transition: all 0.2s ease;
 }
 
@@ -216,22 +216,37 @@ Need to activate this class selector when clicked / active
   transition-delay: 0.4s;
 } */
 
-.project > .info > .play > a > i {
-  position: absolute;
-  font-size: 1.25rem;
-  top: 5px;
-  left: 6px;
-}
-
 .project > .info > li::before {
   display: inline-block;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
   color: var(--accent-colour);
   position: absolute;
   text-align: center;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.project > .info > .play > a > i {
+  position: absolute;
+  font-size: 1.75rem;
+  top: 8px;
+  left: 9px;
+}
+
+.project > .info > .github > a > i {
+  position: absolute;
+  font-size: 2rem;
+  top: 7px;
+  left: 7px;
+}
+
+.project > .info > .code > a > i {
+  position: absolute;
+  font-size: 1.7rem;
+  top: 9px;
+  left: 5px;
 }
 
 .project > .info > .play::before {
@@ -246,20 +261,6 @@ Need to activate this class selector when clicked / active
   content: 'Code';
 }
 
-.project > .info > .github > a > i {
-  position: absolute;
-  font-size: 1.4rem;
-  top: 4px;
-  left: 4px;
-}
-
-.project > .info > .code > a > i {
-  position: absolute;
-  font-size: 1.2rem;
-  top: 5px;
-  left: 3px;
-}
-
 
 @keyframes fadein {
   from {
@@ -272,6 +273,7 @@ Need to activate this class selector when clicked / active
 
 
 p > .fa-play,
+p > .fa-external-link-alt,
 p > .fa-github,
 p > .fa-code {
   background-color: var(--accent-colour);
@@ -280,16 +282,20 @@ p > .fa-code {
   border-radius: 3px;
 }
 
+p > .fa-play {
+  padding: 5px 6px;
+}
+
+p > .fa-external-link-alt {
+  padding: 5px;
+}
+
 p > .fa-github {
   font-size: 1.2rem;
 }
 
 p > .fa-code {
   padding: 5px 3px
-}
-
-p > .fa-play {
-  padding: 5px 6px;
 }
 
 /*/////////////////

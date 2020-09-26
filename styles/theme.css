@@ -27,6 +27,13 @@ html[theme="light"] .emoji {
 } */
 
 html[theme="light"] {
-  --accent-colour: blue;
+  --accent-colour:  #289eff;
   --accent-colour-light: lightblue;
+  --nav-text-colour: #52b1ff;
+  --deep-grey: #eee;
+  --mid-grey-text: #333;
 }
+
+/* html[theme="light"] .mode {
+  filter: invert(1) hue-rotate(180deg);
+} */

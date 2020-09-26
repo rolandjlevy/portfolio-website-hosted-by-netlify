@@ -1,9 +1,9 @@
 // collapse burger menu panel in mobile view 
 
+const body = document.querySelector('body');
 const mediaQueryMobile = 600;
 const burgerCheckBox = document.querySelector('.burger-checkbox-class');
 const contactForm = document.querySelector('#contact-form');
-const body = document.querySelector('body');
 
 const myObserver = new ResizeObserver(entries => {
   entries.forEach(entry => {

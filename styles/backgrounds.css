@@ -52,7 +52,7 @@
   }
 }
 
-.about-bg, footer {
+.about-bg {
   background-color: #f1f1f1;
 }
 
@@ -96,7 +96,7 @@
 
 footer {
   padding: 20px 30px;
-  background: #111;
+  background: var(--deepest-grey);
   color: #999;
   min-height: var(--footer-height);
 }

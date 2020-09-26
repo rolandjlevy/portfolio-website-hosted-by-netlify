@@ -26,12 +26,18 @@ html[theme="light"] .emoji {
   filter: invert(0) hue-rotate(0deg);
 } */
 
-html[theme="light"] {
-  --accent-colour:  #289eff;
+html[data-theme="light"] {
+  --accent-colour:  #169ef8;
   --accent-colour-light: lightblue;
-  --nav-text-colour: #52b1ff;
+  --nav-text-colour: #169ef8;
   --deep-grey: #eee;
   --mid-grey-text: #333;
+  --deepest-grey: #eee;
+  transition: all 0.5s ease;
+}
+
+section * {
+  transition: all 0.5s ease;
 }
 
 /* html[theme="light"] .mode {

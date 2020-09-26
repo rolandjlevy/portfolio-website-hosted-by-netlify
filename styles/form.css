@@ -57,6 +57,14 @@ textarea:-internal-autofill-selected  {
   box-shadow: 0 0 0 50px var(--deep-grey) inset;
 }
 
+input[id="theme"] {
+  visibility: hidden;
+}
+
+label[for="theme"] {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
 
   input[type=text], input[type=email] {

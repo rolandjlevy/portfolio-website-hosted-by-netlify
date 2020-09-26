@@ -4,6 +4,7 @@
   --deep-blue: #003750;
   --dark-grey: #444;
   --deep-grey: #333;
+  --deepest-grey: #111;
   --lightest-grey: #fcfcfc;
   --light-grey: #f0f0f0;
   --mid-light-grey: #eaeaea;
@@ -21,6 +22,7 @@
   --nav-height: 80px;
   --project-container-w: 720px;
   --project-padding: 20px;
+  transition: all 0.5s ease;
 }
 
 * {

@@ -45,7 +45,7 @@
 }
 
 .navbar > .links > ul > li > a {
-  color: inherit;
+  color: var(--accent-colour);
   text-align: center;
   text-decoration: none;
   padding: 2px 8px;

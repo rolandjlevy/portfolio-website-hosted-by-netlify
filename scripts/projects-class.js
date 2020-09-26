@@ -81,9 +81,9 @@ projectData.push(new Project(
   'Try to remove all the marbles and finish with just one left in the middle of the board to acheive \'Solitaire\'.',
   ['javascript','css','firebase'],
   [
-    { play: 'https://js-solitaire-33-game.rjlevy.repl.co/'},
-    { github: 'https://github.com/rolandjlevy/js-solitaire-33-game'},
-    { code: 'https://repl.it/@rjlevy/js-solitaire-33-game'}
+    { play: 'https://js-solitaire-game.rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/js-solitaire-game'},
+    { code: 'https://repl.it/@rjlevy/js-solitaire-game'}
   ]
 ));
 

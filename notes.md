@@ -1,6 +1,7 @@
 # Roland Levy's personal website
 
 ## Fixes
+- add no-scaling to meta tag. see games for example code
 - Complete CSS for lighter theme
 - Change scripts to modules
 - Add EJS icon?

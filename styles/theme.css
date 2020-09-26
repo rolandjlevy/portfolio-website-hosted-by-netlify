@@ -1,4 +1,4 @@
-html[theme="light"] .mode,
+/* html[theme="light"] .mode,
 html[theme="light"] .details,
 html[theme="light"] .info > li {
   filter: invert(1) hue-rotate(180deg);
@@ -24,4 +24,9 @@ html[theme="light"] a:hover {
 
 html[theme="light"] .emoji {
   filter: invert(0) hue-rotate(0deg);
+} */
+
+html[theme="light"] {
+  --accent-colour: blue;
+  --accent-colour-light: lightblue;
 }

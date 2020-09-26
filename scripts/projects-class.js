@@ -44,8 +44,8 @@ class Project {
         </label>
         <ul class="details">
           <li><i class="fas fa-angle-up m-r-5"></i>${this.heading}</li>
-          <li>${this.details}</li>
-          <li>Built with ${this.getLanguages()}.</li>
+          <li><i class="fas fa-info-circle m-r-5"></i>${this.details}</li>
+          <li><i class="fas fa-cog m-r-5"></i>Built with ${this.getLanguages()}.</li>
         </ul>
         ${this.getInfoButtons()}
       </li>
@@ -58,6 +58,34 @@ class Project {
 /////////////////////////
 
 window.projectData = [];
+
+// Sliders Game
+projectData.push(new Project(
+  'sliders-game', 
+  './images/projects/sliders-game.png',
+  'Sliders Game',
+  'Slide pieces into the correct order in the fewest possible moves then add your score to the Leader Board',
+  ['javascript','css','firebase'],
+  [
+    { play: 'https://js-sliders-game.rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/js-sliders-game'},
+    { code: 'https://repl.it/@rjlevy/js-sliders-game'}
+  ]
+));
+
+// Solitaire Game
+projectData.push(new Project(
+  'solitaire-game', 
+  './images/projects/solitaire-game.png',
+  'Solitaire Game',
+  'Try to remove all the marbles and finish with just one left in the middle of the board to acheive \'Solitaire\'.',
+  ['javascript','css','firebase'],
+  [
+    { play: 'https://js-solitaire-33-game.rjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/js-solitaire-33-game'},
+    { code: 'https://repl.it/@rjlevy/js-solitaire-33-game'}
+  ]
+));
 
 // Photo Finder
 projectData.push(new Project(
@@ -98,34 +126,6 @@ projectData.push(new Project(
     { play: 'https://js-text-to-speech-api.rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/js-text-to-speech-api'},
     { code: 'https://repl.it/@rjlevy/js-text-to-speech-api'}
-  ]
-));
-
-// Sliders Game
-projectData.push(new Project(
-  'sliders-game', 
-  './images/projects/sliders-game.png',
-  'Sliders Game',
-  'Slide pieces into the correct order in the fewest possible moves then add your score to the Leader Board',
-  ['javascript','css','firebase'],
-  [
-    { play: 'https://js-sliders-game.rjlevy.repl.co/'},
-    { github: 'https://github.com/rolandjlevy/js-sliders-game'},
-    { code: 'https://repl.it/@rjlevy/js-sliders-game'}
-  ]
-));
-
-// Solitaire Game
-projectData.push(new Project(
-  'solitaire-game', 
-  './images/projects/solitaire-game.png',
-  'Solitaire Game',
-  'A game of speed, logic and skill: start with 33 marbles and try to finish with just one marble left in the middle of the board to acheive \'Solitaire\'.',
-  ['javascript','css','firebase'],
-  [
-    { play: 'https://js-solitaire-33-game.rjlevy.repl.co/'},
-    { github: 'https://github.com/rolandjlevy/js-solitaire-33-game'},
-    { code: 'https://repl.it/@rjlevy/js-solitaire-33-game'}
   ]
 ));
 

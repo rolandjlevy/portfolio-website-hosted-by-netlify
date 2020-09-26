@@ -181,7 +181,8 @@ Need to activate this class selector when clicked / active
   position: relative;
   width: 45px;
   height: 45px;
-  background-color: var(--accent-colour);
+  /* background-color: var(--accent-colour); */
+  background-color: white;
   bottom: 85px;
   left: 12px;
   border-radius: 2px;
@@ -192,15 +193,18 @@ Need to activate this class selector when clicked / active
 
 .project > .info > li:hover {
   transition: all 0.2s ease;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 .project > .info > li > a > i {
-  color: #fff;
+  /* color: #fff; */
+  color: black;
 }
 
 .project > .info > li:hover > a > i {
-  color: #fff;
+  /* color: #fff; */
+  color: var(--accent-colour);
+  transition: all 0.2s ease;
 }
 
 
@@ -219,13 +223,18 @@ Need to activate this class selector when clicked / active
 .project > .info > li::before {
   display: inline-block;
   font-size: 0.875rem;
-  font-weight: 700;
-  color: var(--accent-colour);
+  font-weight: 600;
+  /* color: var(--accent-colour); */
+  color: white;
   position: absolute;
   text-align: center;
   top: 100%;
   left: 50%;
   transform: translateX(-50%);
+  transition: all 0.2s ease;
+}
+.project > .info > li:hover::before {
+  color: var(--accent-colour);
 }
 
 .project > .info > .play > a > i {

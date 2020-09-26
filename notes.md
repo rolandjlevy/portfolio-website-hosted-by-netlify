@@ -1,6 +1,7 @@
 # Roland Levy's personal website
 
 ## Fixes
+- Complete CSS for lighter theme
 - Change scripts to modules
 - Add EJS icon?
 - put projectData into it's own config.js file
@@ -66,6 +67,7 @@ https://alligator.io/js/resize-observer/
 - https://css-tricks.com/almanac/properties/b/background-repeat/
 - https://www.sitepoint.com/css3-transform-background-image/
 - inset drop-shadow: https://stackoverflow.com/questions/26844289/how-to-add-inset-box-shadow-to-image
+- https://dev.to/dip15739/dark-mode-with-only-1-css-property-17fl
 
 ### Demo and code
 - Live demo: https://css-portfolio-website--rjlevy.repl.co

@@ -183,11 +183,11 @@ Need to activate this class selector when clicked / active
   height: 45px;
   /* background-color: var(--accent-colour); */
   background-color: white;
-  bottom: 85px;
+  bottom: 90px;
   left: 12px;
   border-radius: 2px;
   cursor: pointer;
-  margin: 0 6px;
+  margin: 0 5px;
   transition: all 0.2s ease;
 }
 

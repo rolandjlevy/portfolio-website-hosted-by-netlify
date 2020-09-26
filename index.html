@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html theme='default'>
 
 <head>
 	<title>Roland's portfolio 👨‍💻</title>
@@ -21,19 +21,20 @@
 	<link href="styles/tags.css" rel="stylesheet" type="text/css" />
 	<link href="styles/nav.css" rel="stylesheet" type="text/css" />
 	<link href="styles/burger-menu.css" rel="stylesheet" type="text/css" />
+	<link href="styles/theme.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
 
 <body>
 
-	<nav class="navbg"></nav>
+	<nav class="mode navbg"></nav>
 	<nav class="navbar">
 		<section class="links limit">
-			<ul>
+			<ul class="mode">
 				<li><a href="#home" class="navlink">Home</a></li>
 				<li><a href="#about" class="navlink">About</a></li>
         <li><a href="#projects" class="navlink">Projects</a></li>
-        <li><a href="https://github.com/rolandjlevy" class="new-window" target="_blank">Github</a></li>
+        <li><a href="https://github.com/rolandjlevy" class="new-window navlink" target="_blank">Github</a></li>
         <li><a href="#contact" class="navlink">Contact</a></li>
         <!-- <li><a href="/success.html" class="navlink">Success</a></li> -->
         <!-- <li><a href="/images/Roland-Levy-CV-May-2020.pdf" download>Download CV</a></li> -->
@@ -48,27 +49,27 @@
     <div class="burger">
       <div class="burger-side-panel">
         <!-- <label for="burger-checkbox" class="modal-close-button">&times;</label> -->
-        <ul>
-          <li><a href="#home" class="navlink">Home 🏠</a></li>
-          <li><a href="#about" class="navlink">About 👨</a></li>
-          <li><a href="#projects" class="navlink">Projects 👨‍💻</a></li>
+        <ul class="mode">
+          <li><a href="#home" class="navlink">Home <span class="emoji">🏠</span></a></li>
+          <li><a href="#about" class="navlink">About <span class="emoji">👨</span></a></li>
+          <li><a href="#projects" class="navlink">Projects <span class="emoji">👨‍💻</span></a></li>
           <!-- <li><a href="https://github.com/rolandjlevy" target="_blank" class="new-window">Github 😺</a></li> -->
           <!-- <li><a href="/images/Roland-Levy-CV-May-2020.pdf" download>Download CV 📁</a></li> -->
-          <li><a href="#contact" class="navlink">Contact 👋</a></li>
+          <li><a href="#contact" class="navlink">Contact <span class="emoji">👋</span></a></li>
         </ul>
       </div>
     </div>
 
     <main class="container">
 
-      <div class="home-bg">
+      <div class="mode home-bg">
         <section class="section-anchor home">
           <div id="home"></div>
         </section>
         <section class="section">
 
           <div class="limit bgcolor-dark-grey border-radius-5px p-30">
-            <h2>Hi, I'm Roland 👋</h2>
+            <h2>Hi, I'm Roland <span class="emoji">👋</span></h2>
             <p class="paragraph">a full-stack software developer specialising in front-end with 2 years coding experience. Currently working full-time for a London-based company.</p>
           </div>
 
@@ -146,7 +147,7 @@
         </section>
       </div>
 
-      <div class="contact-bg">
+      <div class="mode contact-bg">
         <section class="section-anchor">
           <div id="contact"></div>
         </section>
@@ -157,7 +158,7 @@
             <p class="paragraph">Any questions? Just send me a message and your details. It wIll be great to hear from you.</p>
           </div>
 
-          <form name="contact" method="POST" data-netlify="true" action="/success.html">
+          <form name="contact" id="contact-form" method="POST" data-netlify="true" action="/success.html">
 
             <div class="limit border-radius-5px m-t-20 mb-20">
               <input type="text" id="name" name="name" placeholder="name" required class="m-r-15">
@@ -178,14 +179,14 @@
       </div>
       
     </main>
-    <footer>
+    <footer class="mode">
       <p>&copy; Roland Levy 2020. Home-made with vanilla JavaScript and pure CSS &#9889;</p>
     </footer>
 
-    <script src="/scripts/utils.js"></script>
-    <script src="/scripts/projects-class.js"></script>
-    <script src="/scripts/projects-filtering.js"></script>
-    <script src="/scripts/smooth-scroll-polyfill.js"></script>
+    <script src="/scripts/utils.js" defer></script>
+    <script src="/scripts/projects-class.js" defer></script>
+    <script src="/scripts/projects-filtering.js" defer></script>
+    <script src="/scripts/smooth-scroll-polyfill.js" defer></script>
     
   </body>
 </html>

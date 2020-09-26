@@ -23,18 +23,12 @@
   height: 100%;
   transition: all 0.2s ease;
   object-position: 50%;
-  /*position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;*/
 }
 
 .project.hover > img {
   transform: scale(1.1);
   filter: blur(2px) brightness(120%) saturate(120%);
   transition: all 0.3s ease;
-  /* object-position: 0; */
 }
 
 .project > .toggle-overlay {
@@ -181,7 +175,6 @@ Need to activate this class selector when clicked / active
   position: relative;
   width: 45px;
   height: 45px;
-  /* background-color: var(--accent-colour); */
   background-color: white;
   bottom: 90px;
   left: 12px;
@@ -197,12 +190,10 @@ Need to activate this class selector when clicked / active
 }
 
 .project > .info > li > a > i {
-  /* color: #fff; */
   color: black;
 }
 
 .project > .info > li:hover > a > i {
-  /* color: #fff; */
   color: var(--accent-colour);
   transition: all 0.2s ease;
 }
@@ -224,7 +215,6 @@ Need to activate this class selector when clicked / active
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 600;
-  /* color: var(--accent-colour); */
   color: white;
   position: absolute;
   text-align: center;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html data-theme="dark">
 
 <head>
 	<title>Roland's portfolio 👨‍💻</title>
@@ -16,6 +16,7 @@
 	<link href="styles/normalize.css" rel="stylesheet" type="text/css" />
 	<link href="styles/backgrounds.css" rel="stylesheet" type="text/css" />
 	<link href="styles/main.css" rel="stylesheet" type="text/css" />
+	<link href="styles/theme.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
 
@@ -23,7 +24,7 @@
   <main class="container vertical-align-all">
 
       <div class="success-bg">
-        <section class="section m-t-80">
+        <section class="section m-t-100">
 
           <div class="limit bgcolor-dark-grey border-radius-5px p-30">
             <h2>Success 👍</h2>
@@ -45,5 +46,12 @@
       <p>&copy; 2020 Roland Levy. Home-made with vanilla JavaScript and pure CSS &#9889;</p>
     </footer>
     
+    <!-- <script src="/scripts/utils.js" defer></script> -->
+    <script>
+      const savedTheme = window.localStorage.getItem('theme') || '';
+      const html = document.querySelector('html');
+      html.dataset.theme = savedTheme;
+    </script>
+
   </body>
 </html>

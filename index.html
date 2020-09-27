@@ -25,7 +25,7 @@
   <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
 
-<body onload="onloadCallback('light')">
+<body onload="recaptchaCallback('dark')">
 
 	<nav class="mode navbg"></nav>
 	<nav class="navbar">
@@ -170,7 +170,7 @@
               <input type="text" id="name" name="name" placeholder="name" required class="m-r-15">
               <input type="email" id="email" name="email" placeholder="email" required  oninvalid="this.setCustomValidity('Please enter valid email')" oninput="setCustomValidity('')">
               <textarea id="message" name="message" placeholder="message..." required></textarea>
-              <div id="recaptcha-element"></div>
+              <div id="recaptcha-element" data-theme="dark"></div>
               <!-- <div data-theme="dark" data-netlify-recaptcha="true" class="recaptcha m-b-20"></div> -->
             </div>
 
@@ -195,7 +195,6 @@
     <script src="/scripts/projects-config.js" defer></script>
     <script src="/scripts/projects-filtering.js" defer></script>
     <script src="/scripts/smooth-scroll-polyfill.js" defer></script>
-
     <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
     
   </body>

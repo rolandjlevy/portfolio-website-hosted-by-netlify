@@ -3,6 +3,7 @@ html[data-theme="light"] {
   --dark-grey: #ddd;
   --deep-grey: #eee;
   --deepest-grey: #f0f0f0;
+  --section-bg: #fff;
   --mid-grey-text: #002b47;
   --btn-colour: #002b47;
   --deepest-pink: #004074;
@@ -12,8 +13,7 @@ html[data-theme="light"] {
   transition: all 0.5s ease;
 }
 
-html[data-theme="light"] nav,
-html[data-theme="light"] section {
+html[data-theme="light"] nav {
   background-color: #fff;
 }
 
@@ -42,8 +42,4 @@ html[data-theme="light"] .details {
 
 html[data-theme="light"] .project {
   opacity: 1;
-}
-
-html[data-theme="light"] .details {
-  filter: invert(1);
 }

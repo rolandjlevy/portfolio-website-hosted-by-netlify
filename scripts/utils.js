@@ -21,13 +21,36 @@ myObserver.observe(body);
 
 themeButtons.forEach(item => {
   item.addEventListener('click', (e) => {
-    const customTheme = html.dataset.theme === 'dark' ? 'light' : 'dark';
-    html.dataset.theme = customTheme;
-    invertEmojiColour(customTheme);
-    // const customTheme = e.target.checked ? 'clean' : 'dark';
-    updateRecaptcha(customTheme);
+    const theme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    html.dataset.theme = theme;
+    invertEmojiColour(theme);
+    updateRecaptcha(theme);
+    setVarToLocalStorage('theme', theme);
   });
 });
+
+function setVarToLocalStorage(varName, value) {
+  window.localStorage.setItem(varName, value);
+}
+
+setVarToLocalStorage('theme', 'dark');
+
+// change recaptcha to dark by setting the data-theme attribute
+function updateRecaptcha(theme) { 
+  const recaptcha = document.querySelector('#recaptcha-element');
+  if (recaptcha) {
+    recaptcha.dataset.theme = theme;
+    recaptcha.setAttribute('data-theme', theme);
+  }
+}
+
+// initialise recaptcha x
+function recaptchaCallback(theme) {
+  grecaptcha.render('recaptcha-element', {
+    'sitekey' : '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9',
+    'theme' : theme
+  });
+};
 
 function invertEmojiColour(customTheme) {
   themeEmojis.forEach(item => {
@@ -38,26 +61,3 @@ function invertEmojiColour(customTheme) {
     }
   });
 }
-
-// change recaptcha to dark by setting the data-theme attribute
-
-function onloadCallback(customTheme) {
-  grecaptcha.render('recaptcha-element', {
-    'sitekey' : '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9',
-    'theme' : customTheme
-  });
-};
-
-function updateRecaptcha(customTheme) { 
-  const recaptcha = document.querySelector('.g-recaptcha');
-  // const recaptcha = document.querySelector('.recaptcha');
-  if (recaptcha) {
-    recaptcha.dataset.theme = customTheme;
-    // console.log('data-theme:', recaptcha.getAttribute('data-theme'));
-    recaptcha.setAttribute('data-theme', customTheme);
-    console.log({Recaptcha});
-    Recaptcha.reload();
-  }
-}
-
-updateRecaptcha('dark');

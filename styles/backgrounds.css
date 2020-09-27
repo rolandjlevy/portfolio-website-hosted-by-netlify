@@ -35,7 +35,7 @@
 }
 
 .home-bg {
-  background-color: #000;
+  background-color: var(--section-bg);
   min-height: 350px;
 }
 
@@ -61,13 +61,17 @@
 }
 
 .contact-bg {
-  background-color: #000;
+  background-color: var(--section-bg);
   min-height: 500px;
 }
 
 .success-bg {
-  background-color: #000;
+  background-color: var(--section-bg);
   height: calc(100vh);
+}
+
+.success-header {
+  background-color: var(--section-bg);
 }
 
 .home-bg::before {

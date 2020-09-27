@@ -190,7 +190,7 @@ Need to activate this class selector when clicked / active
 }
 
 .project > .info > li > a > i {
-  color: black;
+  color: var(--accent-colour);
 }
 
 .project > .info > li:hover > a > i {
@@ -215,7 +215,7 @@ Need to activate this class selector when clicked / active
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 600;
-  color: white;
+  color: var(--accent-colour);
   position: absolute;
   text-align: center;
   top: 100%;
@@ -223,6 +223,7 @@ Need to activate this class selector when clicked / active
   transform: translateX(-50%);
   transition: all 0.2s ease;
 }
+
 .project > .info > li:hover::before {
   color: var(--accent-colour);
 }

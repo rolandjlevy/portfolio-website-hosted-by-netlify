@@ -50,7 +50,7 @@
 
 .burger-side-panel {
   color: var(--nav-text-colour);
-  padding: 10px;
+  padding: 8px 10px 12px 10px;
   overflow: hidden;
   position: absolute;
   top: 0;

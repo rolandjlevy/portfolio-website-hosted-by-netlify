@@ -45,7 +45,8 @@ function updateRecaptcha(customTheme) {
   const recaptcha = document.querySelector('.g-recaptcha');
   // const temp = document.querySelector('div[data-theme]');
   if (recaptcha) {
-    recaptcha.setAttribute("data-theme", customTheme);
+    console.log('data-theme:', recaptcha.getAttribute('data-theme'));
+    recaptcha.setAttribute('data-theme', customTheme);
   }
 }
 

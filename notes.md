@@ -1,16 +1,23 @@
 # Roland Levy's personal website
 
 ## Fixes
+- get background images working in light mode
+- fix language icon colours in light mode
+- sort out project info icons in light mode
+- quiz game demo button is wrong
+- consider changing light areas in dark mode to dark
+- improve and shorten About Me wording
 - Recaptcha customisation code: https://developers.google.com/recaptcha/old/docs/customization
 - https://stackoverflow.com/questions/22991938/overriding-google-recaptcha-css-to-make-it-responsive
 - https://www.tutspointer.com/google-recaptcha-responsive-bootstrap-or-using-media-query/
-- Create button and CSS for lighter theme / mode
 - Change scripts to modules?
 - Add EJS icon?
 - test in Safari
 - minor bug: when project is pinned and you click on .details the icons dissapear
 
 ### Done
+- Create button and CSS for lighter theme / mode
+- improve padding on burger menu block
 - add no-scaling to meta tag
 - add defer to script tags
 - Add Demo, Git and Code labels under details icons

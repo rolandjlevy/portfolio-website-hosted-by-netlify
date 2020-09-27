@@ -23,6 +23,12 @@
 	<link href="styles/burger-menu.css" rel="stylesheet" type="text/css" />
 	<link href="styles/theme.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
+  <!-- <script type="text/javascript">
+    const onloadCallback = function() {
+      console.log("grecaptcha is ready!");
+    };
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> -->
 </head>
 
 <body>
@@ -96,7 +102,6 @@
         </section>
       </div>
 
-
       <div class="about-bg">
         <section class="section-anchor">
           <div id="about"></div>
@@ -154,7 +159,7 @@
         </section>
       </div>
 
-      <div class="mode contact-bg">
+      <div class="contact-bg">
         <section class="section-anchor">
           <div id="contact"></div>
         </section>
@@ -165,19 +170,16 @@
             <p class="paragraph">Any questions? Just send me a message and your details. It wIll be great to hear from you.</p>
           </div>
 
-          <script type="text/javascript">
-            const RecaptchaOptions = {
-              theme : 'light'
-            };
-          </script>
-
           <form name="contact" id="contact-form" method="POST" data-netlify="true" action="/success.html">
 
             <div class="limit border-radius-5px m-t-20 mb-20">
               <input type="text" id="name" name="name" placeholder="name" required class="m-r-15">
               <input type="email" id="email" name="email" placeholder="email" required  oninvalid="this.setCustomValidity('Please enter valid email')" oninput="setCustomValidity('')">
               <textarea id="message" name="message" placeholder="message..." required></textarea>
+              
               <div data-theme="dark" data-netlify-recaptcha="true" class="recaptcha m-b-20"></div>
+
+              <!-- <div class="g-recaptcha" data-sitekey="your_site_key" class="m-b-20"></div> -->
 
               <!-- <div id="recaptcha_widget" style="display:none">
                 <div id="recaptcha_image"></div>
@@ -216,7 +218,7 @@
       </div>
       
     </main>
-    <footer class="mode">
+    <footer>
       <p>&copy; Roland Levy 2020. Home-made with vanilla JavaScript and pure CSS &#9889;</p>
     </footer>
 

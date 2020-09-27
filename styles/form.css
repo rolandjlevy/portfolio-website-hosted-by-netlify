@@ -63,6 +63,15 @@ input[id*="theme"] {
   height: 0;
 }
 
+input[id*="theme"]:checked + label[for*="theme"] > span {
+  transition: all 0.5s ease;
+}
+
+label[for*="theme"] > .emoji.light {
+  filter: invert(1) opacity(0.7) saturate(1.5) brightness(1.2) hue-rotate(-25deg);
+  transition: all 0.5s ease;
+}
+
 label[for*="theme"] {
   cursor: pointer;
 }

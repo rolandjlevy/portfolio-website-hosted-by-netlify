@@ -20,10 +20,16 @@ myObserver.observe(body);
 
 // change recaptcha to dark by setting the data-theme attribute
 const recaptcha = document.querySelector('.g-recaptcha');
-if (recaptcha) {
-  recaptcha.setAttribute("data-theme", "dark");
+
+function updateRecaptcha() { 
+  if (recaptcha) {
+    recaptcha.setAttribute("data-theme", html.dataset.theme);
+  }
 }
 
+updateRecaptcha();
+
 theme.addEventListener('click', (e) => {
-  html.dataset.theme = e.target.checked ? 'light' : 'default';
+  html.dataset.theme = e.target.checked ? 'light' : 'dark';
+  updateRecaptcha();
 });

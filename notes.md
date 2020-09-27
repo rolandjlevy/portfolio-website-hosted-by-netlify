@@ -3,6 +3,7 @@
 ## Fixes
 - Recaptcha customisation code: https://developers.google.com/recaptcha/old/docs/customization
 - https://stackoverflow.com/questions/22991938/overriding-google-recaptcha-css-to-make-it-responsive
+- https://www.tutspointer.com/google-recaptcha-responsive-bootstrap-or-using-media-query/
 - Create button and CSS for lighter theme / mode
 - Change scripts to modules?
 - Add EJS icon?

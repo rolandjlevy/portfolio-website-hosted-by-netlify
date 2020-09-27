@@ -2,7 +2,7 @@
 
 const html = document.querySelector('html');
 const body = document.querySelector('body');
-const theme = document.querySelector('#theme');
+const themeButtons = document.querySelectorAll('.theme');
 const mediaQueryMobile = 600;
 const burgerCheckBox = document.querySelector('.burger-checkbox-class');
 const contactForm = document.querySelector('#contact-form');
@@ -18,11 +18,15 @@ const myObserver = new ResizeObserver(entries => {
 
 myObserver.observe(body);
 
+console.log({themeButtons})
 
-theme.addEventListener('click', (e) => {
-  html.dataset.theme = e.target.checked ? 'light' : 'dark';
-  // const customTheme = e.target.checked ? 'clean' : 'dark';
-  // updateRecaptcha(customTheme);
+themeButtons.forEach(item => {
+  item.addEventListener('click', (e) => {
+    const customTheme = html.dataset.theme === 'dark' ? 'light' : 'dark';
+    html.dataset.theme = customTheme
+    // const customTheme = e.target.checked ? 'clean' : 'dark';
+    // updateRecaptcha(customTheme);
+  });
 });
 
 // change recaptcha to dark by setting the data-theme attribute

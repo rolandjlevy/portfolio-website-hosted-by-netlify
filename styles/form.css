@@ -57,11 +57,13 @@ textarea:-internal-autofill-selected  {
   box-shadow: 0 0 0 50px var(--deep-grey) inset;
 }
 
-input[id="theme"] {
+input[id*="theme"] {
   visibility: hidden;
+  width: 0;
+  height: 0;
 }
 
-label[for="theme"] {
+label[for*="theme"] {
   cursor: pointer;
 }
 
@@ -74,7 +76,7 @@ label[for="theme"] {
   
 }
 
-.g-recaptcha iframe {
+/* .g-recaptcha iframe {
   max-width: 100% !important;
   transform:scale(0.77) !important;
   -webkit-transform:scale(0.77) !important;
@@ -90,4 +92,4 @@ label[for="theme"] {
   transform-origin:0 0 !important;
   -webkit-transform-origin:0 0 !important;
   background-color: green;
-}
+} */

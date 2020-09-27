@@ -50,7 +50,7 @@
 
 .burger-side-panel {
   color: var(--nav-text-colour);
-  padding: 15px;
+  padding: 10px;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -69,15 +69,15 @@
 
 .burger-side-panel li {
   list-style: none;
-  margin: 5px;
+  margin: 2px;
 }
 
 .burger-side-panel li > a {
   color: inherit;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   pointer-events: auto;
   text-decoration: none;
-  padding: 8px 12px;
+  padding: 6px 12px;
   border-radius: 5px;
   transition: all 0.3s ease;
   font-weight: 600;

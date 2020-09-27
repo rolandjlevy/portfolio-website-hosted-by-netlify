@@ -165,13 +165,46 @@
             <p class="paragraph">Any questions? Just send me a message and your details. It wIll be great to hear from you.</p>
           </div>
 
+          <script type="text/javascript">
+            const RecaptchaOptions = {
+              theme : 'light'
+            };
+          </script>
+
           <form name="contact" id="contact-form" method="POST" data-netlify="true" action="/success.html">
 
             <div class="limit border-radius-5px m-t-20 mb-20">
               <input type="text" id="name" name="name" placeholder="name" required class="m-r-15">
               <input type="email" id="email" name="email" placeholder="email" required  oninvalid="this.setCustomValidity('Please enter valid email')" oninput="setCustomValidity('')">
               <textarea id="message" name="message" placeholder="message..." required></textarea>
-              <div data-theme="dark" data-netlify-recaptcha="true" class="recaptcha m-b-20"></div>
+              <!-- <div data-theme="dark" data-netlify-recaptcha="true" class="recaptcha m-b-20"></div> -->
+
+              <div id="recaptcha_widget" style="display:none">
+                <div id="recaptcha_image"></div>
+                <div class="recaptcha_only_if_incorrect_sol" style="color:red">Incorrect please try again</div>
+                <span class="recaptcha_only_if_image">Enter the words above:</span>
+                <span class="recaptcha_only_if_audio">Enter the numbers you hear:</span>
+                <input type="text" id="recaptcha_response_field" name="recaptcha_response_field" />
+                <div><a href="javascript:Recaptcha.reload()">Get another CAPTCHA</a></div>
+                <div class="recaptcha_only_if_image"><a href="javascript:Recaptcha.switch_type('audio')">Get an audio CAPTCHA</a></div>
+                <div class="recaptcha_only_if_audio"><a href="javascript:Recaptcha.switch_type('image')">Get an image CAPTCHA</a></div>
+                <div><a href="javascript:Recaptcha.showhelp()">Help</a></div>
+              </div>
+
+              <script type="text/javascript" src="https://www.google.com/recaptcha/api/challenge?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9">
+              </script>
+
+              <noscript>
+                <iframe src="https://www.google.com/recaptcha/api/noscript?k=6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9" height="300" width="500" frameborder="0"></iframe><br>
+                <textarea name="recaptcha_challenge_field" rows="3" cols="40">
+                </textarea>
+                <input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+              </noscript>
+
+
+
+
+
             </div>
 
             <div class="limit m-t-30">

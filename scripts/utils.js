@@ -21,7 +21,7 @@ myObserver.observe(body);
 
 theme.addEventListener('click', (e) => {
   html.dataset.theme = e.target.checked ? 'light' : 'dark';
-  const customTheme = e.target.checked ? 'white' : 'dark';
+  const customTheme = e.target.checked ? 'white' : 'blackglass';
   updateRecaptcha(customTheme);
 });
 
@@ -36,4 +36,4 @@ function updateRecaptcha(customTheme) {
   }
 }
 
-updateRecaptcha();
+updateRecaptcha('blackglass');

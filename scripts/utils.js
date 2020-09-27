@@ -21,21 +21,17 @@ myObserver.observe(body);
 
 theme.addEventListener('click', (e) => {
   html.dataset.theme = e.target.checked ? 'light' : 'dark';
-  const customTheme = e.target.checked ? 'clean' : 'dark';
-  updateRecaptcha(customTheme);
+  // const customTheme = e.target.checked ? 'clean' : 'dark';
+  // updateRecaptcha(customTheme);
 });
 
 // change recaptcha to dark by setting the data-theme attribute
 
 function updateRecaptcha(customTheme) { 
   const recaptcha = document.querySelector('.g-recaptcha');
-  const temp = document.querySelector('div[data-theme]');
-  console.log({temp, recaptcha});
+  // const temp = document.querySelector('div[data-theme]');
   if (recaptcha) {
-    //setTimeout(() => {
-      temp.setAttribute("data-theme", customTheme);
-      recaptcha.setAttribute("data-theme", customTheme);
-    //}, 0);
+    recaptcha.setAttribute("data-theme", customTheme);
   }
 }
 

@@ -65,33 +65,6 @@ label[for="theme"] {
   cursor: pointer;
 }
 
-#recaptcha_challenge_image{
-  margin: 0 !important;
-  width: 100% !important;
-  background-color: red !important;
-}
-
-#recaptcha_response_field {
-  margin: 0 !important;
-  width: 100% !important;
-  background-color: red !important;
-}
-
-.recaptchatable #recaptcha_image {
-  margin: 0 !important;
-  width: 100% !important;
-  background-color: red !important;
-}
-
-.g-recaptcha > div > div{
-   width: 100% !important;
-   height: 78px;
-   transform:scale(0.77);
-   webkit-transform:scale(0.77);
-   text-align: center;
-   position: relative;
-}
-
 @media screen and (max-width: 600px) {
 
   input[type=text], input[type=email] {

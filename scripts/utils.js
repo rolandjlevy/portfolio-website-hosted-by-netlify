@@ -47,6 +47,7 @@ function updateRecaptcha(customTheme) {
   if (recaptcha) {
     // console.log('data-theme:', recaptcha.getAttribute('data-theme'));
     // recaptcha.setAttribute('data-theme', customTheme);
+    console.log({customTheme})
     recaptcha.dataset.theme = customTheme;
   }
 }

@@ -29,6 +29,8 @@ theme.addEventListener('click', (e) => {
 
 function updateRecaptcha(customTheme) { 
   const recaptcha = document.querySelector('.g-recaptcha');
+  const temp = document.querySelector('div[data-theme]');
+  console.log({temp});
   if (recaptcha) {
     //setTimeout(() => {
       recaptcha.setAttribute("data-theme", customTheme);

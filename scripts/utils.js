@@ -36,4 +36,4 @@ function updateRecaptcha(customTheme) {
   }
 }
 
-updateRecaptcha('blackglass');
+updateRecaptcha('dark');

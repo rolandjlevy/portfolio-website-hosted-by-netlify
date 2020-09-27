@@ -81,6 +81,7 @@ label[for="theme"] {
   transform-origin: center center !important;
   -webkit-transform-origin: center center !important;
   margin-left:5px;
+  background-color: pink;
 }
 
 #rc-imageselect {
@@ -88,4 +89,5 @@ label[for="theme"] {
   -webkit-transform: scale(0.77) !important;
   transform-origin:0 0 !important;
   -webkit-transform-origin:0 0 !important;
+  background-color: green;
 }

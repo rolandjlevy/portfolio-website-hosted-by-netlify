@@ -25,7 +25,7 @@ themeButtons.forEach(item => {
     html.dataset.theme = customTheme;
     invertEmojiColour(customTheme);
     // const customTheme = e.target.checked ? 'clean' : 'dark';
-    // updateRecaptcha(customTheme);
+    updateRecaptcha(customTheme);
   });
 });
 
@@ -42,12 +42,14 @@ function invertEmojiColour(customTheme) {
 // change recaptcha to dark by setting the data-theme attribute
 
 function updateRecaptcha(customTheme) { 
-  // const recaptcha = document.querySelector('.g-recaptcha');
-  const recaptcha = document.querySelector('.recaptcha');
+  const recaptcha = document.querySelector('.g-recaptcha');
+  // const recaptcha = document.querySelector('.recaptcha');
   if (recaptcha) {
-    console.log('data-theme:', recaptcha.getAttribute('data-theme'));
+    // console.log('data-theme:', recaptcha.getAttribute('data-theme'));
     // recaptcha.setAttribute('data-theme', customTheme);
     recaptcha.dataset.theme = customTheme;
+    console.log({Recaptcha});
+    Recaptcha.reload();
   }
 }
 

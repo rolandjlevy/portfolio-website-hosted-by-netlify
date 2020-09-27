@@ -41,8 +41,8 @@ function invertEmojiColour(customTheme) {
 
 // change recaptcha to dark by setting the data-theme attribute
 
-const onloadCallback = function(customTheme) {
-  grecaptcha.render('html_element', {
+function onloadCallback(customTheme) {
+  grecaptcha.render('recaptcha-element', {
     'sitekey' : '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9',
     'theme' : customTheme
   });

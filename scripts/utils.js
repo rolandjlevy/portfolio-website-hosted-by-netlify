@@ -45,12 +45,12 @@ function updateRecaptcha(customTheme) {
   const recaptcha = document.querySelector('.g-recaptcha');
   // const recaptcha = document.querySelector('.recaptcha');
   if (recaptcha) {
-    // console.log('data-theme:', recaptcha.getAttribute('data-theme'));
-    // recaptcha.setAttribute('data-theme', customTheme);
     recaptcha.dataset.theme = customTheme;
+    // console.log('data-theme:', recaptcha.getAttribute('data-theme'));
+    recaptcha.setAttribute('data-theme', customTheme);
     console.log({Recaptcha});
     Recaptcha.reload();
   }
 }
 
-// updateRecaptcha('dark');
+updateRecaptcha('dark');

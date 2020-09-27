@@ -44,7 +44,7 @@ function invertEmojiColour(customTheme) {
 const onloadCallback = function() {
   grecaptcha.render('html_element', {
     'sitekey' : '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9',
-    'theme' : 'light'
+    'theme' : 'dark'
   });
 };
 

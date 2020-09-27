@@ -11,26 +11,28 @@ const myObserver = new ResizeObserver(entries => {
   entries.forEach(entry => {
     const contentWidth = entry.contentRect.width;
     if (contentWidth > mediaQueryMobile && burgerCheckBox.checked) {
-    burgerCheckBox.checked = false;
+      burgerCheckBox.checked = false;
     }
   });
 });
 
 myObserver.observe(body);
 
+
+theme.addEventListener('click', (e) => {
+  html.dataset.theme = e.target.checked ? 'light' : 'dark';
+  updateRecaptcha(html.dataset.theme);
+});
+
 // change recaptcha to dark by setting the data-theme attribute
 
-function updateRecaptcha() { 
+function updateRecaptcha(mode) { 
   const recaptcha = document.querySelector('.g-recaptcha');
   if (recaptcha) {
-    recaptcha.setAttribute("data-theme", html.dataset.theme);
-    console.log('html.dataset.theme', html.dataset.theme)
+    setTimeout(() => {
+      recaptcha.setAttribute("data-theme", mode);
+    }, 0);
   }
 }
 
 updateRecaptcha();
-
-theme.addEventListener('click', (e) => {
-  html.dataset.theme = e.target.checked ? 'light' : 'dark';
-  updateRecaptcha();
-});

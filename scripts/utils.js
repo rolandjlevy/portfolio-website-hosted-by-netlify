@@ -24,6 +24,7 @@ const recaptcha = document.querySelector('.g-recaptcha');
 function updateRecaptcha() { 
   if (recaptcha) {
     recaptcha.setAttribute("data-theme", html.dataset.theme);
+    console.log('html.dataset.theme', html.dataset.theme)
   }
 }
 

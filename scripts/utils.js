@@ -43,11 +43,13 @@ function invertEmojiColour(customTheme) {
 
 function updateRecaptcha(customTheme) { 
   const recaptcha = document.querySelector('.g-recaptcha');
-  // const temp = document.querySelector('div[data-theme]');
+  const temp = document.querySelector('.recaptcha');
+  temp.dataset.theme = 'light';
+  console.log(temp.dataset.theme);
   if (recaptcha) {
     // console.log('data-theme:', recaptcha.getAttribute('data-theme'));
-    recaptcha.setAttribute('data-theme', customTheme);
+    // recaptcha.setAttribute('data-theme', customTheme);
   }
 }
 
-// updateRecaptcha('dark');
+updateRecaptcha('dark');

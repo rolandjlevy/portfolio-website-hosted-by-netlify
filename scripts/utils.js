@@ -30,9 +30,9 @@ theme.addEventListener('click', (e) => {
 function updateRecaptcha(customTheme) { 
   const recaptcha = document.querySelector('.g-recaptcha');
   if (recaptcha) {
-    setTimeout(() => {
+    //setTimeout(() => {
       recaptcha.setAttribute("data-theme", customTheme);
-    }, 0);
+    //}, 0);
   }
 }
 

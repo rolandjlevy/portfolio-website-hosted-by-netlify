@@ -1,16 +1,16 @@
 # Roland Levy's personal website
 
 ## Fixes
-- add no-scaling to meta tag. see games for example code
-- Complete CSS for lighter theme
-- Change scripts to modules
+- Recaptcha customisation code: https://developers.google.com/recaptcha/old/docs/customization
+- Create button and CSS for lighter theme / mode
+- Change scripts to modules?
 - Add EJS icon?
-- put projectData into it's own config.js file
-- add defer to script tags
 - test in Safari
 - minor bug: when project is pinned and you click on .details the icons dissapear
 
 ### Done
+- add no-scaling to meta tag
+- add defer to script tags
 - Add Demo, Git and Code labels under details icons
 - in mobile view, allow black panel to close when you touch the project name. At the moment it's stuck
 - change github repo in Netlify so domain points to this repo. Instructions here: https://docs.netlify.com/configure-builds/repo-permissions-linking/#install-with-a-new-site

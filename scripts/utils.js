@@ -21,16 +21,17 @@ myObserver.observe(body);
 
 theme.addEventListener('click', (e) => {
   html.dataset.theme = e.target.checked ? 'light' : 'dark';
-  updateRecaptcha(html.dataset.theme);
+  const customTheme = e.target.checked ? 'white' : 'blackglass';
+  updateRecaptcha(customTheme);
 });
 
 // change recaptcha to dark by setting the data-theme attribute
 
-function updateRecaptcha(mode) { 
+function updateRecaptcha(customTheme) { 
   const recaptcha = document.querySelector('.g-recaptcha');
   if (recaptcha) {
     setTimeout(() => {
-      recaptcha.setAttribute("data-theme", mode);
+      recaptcha.setAttribute("data-theme", customTheme);
     }, 0);
   }
 }

@@ -65,6 +65,21 @@ label[for="theme"] {
   cursor: pointer;
 }
 
+#recaptcha_challenge_image{
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+#recaptcha_response_field {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+.recaptchatable #recaptcha_image {
+  margin: 0 !important;
+  width: 100% !important;
+}
+
 @media screen and (max-width: 600px) {
 
   input[type=text], input[type=email] {

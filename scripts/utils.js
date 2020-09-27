@@ -34,6 +34,7 @@ function updateRecaptcha(customTheme) {
   if (recaptcha) {
     //setTimeout(() => {
       temp.setAttribute("data-theme", customTheme);
+      recaptcha.setAttribute("data-theme", customTheme);
     //}, 0);
   }
 }

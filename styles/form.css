@@ -83,6 +83,15 @@ label[for="theme"] {
   background-color: red !important;
 }
 
+.g-recaptcha > div > div{
+   width: 100% !important;
+   height: 78px;
+   transform:scale(0.77);
+   webkit-transform:scale(0.77);
+   text-align: center;
+   position: relative;
+}
+
 @media screen and (max-width: 600px) {
 
   input[type=text], input[type=email] {

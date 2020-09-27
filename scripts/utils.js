@@ -30,10 +30,10 @@ theme.addEventListener('click', (e) => {
 function updateRecaptcha(customTheme) { 
   const recaptcha = document.querySelector('.g-recaptcha');
   const temp = document.querySelector('div[data-theme]');
-  console.log({temp});
+  console.log({temp, recaptcha});
   if (recaptcha) {
     //setTimeout(() => {
-      recaptcha.setAttribute("data-theme", customTheme);
+      temp.setAttribute("data-theme", customTheme);
     //}, 0);
   }
 }

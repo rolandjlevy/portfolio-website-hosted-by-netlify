@@ -41,6 +41,13 @@ function invertEmojiColour(customTheme) {
 
 // change recaptcha to dark by setting the data-theme attribute
 
+const onloadCallback = function() {
+  grecaptcha.render('html_element', {
+    'sitekey' : '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9',
+    'theme' : 'light'
+  });
+};
+
 function updateRecaptcha(customTheme) { 
   const recaptcha = document.querySelector('.g-recaptcha');
   // const recaptcha = document.querySelector('.recaptcha');

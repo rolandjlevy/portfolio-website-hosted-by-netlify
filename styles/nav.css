@@ -4,7 +4,7 @@
 
 .navbar, .navbg {
   overflow: hidden;
-  color: var(--nav-text-colour);
+  color: var(--accent-colour);
   position: fixed;
   top: 0; 
   width: 100%; 
@@ -26,7 +26,7 @@
   visibility: visible;
   transition: all 0.5s ease;
   z-index: 10;
-  border-bottom: 2px solid #ff3d7744;
+  border-bottom: 2px solid var(--accent-colour-faded);
 }
 
 .navbar {
@@ -61,8 +61,8 @@ ul > li > a.new-window::after {
 }
 
 .navbar > .links > ul > li > a:hover {
-  background: rgb(255, 255, 255);
-  color: black;
+  background: var(--nav-highlight);
+  color: var(--deepest-pink);
   transition: all 0.2s ease;
 }
 

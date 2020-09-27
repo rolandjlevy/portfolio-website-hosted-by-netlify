@@ -1,45 +1,49 @@
-/* html[theme="light"] .mode,
-html[theme="light"] .details,
-html[theme="light"] .info > li {
-  filter: invert(1) hue-rotate(180deg);
-}
-
-html[theme="light"] h2,
-html[theme="light"] a,
-html[theme="light"] button {
-  filter: hue-rotate(200deg);
-}
-
-html[theme="light"] form input,
-html[theme="light"] form textarea,
-html[theme="light"] .bgcolor-dark-grey,
-html[theme="light"] .btn.dark {
-  background-color: #111;
-}
-
-html[theme="light"] a:hover {
-  background: rgb(173, 0, 121);
-  color: black;
-}
-
-html[theme="light"] .emoji {
-  filter: invert(0) hue-rotate(0deg);
-} */
-
 html[data-theme="light"] {
-  --accent-colour:  #169ef8;
-  --accent-colour-light: lightblue;
-  --nav-text-colour: #169ef8;
+  --accent-colour:  #1692f8;
+  --dark-grey: #ddd;
   --deep-grey: #eee;
-  --mid-grey-text: #333;
-  --deepest-grey: #eee;
+  --deepest-grey: #f0f0f0;
+  --mid-grey-text: #002b47;
+  --btn-colour: #002b47;
+  --deepest-pink: #004074;
+  --dark-grey-btn: #004074;
+  --accent-colour-faded: #1692f866;
+  --nav-highlight: #f0f0f0;
   transition: all 0.5s ease;
 }
 
-section * {
+html[data-theme="light"] nav,
+html[data-theme="light"] section {
+  background-color: #fff;
+}
+
+html[data-theme="light"] nav {
+  border-bottom: 2px solid var(--accent-colour-faded);
+}
+
+section {
   transition: all 0.5s ease;
 }
 
-/* html[theme="light"] .mode {
-  filter: invert(1) hue-rotate(180deg);
-} */
+html[data-theme="light"] section::before {
+  filter: invert(1);
+  opacity: 1;
+}
+
+html[data-theme="light"] button > img,
+html[data-theme="light"] a img {
+  filter: hue-rotate(240deg) brightness(1.3)
+}
+
+html[data-theme="light"] .details {
+  filter: invert(1);
+  opacity: 1;
+}
+
+html[data-theme="light"] .project {
+  opacity: 1;
+}
+
+html[data-theme="light"] .details {
+  filter: invert(1);
+}

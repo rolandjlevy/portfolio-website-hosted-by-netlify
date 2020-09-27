@@ -54,8 +54,8 @@ button.btn  {
 }
 
 .btn.dark {
-  background-color: #333;
-  color: #fff;
+  background-color: var(--deep-grey);
+  color: var(--btn-colour);
 }
 
 .btn.light {
@@ -88,7 +88,7 @@ button.btn img  {
 }
 
 .btn.dark:hover {
-  background-color: #444;
+  background-color: var(--dark-grey);
   transition: all 0.2s ease;
 }
 

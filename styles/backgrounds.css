@@ -97,7 +97,7 @@
 footer {
   padding: 20px 30px;
   background: var(--deepest-grey);
-  color: #999;
+  color: var(--mid-grey-text);
   min-height: var(--footer-height);
 }
 

@@ -17,7 +17,7 @@
   display: inline-block;
   padding: 8px 8px 6px 33px;
   background-color: var(--mid-light-grey);
-  color: var(--dark-grey);
+  color: var(--dark-grey-btn);
   border-radius: 10px;
   text-decoration: none;
   transition: all 0.2s ease;

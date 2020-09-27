@@ -28,7 +28,7 @@ function updateRecaptcha() {
   }
 }
 
-// updateRecaptcha();
+updateRecaptcha();
 
 theme.addEventListener('click', (e) => {
   html.dataset.theme = e.target.checked ? 'light' : 'dark';

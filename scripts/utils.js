@@ -19,9 +19,9 @@ const myObserver = new ResizeObserver(entries => {
 myObserver.observe(body);
 
 // change recaptcha to dark by setting the data-theme attribute
-const recaptcha = document.querySelector('.g-recaptcha');
 
 function updateRecaptcha() { 
+  const recaptcha = document.querySelector('.g-recaptcha');
   if (recaptcha) {
     recaptcha.setAttribute("data-theme", html.dataset.theme);
     console.log('html.dataset.theme', html.dataset.theme)

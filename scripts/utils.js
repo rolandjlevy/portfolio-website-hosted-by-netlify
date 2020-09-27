@@ -52,4 +52,4 @@ function updateRecaptcha(customTheme) {
   }
 }
 
-updateRecaptcha('dark');
+updateRecaptcha('light');

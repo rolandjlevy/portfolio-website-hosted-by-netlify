@@ -21,7 +21,7 @@ myObserver.observe(body);
 
 theme.addEventListener('click', (e) => {
   html.dataset.theme = e.target.checked ? 'light' : 'dark';
-  const customTheme = e.target.checked ? 'white' : 'blackglass';
+  const customTheme = e.target.checked ? 'white' : 'dark';
   updateRecaptcha(customTheme);
 });
 

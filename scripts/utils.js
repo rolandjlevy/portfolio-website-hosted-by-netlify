@@ -36,8 +36,7 @@ function setVarToLocalStorage(varName, value) {
 setVarToLocalStorage('theme', 'dark');
 
 // change recaptcha to dark by setting the data-theme attribute
-function updateRecaptcha(theme) { 
-  const recaptchaElem = document.querySelector('#recaptcha-element');
+function updateRecaptcha(theme) {
   const recaptcha = document.querySelector('.g-recaptcha');
   if (recaptcha) {
     recaptcha.dataset.theme = theme;

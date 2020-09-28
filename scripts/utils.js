@@ -48,10 +48,10 @@ function updateRecaptcha(theme) {
 
 // initialise recaptcha x
 function recaptchaCallback(theme) {
-  grecaptcha.render('recaptcha-element', {
-    'sitekey' : '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9',
-    'theme' : theme
-  });
+  // grecaptcha.render('recaptcha-element', {
+  //   'sitekey' : '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9',
+  //   'theme' : theme
+  // });
 };
 
 function invertEmojiColour(customTheme) {

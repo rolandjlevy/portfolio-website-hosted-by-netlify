@@ -27,10 +27,10 @@
 
 <body onload="recaptchaCallback('dark')">
 
-	<nav class="mode navbg"></nav>
+	<nav class="navbg"></nav>
 	<nav class="navbar">
 		<div class="links limit">
-			<ul class="mode">
+			<ul>
 				<li><a href="#home" class="navlink">Home</a></li>
 				<li><a href="#about" class="navlink">About</a></li>
         <li><a href="#projects" class="navlink">Projects</a></li>
@@ -60,7 +60,7 @@
           <li><a href="#contact" class="navlink">Contact <span class="emoji">👋</span></a></li>
           <li>
             <a class="navlink">
-              <input type="checkbox" id="theme-burger" class="theme"><label for="theme-burger">Theme <span class="emoji">🌓</span></label>
+              <input type="checkbox" id="theme-burger" class="theme"><label for="theme-burger">Mode <span class="emoji">🌓</span></label>
             </a>
           </li>
         </ul>
@@ -69,7 +69,7 @@
 
     <main class="container">
 
-      <div class="mode home-bg">
+      <div class="home-bg">
         <section class="section-anchor home">
           <div id="home"></div>
         </section>
@@ -171,7 +171,7 @@
               <input type="email" id="email" name="email" placeholder="email" required  oninvalid="this.setCustomValidity('Please enter valid email')" oninput="setCustomValidity('')">
               <textarea id="message" name="message" placeholder="message..." required></textarea>
               <div id="recaptcha-element" data-theme="dark"></div>
-              <!-- <div data-theme="dark" data-netlify-recaptcha="true" class="recaptcha m-b-20"></div> -->
+              <!-- <div id="recaptcha-element" data-theme="dark" data-netlify-recaptcha="true" class="m-b-20"></div> -->
             </div>
 
             <div class="limit m-t-30">

@@ -1,21 +1,17 @@
 # Roland Levy's personal website
 
 ## Fixes
-- get background images working in light mode
-- fix language icon colours in light mode
+- form element colours: text, bg colour
 - sort out project info icons in light mode
-- quiz game demo button is wrong
 - consider changing light areas in dark mode to dark
 - improve and shorten About Me wording
-- Recaptcha customisation code: https://developers.google.com/recaptcha/old/docs/customization
-- https://stackoverflow.com/questions/22991938/overriding-google-recaptcha-css-to-make-it-responsive
-- https://www.tutspointer.com/google-recaptcha-responsive-bootstrap-or-using-media-query/
 - Change scripts to modules?
 - Add EJS icon?
 - test in Safari
 - minor bug: when project is pinned and you click on .details the icons dissapear
 
 ### Done
+- get background images working in light mode
 - Create button and CSS for lighter theme / mode
 - improve padding on burger menu block
 - add no-scaling to meta tag
@@ -32,6 +28,9 @@
 - Get icons for nav from https://css.gg
 - make first background section rotate 5 degrees
 - Save favourite projects in localStorage
+- Recaptcha customisation code: https://developers.google.com/recaptcha/old/docs/customization
+- https://stackoverflow.com/questions/22991938/overriding-google-recaptcha-css-to-make-it-responsive
+- https://www.tutspointer.com/google-recaptcha-responsive-bootstrap-or-using-media-query/
 
 ### Fonts
 - Google sans
@@ -87,3 +86,4 @@ https://alligator.io/js/resize-observer/
 ### Reference
 - transition: all 0.3s 0.2s cubic-bezier(0.1, 0.7, 1.0, 0.3);
 - background-size: calc(100% - 100px) calc(100% - 100px);
+- Favicon converter: https://favicon.io/favicon-converter/

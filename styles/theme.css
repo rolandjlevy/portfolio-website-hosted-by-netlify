@@ -30,8 +30,8 @@ html[data-theme="light"] section::before {
   opacity: 1;
 }
 
-html[data-theme="light"] button > img,
-html[data-theme="light"] a img {
+html[data-theme="light"] button.dark > img,
+html[data-theme="light"] a.dark img {
   filter: hue-rotate(240deg) brightness(1.3)
 }
 
@@ -42,4 +42,26 @@ html[data-theme="light"] .details {
 
 html[data-theme="light"] .project {
   opacity: 1;
+}
+
+/***************/
+/* Backgrounds */
+/***************/
+
+html[data-theme="light"] .home-bg::before,
+html[data-theme="light"] .about-bg::before,
+html[data-theme="light"] .projects-bg::before,
+html[data-theme="light"] .contact-bg::before,
+html[data-theme="light"] .success-bg::before {
+  filter: hue-rotate(235deg) blur(2px);
+  opacity: 0.02;
+}
+
+html[data-theme="light"] .about-bg {
+  background-color: white;
+}
+
+html[data-theme="light"] .home-bg::before,
+html[data-theme="light"] .projects-bg::before {
+  background: none;
 }

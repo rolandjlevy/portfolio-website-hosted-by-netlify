@@ -12,7 +12,7 @@
   margin: 0;
   letter-spacing: 0.3px;
   transition: all 0.3s ease;
-  border: 5px solid #fff;
+  border: 10px solid #fff;
   width: 33.3%;
   overflow: hidden;
 }
@@ -35,8 +35,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 25px;
-  height: 25px;
+  width: 30px;
+  height: 30px;
   border-bottom-left-radius: 0.35rem;
   background-color: var(--accent-colour);
   cursor: pointer;
@@ -62,8 +62,9 @@
   color: #fff;
   transform: rotate(45deg);
   float: right;
-  margin-top: 6px;
-  margin-right: 6px;
+  margin-top: 7px;
+  margin-right: 7px;
+  font-size: 1.2rem;
 }
 
 .project > .toggle  {

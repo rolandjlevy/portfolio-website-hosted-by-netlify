@@ -200,7 +200,7 @@ projectData.push(new Project(
   'Which City? involves browsing photos and trying to guess the city.',
   ['react','sass'],
   [
-    { play: 'https://github.com/rolandjlevy/which-city'},
-    { github: 'https://which-city.herokuapp.com/'}
+    { play: 'https://which-city.herokuapp.com/'},
+    { github: 'https://github.com/rolandjlevy/which-city'}
   ]
 ));

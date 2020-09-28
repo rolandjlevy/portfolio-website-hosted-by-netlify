@@ -30,9 +30,9 @@
   background-position: left top;
 }
 
-.projects-bg::before {
+/* .projects-bg::before {
   background-image: none;
-}
+} */
 
 .home-bg {
   background-color: var(--section-bg);

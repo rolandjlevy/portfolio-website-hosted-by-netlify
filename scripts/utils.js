@@ -35,8 +35,6 @@ function setVarToLocalStorage(varName, value) {
 
 setVarToLocalStorage('theme', 'dark');
 
-updateRecaptcha('dark');
-
 // change recaptcha to dark by setting the data-theme attribute
 function updateRecaptcha(theme) { 
   const recaptcha = document.querySelector('#recaptcha-element');
@@ -46,12 +44,14 @@ function updateRecaptcha(theme) {
   }
 }
 
-// initialise recaptcha x
+updateRecaptcha('dark');
+
+// initialise recaptcha on body onload event
 function recaptchaCallback(theme) {
-  // grecaptcha.render('recaptcha-element', {
-  //   'sitekey' : '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9',
-  //   'theme' : theme
-  // });
+  grecaptcha.render('recaptcha-element', {
+    'sitekey' : '6LdAvUIUAAAAAHjrjmjtNTcXyKm0WKwefLp-dQv9',
+    'theme' : theme
+  });
 };
 
 function invertEmojiColour(customTheme) {

@@ -36,7 +36,7 @@ projectData.push(new Project(
   'Uses the Unsplash API to search for and favourite photos.',
   ['express','ejs','bootstrap','javascript'],
   [
-    { play: 'https://express-photo-finder-using-unsplash-api--rjlevy.repl.co/'},
+    { play: 'https://express-photo-finder-using-unsplash-api.rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/express-photo-finder-using-unsplash-api'},
     { code: 'https://repl.it/@rjlevy/express-photo-finder-using-unsplash-api'}
   ]
@@ -50,7 +50,7 @@ projectData.push(new Project(
   'Uses an API to translate phrases into 14 languages.',
   ['express', 'node', 'ejs', 'bootstrap'],
   [
-    { play: 'https://express-google-translate-api-with-ejs--rjlevy.repl.co/'},
+    { play: 'https://express-google-translate-api-with-ejs.rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/express-google-translate-api-with-ejs'},
     { code: 'https://repl.it/@rjlevy/express-google-translate-api-with-ejs'}
   ]
@@ -78,7 +78,7 @@ projectData.push(new Project(
   'Draw coloured pixels on a customizable grid.',
   ['vue','css'],
   [
-    { play: 'https://vue-pixel-grid-draw--rjlevy.repl.co/'},
+    { play: 'https://vue-pixel-grid-draw.rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/vue-pixel-grid-draw/'},
     { code: 'https://repl.it/@rjlevy/vue-pixel-grid-draw/'}
   ]
@@ -106,7 +106,7 @@ projectData.push(new Project(
   'Generates random swatches and displays colour values.',
   ['javascript','css'],
   [
-    { play: 'https://js-random-hex-colour-swatch-generator-oop--rjlevy.repl.co'},
+    { play: 'https://js-random-hex-colour-swatch-generator-oop.rjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/js-random-hex-colour-swatch-generator-oop'},
     { code: 'https://repl.it/@rjlevy/js-random-hex-colour-swatch-generator-oop'}
   ]
@@ -134,7 +134,7 @@ projectData.push(new Project(
   'RGB colour sliders create swatches with rgb and hex colour values displayed.',
   ['vue','css'],
   [
-    { play: 'https://vue-colour-creator--rjlevy.repl.co/'},
+    { play: 'https://vue-colour-creator.rjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/vue-colour-creator/'},
     { code: 'https://repl.it/@rjlevy/vue-colour-creator/'}
   ]

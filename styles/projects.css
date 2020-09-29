@@ -48,13 +48,13 @@
   transition: all 0.2s ease;
 }
 
-.project > .toggle ~ .toggle-overlay:hover {
-  opacity: 0.7;
+.project > .toggle:checked ~ .toggle-overlay {
+  opacity: 1;
   transition: all 0.2s ease;
 }
 
-.project > .toggle:checked ~ .toggle-overlay {
-  opacity: 1;
+.project > .toggle ~ .toggle-overlay:hover {
+  opacity: 0.7;
   transition: all 0.2s ease;
 }
 
@@ -158,15 +158,34 @@ Need to activate this class selector when clicked / active
 /* project info buttons */
 /************************/
 
-.project > .info {
+
+.project > .toggle:not(:checked) ~ .info,
+.project > .toggle:checked ~ .info,
+.project.hover > .toggle:not(:checked) ~ .info,
+.project.hover > .toggle:checked ~ .info {
   display: flex;
   flex-direction: row;
+}
+
+.project > .toggle:not(:checked) ~ .info {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.2s 0.1s ease;
 }
 
-.project.hover > .info {
+.project > .toggle:checked ~ .info {
+  opacity: 1;
+  pointer-events: initial;
+  transition: opacity 0.2s 0.2s ease;
+}
+
+.project.hover > .toggle:checked ~ .info {
+  opacity: 1;
+  pointer-events: initial;
+  transition: opacity 0.2s 0.2s ease;
+}
+
+.project.hover > .toggle:not(:checked) ~ .info {
   opacity: 1;
   pointer-events: initial;
   transition: opacity 0.2s 0.2s ease;

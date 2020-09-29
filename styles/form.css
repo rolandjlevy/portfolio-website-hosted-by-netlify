@@ -11,7 +11,7 @@ input[type=text], input[type=email], textarea {
   margin-top: 6px; 
   margin-bottom: 20px; 
   resize: vertical;
-  color: #fff;
+  color: var(--lightest-grey);
 }
 
 input[type=text], input[type=email] {
@@ -84,21 +84,3 @@ label[for*="theme"] {
   }
   
 }
-
-/* .g-recaptcha iframe {
-  max-width: 100% !important;
-  transform:scale(0.77) !important;
-  -webkit-transform:scale(0.77) !important;
-  transform-origin: center center !important;
-  -webkit-transform-origin: center center !important;
-  margin-left:5px;
-  background-color: pink;
-}
-
-#rc-imageselect {
-  transform: scale(0.77) !important;
-  -webkit-transform: scale(0.77) !important;
-  transform-origin:0 0 !important;
-  -webkit-transform-origin:0 0 !important;
-  background-color: green;
-} */

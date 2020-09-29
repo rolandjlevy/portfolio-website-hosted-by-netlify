@@ -1,9 +1,10 @@
 html[data-theme="light"] {
   --accent-colour:  #1692f8;
   --dark-grey: #ddd;
-  --deep-grey: #eee;
+  --deep-grey: #f0f0f0;
   --deepest-grey: #f0f0f0;
   --section-bg: #fff;
+  --lightest-grey: #002b47;
   --mid-grey-text: #002b47;
   --btn-colour: #002b47;
   --deepest-pink: #004074;

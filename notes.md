@@ -1,13 +1,13 @@
 # Roland Levy's personal website
 
 ## Fixes
-- form element colours: text, bg colour
 - Change scripts to modules?
 - Add EJS icon?
 - test in Safari
 - minor bug: when project is pinned and you click on .details the icons dissapear
 
 ### Done
+- form element colours: text, bg colour
 - sort out project info icons in light mode
 - consider changing light areas in dark mode to dark
 - improve and shorten About Me wording

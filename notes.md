@@ -2,15 +2,15 @@
 
 ## Fixes
 - form element colours: text, bg colour
-- sort out project info icons in light mode
-- consider changing light areas in dark mode to dark
-- improve and shorten About Me wording
 - Change scripts to modules?
 - Add EJS icon?
 - test in Safari
 - minor bug: when project is pinned and you click on .details the icons dissapear
 
 ### Done
+- sort out project info icons in light mode
+- consider changing light areas in dark mode to dark
+- improve and shorten About Me wording
 - get background images working in light mode
 - Create button and CSS for lighter theme / mode
 - improve padding on burger menu block

@@ -86,7 +86,7 @@ Need to activate this class selector when clicked / active
   height: 40px;
   bottom: 0;
   width: 100%;
-  background: #000000cc;
+  background: #333333ee;
   opacity: 1;
   background-position: center;
   color: #fff;
@@ -195,7 +195,7 @@ Need to activate this class selector when clicked / active
 }
 
 .project > .info > li:hover > a > i {
-  color: var(--accent-colour);
+  color: black;
   transition: all 0.2s ease;
 }
 

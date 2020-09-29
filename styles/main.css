@@ -112,6 +112,7 @@ button.btn img  {
   margin-bottom: 20px;
   min-width: 150px;
   min-height: 150px;
+  transition: all 0.3s ease;
 }
 
 .profile-image-wrapper:after {
@@ -283,5 +284,16 @@ h2 {
     height: 0;
     transition: all 0.3s ease;
   }
-  
+
+}
+
+@media screen and (max-width: 360px) {
+
+  .profile-image-wrapper {
+    transform: scale(0.75);
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+
 }

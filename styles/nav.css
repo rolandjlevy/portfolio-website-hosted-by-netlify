@@ -67,9 +67,13 @@ ul > li > a.new-window::after {
 }
 
 .navbar > .links > ul > li > img.logo {
-    width: 30px;
-    margin-right: 10px;
-    vertical-align: middle;
+  width: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+a.btn {
+  display: inline-flex;
 }
 
 /*/////////////////

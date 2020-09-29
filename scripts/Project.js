@@ -11,10 +11,6 @@ class Project {
     this.languages = languages;
     this.infoButtons = infoButtons;
   }
-  amendCase(word) {
-    if (word.toLowerCase() === 'ejs' || word.toLowerCase() === 'css') return word.toUpperCase();
-    return word[0].toUpperCase() + word.slice(1, word.length).toLowerCase();
-  }
   getLanguages() {
     return this.languages.map(word => this.amendCase(word)).join(', ');
   }
@@ -50,5 +46,9 @@ class Project {
         ${this.getInfoButtons()}
       </li>
     `;
+  }
+  amendCase(word) {
+    if (word.toLowerCase() === 'ejs' || word.toLowerCase() === 'css') return word.toUpperCase();
+    return word[0].toUpperCase() + word.slice(1, word.length).toLowerCase();
   }
 }

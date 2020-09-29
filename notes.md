@@ -4,6 +4,7 @@
 - Change scripts to modules?
 - Add EJS icon?
 - test in Safari
+- test in Firefox - very laggy: https://www.makeuseof.com/tag/5-firefox-runs-slow-browsers-run-fast/
 - minor bug: when project is pinned and you click on .details the icons dissapear
 
 ### Done

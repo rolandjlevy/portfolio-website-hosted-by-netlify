@@ -92,9 +92,9 @@ projectData.push(new Project(
   'An analogue clock which accurately shows the time using pure CSS and a tiny touch of JS',
   ['css','javascript'],
   [
-    { play: 'https://js-analogue-clock--rjlevy.repl.co/'},
+    { play: 'https://css-analogue-clock.rjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
-    { code: 'https://repl.it/@rjlevy/CSS-analogue-clock/'}
+    { code: 'https://repl.it/@rjlevy/css-analogue-clock/'}
   ]
 ));
 

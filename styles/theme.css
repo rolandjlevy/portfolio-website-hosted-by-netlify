@@ -36,7 +36,7 @@ html[data-theme="light"] {
   --theme-text-colour-20: #ddd;
   --theme-text-colour-10: #eee;
   --theme-text-colour-0: #fff;
-  
+
 }
 
 html[data-theme="light"] nav {
@@ -74,7 +74,7 @@ html[data-theme="light"] .about-bg::before,
 html[data-theme="light"] .projects-bg::before,
 html[data-theme="light"] .contact-bg::before,
 html[data-theme="light"] .success-bg::before {
-  filter: hue-rotate(235deg) blur(2px);
+  filter: hue-rotate(235deg) blur(0);
   opacity: 0.02;
 }
 
@@ -91,7 +91,7 @@ html[data-theme="light"] .project > .toggle ~ .details {
   background: var(--theme-bg-colour-130);
 }
 
-html[data-theme="light"] .home-bg::before,
+html[data-theme="light"] .about-bg::before,
 html[data-theme="light"] .projects-bg::before {
   background: none;
 }

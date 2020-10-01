@@ -5,7 +5,7 @@ projectData.push(new Project(
   'sliders-game', 
   './images/projects/sliders-game.png',
   'Sliders Game',
-  'Slide pieces into the correct order in the fewest possible moves then add your score to the Leader Board',
+  'Slide pieces into the correct order in the fewest possible moves then submit your high score',
   ['javascript','css','firebase'],
   [
     { play: 'https://js-sliders-game.rjlevy.repl.co/'},

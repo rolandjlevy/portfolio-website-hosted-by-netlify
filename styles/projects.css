@@ -82,7 +82,7 @@
   height: 40px;
   bottom: 0;
   width: 100%;
-  background: var(--theme-bg-colour-100);
+  background: var(--theme-bg-colour-120);
   opacity: 1;
   background-position: center;
   color: var(--theme-text-colour-150);
@@ -135,7 +135,7 @@
   transition: all 0.2s 0.3s ease;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
   .project > .details > li:first-child:hover > .fa-angle-up,
   .project.hover > .details > li:first-child:hover > .fa-angle-up {
     transform: rotate(180deg);
@@ -191,10 +191,10 @@
   position: relative;
   width: 45px;
   height: 45px;
-  background-color: var(--theme-bg-colour-70);
+  background-color: var(--accent-colour);
   bottom: 90px;
   left: 12px;
-  border-radius: 2px;
+  border-radius: 5px;
   cursor: pointer;
   margin: 0 5px;
   transition: all 0.2s ease;
@@ -207,11 +207,11 @@
 }
 
 .project > .info > li > a > i {
-  color: var(--theme-text-colour-150);
+  color: var(--theme-bg-colour-120);
 }
 
 .project > .info > li:hover > a > i {
-  color: var(--accent-colour);
+  color: var(--theme-text-colour-150);
   transition: all 0.2s ease;
 }
 
@@ -232,7 +232,7 @@
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--theme-text-colour-150);
+  color: var(--accent-colour);
   position: absolute;
   text-align: center;
   top: 100%;
@@ -319,7 +319,7 @@ p > .fa-code {
 // media queries // 
 /////////////////*/
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 720px) {
   li.project {
     width: 50%;
     transition: all 0.3s ease;
@@ -347,6 +347,37 @@ p > .fa-code {
 
   li.project > .details > li > .fa-angle-up {
     font-size: 1.5rem;
+  }
+
+}
+
+/* @media screen and (max-width: 720px) and (min-width: 640px)  { */
+@media screen and (max-width: 320px) {
+  .project > .info > li {
+    width: 35px;
+    height: 35px;
+    bottom: 75px;
+  }
+  .project > .info > li::before {
+    font-size: 0.75rem;
+  }
+  .project > .info > .play > a > i {
+    font-size: 1.5rem;
+    top: 6px;
+    left: 7px;
+  }
+  .project > .info > .github > a > i {
+    font-size: 1.75rem;
+    top: 5px;
+    left: 5px;
+  }
+  .project > .info > .code > a > i {
+    font-size: 1.375rem;
+    top: 7px;
+    left: 4px;
+  }
+  li.project > .details > li {
+    font-size: 0.875rem;
   }
 
 }

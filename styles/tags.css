@@ -16,8 +16,8 @@
   position: relative;
   display: inline-block;
   padding: 8px 8px 6px 33px;
-  background-color: var(--mid-light-grey);
-  color: var(--dark-grey-btn);
+  background-color: var(--theme-bg-colour-110);
+  color: var(--theme-text-colour-110);
   border-radius: 10px;
   text-decoration: none;
   transition: all 0.2s ease;
@@ -40,13 +40,13 @@
 
 .tags > li > a.selected,
 .tags > li > a:active {
-  background-color: var(--mid-dark-grey);
+  background-color: var(--theme-bg-colour-90);
   transition: all 0.2s ease;
   color: #fff;
 }
 
 .tags > li > a:hover {
-  background-color: var(--mid-darker-grey);
+  background-color: var(--theme-bg-colour-90);
   transition: all 0.2s ease;
   color: #fff;
 }

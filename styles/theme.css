@@ -1,19 +1,7 @@
 html[data-theme="light"] {
+
   --accent-colour:  #1692f8;
   --accent-colour-faded: #d6edff;
-  
-  --dark-grey: #ddd;
-  --deep-grey: #f0f0f0;
-  --deepest-grey: #f0f0f0;
-  --section-bg: #fff;
-  --lightest-grey: #002b47;
-  --mid-grey-text: #002b47;
-  --mid-darker-grey: #f0f0f0;
-  --btn-colour: #002b47;
-  --deepest-pink: #004074;
-  --dark-grey-btn: #004074;
-  --nav-highlight: #f0f0f0;
-  transition: all 0.5s ease;
 
   --theme-bg-colour-150: #fff;
   --theme-bg-colour-140: #f9f9f9;
@@ -48,6 +36,7 @@ html[data-theme="light"] {
   --theme-text-colour-20: #ddd;
   --theme-text-colour-10: #eee;
   --theme-text-colour-0: #fff;
+  
 }
 
 html[data-theme="light"] nav {

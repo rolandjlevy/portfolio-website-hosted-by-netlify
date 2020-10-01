@@ -267,7 +267,7 @@
 }
 
 .project > .info > .play::before {
-  content: 'Demo';
+  content: 'View';
 }
 
 .project > .info > .github::before {

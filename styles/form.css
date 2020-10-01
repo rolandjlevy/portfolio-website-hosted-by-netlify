@@ -5,13 +5,13 @@ input[type=text], input[type=email], textarea {
   -o-transition: all 0.30s ease-in-out;
   outline: none;
   border: 1px solid transparent;
-  background-color: var(--deep-grey);
+  background-color: var(--theme-bg-colour-120);
   padding: 10px 15px; 
   border-radius: 5px; 
   margin-top: 6px; 
   margin-bottom: 20px; 
   resize: vertical;
-  color: var(--lightest-grey);
+  color: var(--theme-text-colour-140);
 }
 
 input[type=text], input[type=email] {
@@ -35,15 +35,15 @@ input[type=text]:blur, input[type=email]:blur, textarea:blur {
 }
 
 ::-webkit-input-placeholder { /* Edge */
-  color: #999;
+  color: var(--theme-text-colour-60);
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: #999;
+  color: var(--theme-text-colour-60);
 }
 
 ::placeholder {
-  color: #999;
+  color: var(--theme-text-colour-60);
 }
 
 input:-webkit-autofill, 
@@ -52,9 +52,9 @@ input:-internal-autofill-selected,
 textarea:-webkit-autofill, 
 textarea:-webkit-autofill:focus,
 textarea:-internal-autofill-selected  {
-  -webkit-box-shadow: 0 0 0 50px var(--deep-grey) inset; 
-  -webkit-text-fill-color: #fff;
-  box-shadow: 0 0 0 50px var(--deep-grey) inset;
+  -webkit-box-shadow: 0 0 0 50px var(--theme-bg-colour-120) inset; 
+  -webkit-text-fill-color: var(--theme-text-colour-120);
+  box-shadow: 0 0 0 50px var(--theme-bg-colour-120) inset;
 }
 
 input[id*="theme"] {

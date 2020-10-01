@@ -16,12 +16,8 @@
   height: var(--nav-height);
 }
 
-/* .navbar-top {
-  background-color: var(--deep-grey);
-} */
-
 .navbg {
-  background-color: black;
+  background-color: var(--theme-bg-colour-140);
   opacity: 1;
   visibility: visible;
   transition: all 0.5s ease;
@@ -44,11 +40,12 @@
   font-weight: 700;
 }
 
-.navbar > .links > ul > li > a {
+.navbar > .links > ul > li > a,
+.navbar > .links > ul > li > label {
   color: var(--accent-colour);
   text-align: center;
   text-decoration: none;
-  padding: 2px 8px;
+  padding: 5px 12px;
   border-radius: 3px;
   transition: all 0.2s ease;
 }
@@ -60,9 +57,9 @@ ul > li > a.new-window::after {
   margin-left: 5px;
 }
 
-.navbar > .links > ul > li > a:hover {
-  background: var(--nav-highlight);
-  color: var(--deepest-pink);
+.navbar > .links > ul > li > a:hover,
+.navbar > .links > ul > li > label:hover {
+  background: var(--theme-bg-colour-110);
   transition: all 0.2s ease;
 }
 

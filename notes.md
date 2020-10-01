@@ -1,13 +1,15 @@
 # Roland Levy's personal website
 
 ## Fixes
+- Improve language buttons
+- Imprive design of project blocks. See images/bbc-feature-block.png and footer of https://www.bbc.co.uk/news/uk-54344961
 - Change scripts to modules?
 - Add EJS icon?
 - test in Safari
 - test in Firefox - very laggy: https://www.makeuseof.com/tag/5-firefox-runs-slow-browsers-run-fast/
-- minor bug: when project is pinned and you click on .details the icons dissapear
 
 ### Done
+- minor bug: when project is pinned and you click on .details the icons dissapear
 - form element colours: text, bg colour
 - sort out project info icons in light mode
 - consider changing light areas in dark mode to dark

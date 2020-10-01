@@ -49,7 +49,6 @@
 }
 
 .burger-side-panel {
-  color: var(--nav-text-colour);
   padding: 8px 10px 12px 10px;
   overflow: hidden;
   position: absolute;
@@ -58,7 +57,7 @@
   width: 240px;
   height: 240px;
   box-shadow: 0 3px 5px 0 #00000011;
-  background: #fff;
+  background: var(--theme-bg-colour-140);
   z-index: -1;
 }
 
@@ -84,7 +83,7 @@
 }
 
 .burger-side-panel li > a:hover {
-  background: var(--light-grey);
+  background: var(--theme-bg-colour-110);
   transition: all 0.3s ease;
 }
 
@@ -110,7 +109,7 @@
 .burger-checkbox-class:checked ~ .burger > .burger-side-panel  {
   transform: translate(0, 0) scale(1, 1) rotate(0deg);
   border-radius: 8px;
-  background: #fff;
+  background: var(--theme-bg-colour-140);
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.3, 1.275);
   opacity: 1;
 } 
@@ -128,7 +127,7 @@
 }
 
 .burger-checkbox-class ~ .hamburger-label:hover ~ .burger > .burger-side-panel {
-  background: var(--lightest-grey);
+  background: var(--theme-bg-colour-130);
   opacity: 1;
 }
 

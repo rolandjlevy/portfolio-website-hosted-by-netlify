@@ -3,6 +3,8 @@
 const html = document.querySelector('html');
 const body = document.querySelector('body');
 const themeButtons = document.querySelectorAll('.theme');
+const themeNavInput = document.querySelectorAll('#theme-nav');
+const themeNavBtn = document.querySelectorAll('.theme-nav-btn');
 const themeEmojis = document.querySelectorAll('label[for*="theme"] > .emoji');
 const mediaQueryMobile = 600;
 const burgerCheckBox = document.querySelector('.burger-checkbox-class');

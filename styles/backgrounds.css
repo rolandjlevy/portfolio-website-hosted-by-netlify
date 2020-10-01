@@ -30,12 +30,8 @@
   background-position: left top;
 }
 
-/* .projects-bg::before {
-  background-image: none;
-} */
-
 .home-bg {
-  background-color: var(--section-bg);
+  background-color: var(--theme-bg-colour-150);
   min-height: 350px;
 }
 
@@ -53,25 +49,25 @@
 }
 
 .about-bg {
-  background-color: #f1f1f1;
+  background-color: var(--theme-bg-colour-150);
 }
 
 .projects-bg {
-  background-color: #fff;
+  background-color: var(--theme-bg-colour-140);
 }
 
 .contact-bg {
-  background-color: var(--section-bg);
+  background-color: var(--theme-bg-colour-150);
   min-height: 500px;
 }
 
 .success-bg {
-  background-color: var(--section-bg);
+  background-color: var(--theme-bg-colour-150);
   height: calc(100vh);
 }
 
 .success-header {
-  background-color: var(--section-bg);
+  background-color: var(--theme-bg-colour-150);
 }
 
 .home-bg::before {
@@ -94,14 +90,10 @@
   opacity: 0.16;
 }
 
-.bgcolor-dark-grey {
-  background-color: var(--deep-grey);
-}
-
 footer {
   padding: 20px 30px;
-  background: var(--deepest-grey);
-  color: var(--mid-grey-text);
+  background: var(--theme-bg-colour-140);
+  color: var(--theme-text-colour-80);
   min-height: var(--footer-height);
 }
 

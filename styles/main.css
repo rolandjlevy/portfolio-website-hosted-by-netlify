@@ -1,6 +1,6 @@
 .container {
   height: 100%;
-  background: var(--deep-grey);
+  background: var(--theme-bg-colour-140);
 }
 
 .limit {
@@ -54,14 +54,14 @@ button.btn  {
 }
 
 .btn.dark {
-  background-color: var(--deep-grey);
-  color: var(--btn-colour);
+  background-color: var(--theme-bg-colour-120);
+  color: var(--theme-text-colour-120);
 }
 
 .btn.light {
-  background-color: #fdfdfd;
-  color: #000;
-  box-shadow: 0 5px 5px -5px #aaa;
+  background-color: var(--theme-bg-colour-120);
+  color: var(--theme-text-colour-120);
+  box-shadow: 0 8px 8px -5px var(--theme-bg-colour-50);
 }
 
 a.btn img  {
@@ -88,15 +88,15 @@ button.btn img  {
 }
 
 .btn.dark:hover {
-  background-color: var(--dark-grey);
+  background-color: var(--theme-bg-colour-100);
   transition: all 0.2s ease;
 }
 
 .btn.light:hover {
-  background-color: #666;
-  color: #fff;
+  background-color: var(--theme-bg-colour-100);
+  color: var(--theme-text-colour-120);
   transition: all 0.2s ease;
-  box-shadow: 0 10px 10px -5px #aaa;
+  box-shadow: 0 10px 10px -5px var(--theme-bg-colour-30);
 }
 
 /******************/
@@ -123,7 +123,7 @@ button.btn img  {
   height: 100%;
   left: 0; 
   top: 0;
-  box-shadow: inset 1px 5px 5px #aaa;
+  box-shadow: inset 1px 5px 5px var(--theme-bg-colour-30);
 }
 
 .profile-image-wrapper > img {
@@ -139,7 +139,6 @@ button.btn img  {
 
 h1, h2, h3, h4, h5 {
   font-family: 'Raleway', sans-serif;
-  color: var(--highlight-colour);
   margin: 10px 0;
   letter-spacing: 1px;
   line-height: 1.15;
@@ -153,20 +152,17 @@ h2 {
 }
 
 .paragraph {
-  /* font-size: 1rem;
-  color: #fff;
-  font-weight: 300; */
   font-size: 1.25rem;
-  color: var(--mid-grey-text);
+  color: var(--theme-text-colour-100);
   font-weight: 500;
 }
 
 .box-shadow-light {
-  box-shadow: 0 3px 5px 2px var(--box-shadow-light);
+  box-shadow: 0 3px 5px 2px var(--theme-bg-colour-20);
 }
 
 .box-shadow-dark {
-  box-shadow: 0 1px 10px 3px #000;
+  box-shadow: 0 1px 10px 3px var(--theme-bg-colour-150);
 }
 
 .vertical-align {
@@ -180,6 +176,10 @@ h2 {
   justify-content: center;
   flex-direction: column;
   height: 100vh;
+}
+
+.panel {
+  background-color: var(--theme-bg-colour-120);
 }
 
 .border-radius-5px {

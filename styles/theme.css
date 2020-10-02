@@ -95,3 +95,17 @@ html[data-theme="light"] .about-bg::before,
 html[data-theme="light"] .projects-bg::before {
   background: none;
 }
+
+html[data-theme="light"] #rc-anchor-container, 
+html[data-theme="light"] #rc-anchor-container > div, 
+html[data-theme="light"] #rc-anchor-container > div  * {
+	box-shadow: none !important;
+	border: none !important;
+	background-color: var(--theme-bg-colour-130) !important;
+}
+
+html[data-theme="light"] .rc-anchor-checkbox-label, 
+html[data-theme="light"] .rc-anchor-logo-text, 
+html[data-theme="light"] .rc-anchor-pt > * {
+	color: var(--theme-text-colour-130);
+}

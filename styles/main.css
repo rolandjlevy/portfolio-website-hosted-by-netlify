@@ -54,14 +54,26 @@ button.btn  {
 }
 
 .btn.dark {
-  background-color: var(--theme-bg-colour-120);
+  background-color: var(--theme-bg-colour-130);
   color: var(--theme-text-colour-120);
 }
 
+.btn.dark:hover {
+  background-color: var(--theme-bg-colour-100);
+  transition: all 0.2s ease;
+}
+
 .btn.light {
-  background-color: var(--theme-bg-colour-120);
+  background-color: var(--theme-bg-colour-130);
   color: var(--theme-text-colour-120);
-  box-shadow: 0 8px 8px -5px var(--theme-bg-colour-50);
+  /* box-shadow: 0 8px 8px -5px var(--theme-bg-colour-70); */
+}
+
+.btn.light:hover {
+  background-color: var(--theme-bg-colour-100);
+  color: var(--theme-text-colour-120);
+  transition: all 0.2s ease;
+  /* box-shadow: 0 10px 10px -5px var(--theme-bg-colour-50); */
 }
 
 a.btn img  {
@@ -85,18 +97,6 @@ button.btn img  {
 .btn i.left  {
   margin-left: 0;
   margin-right: 10px;
-}
-
-.btn.dark:hover {
-  background-color: var(--theme-bg-colour-100);
-  transition: all 0.2s ease;
-}
-
-.btn.light:hover {
-  background-color: var(--theme-bg-colour-100);
-  color: var(--theme-text-colour-120);
-  transition: all 0.2s ease;
-  box-shadow: 0 10px 10px -5px var(--theme-bg-colour-30);
 }
 
 /******************/
@@ -179,7 +179,7 @@ h2 {
 }
 
 .panel {
-  background-color: var(--theme-bg-colour-120);
+  background-color: var(--theme-bg-colour-130);
 }
 
 .border-radius-5px {

@@ -40,13 +40,13 @@
 
 .tags > li > a.selected,
 .tags > li > a:active {
-  background-color: var(--theme-bg-colour-90);
+  background-color: var(--theme-bg-colour-70);
   transition: all 0.2s ease;
-  color: #fff;
+  color: var(--theme-text-colour-140);
 }
 
 .tags > li > a:hover {
   background-color: var(--theme-bg-colour-90);
   transition: all 0.2s ease;
-  color: #fff;
+  color: var(--theme-text-colour-140);
 }

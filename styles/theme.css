@@ -88,7 +88,8 @@ html[data-theme="light"] .project {
 }
 
 html[data-theme="light"] .project > .toggle ~ .details {
-  background: var(--theme-bg-colour-130);
+  /* background: var(--theme-bg-colour-130); */
+  background: linear-gradient(to bottom, #eeeeeedd 0%, var(--theme-bg-colour-130) 100%);
 }
 
 html[data-theme="light"] .about-bg::before,

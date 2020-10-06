@@ -47,6 +47,7 @@
   width: fit-content;
   transition: all 0.2s ease;
   font-weight: 600;
+  font-size: 1.25rem;
 }
 
 button.btn  {
@@ -54,26 +55,14 @@ button.btn  {
 }
 
 .btn.dark {
-  background-color: var(--theme-bg-colour-130);
+  background-color: var(--theme-bg-colour-110);
   color: var(--theme-text-colour-120);
 }
 
 .btn.dark:hover {
-  background-color: var(--theme-bg-colour-100);
+  background-color: var(--theme-bg-colour-30);
+  color: var(--theme-bg-colour-150);
   transition: all 0.2s ease;
-}
-
-.btn.light {
-  background-color: var(--theme-bg-colour-130);
-  color: var(--theme-text-colour-120);
-  /* box-shadow: 0 8px 8px -5px var(--theme-bg-colour-70); */
-}
-
-.btn.light:hover {
-  background-color: var(--theme-bg-colour-100);
-  color: var(--theme-text-colour-120);
-  transition: all 0.2s ease;
-  /* box-shadow: 0 10px 10px -5px var(--theme-bg-colour-50); */
 }
 
 a.btn img  {
@@ -151,14 +140,10 @@ h2 {
   color: var(--accent-colour);
 }
 
-.paragraph {
+p {
   font-size: 1.25rem;
   color: var(--theme-text-colour-100);
   font-weight: 500;
-}
-
-.box-shadow-light {
-  box-shadow: 0 3px 5px 2px var(--theme-bg-colour-20);
 }
 
 .box-shadow-dark {
@@ -204,6 +189,10 @@ h2 {
 
 .m-b-20 {
   margin-bottom: 20px;
+}
+
+.m-b-30 {
+  margin-bottom: 30px;
 }
 
 .m-l-10 {

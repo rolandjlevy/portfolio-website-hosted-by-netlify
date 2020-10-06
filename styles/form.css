@@ -17,12 +17,14 @@ input[type=text], input[type=email], textarea {
 input[type=text], input[type=email] {
   width: calc(50% - 10px);
   display: inline-block;
+  font-size: 1.25rem;
 }
 
 textarea {
   width: 100%; 
   display: block;
   height: 150px;
+  font-size: 1.25rem;
 }
  
 input[type=text]:focus, input[type=email]:focus, textarea:focus {

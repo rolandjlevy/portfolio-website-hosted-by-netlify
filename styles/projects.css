@@ -10,7 +10,7 @@
   position: relative;
   display: block;
   margin: 0;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.25px;
   transition: all 0.3s ease;
   border: 10px solid var(--theme-bg-colour-140);
   width: 33.3%;
@@ -92,7 +92,7 @@
   border-bottom-left-radius: inherit;
   border-bottom-right-radius: inherit;
   padding: 10px 15px 15px 15px;
-  font-size: 0.75rem;
+  /* font-size: 0.75rem; */
   font-family: 'Open Sans', sans-serif;
   transition: all 0.2s 0.1s ease;
   overflow: hidden;
@@ -109,14 +109,16 @@
 /*******************/
 
 .project > .details > li:first-child {
+  letter-spacing: 0.25px;
   font-weight: 700;
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 10px;
   cursor: pointer;
 }
 
 .project.hover > .details {
+  font-size: 1rem;
   height: 100%;
   bottom: 0;
   padding: 10px 15px 15px 15px;
@@ -197,7 +199,7 @@
   left: 12px;
   border-radius: 5px;
   cursor: pointer;
-  margin: 0 5px;
+  margin: 0 10px 0 0;
   transition: all 0.2s ease;
   box-shadow: 0 5px 5px -5px #00000099;
 }
@@ -320,14 +322,14 @@ p > .fa-code {
 // media queries // 
 /////////////////*/
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 846px) {
   li.project {
     width: 50%;
     transition: all 0.3s ease;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 640px) {
   
   li.project {
     width: 100%;
@@ -339,7 +341,7 @@ p > .fa-code {
   }
 
   li.project > .details > li:first-child {
-    font-size: 1.3rem;
+    font-size: 1.25rem;
   }
   
   li.project > .details {
@@ -378,7 +380,7 @@ p > .fa-code {
     left: 4px;
   }
   li.project > .details > li {
-    font-size: 0.875rem;
+    font-size: 1rem;
   }
 
 }

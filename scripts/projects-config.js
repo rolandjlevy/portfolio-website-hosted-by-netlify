@@ -5,7 +5,7 @@ projectData.push(new Project(
   'sliders-game', 
   './images/projects/sliders-game.png',
   'Sliders Game',
-  'Slide pieces into the correct order in the fewest possible moves then submit your high score',
+  'Slide pieces into the correct order in the fewest possible moves.',
   ['javascript','css','firebase'],
   [
     { play: 'https://js-sliders-game.rjlevy.repl.co/'},
@@ -19,7 +19,7 @@ projectData.push(new Project(
   'solitaire-game', 
   './images/projects/solitaire-game.png',
   'Solitaire Game',
-  'Try to remove all the marbles and finish with just one left in the middle of the board to acheive \'Solitaire\'.',
+  'Remove the marbles and finish with one remaining to acheive \'Solitaire\'.',
   ['javascript','css','firebase'],
   [
     { play: 'https://js-solitaire-game.rjlevy.repl.co/'},
@@ -47,7 +47,7 @@ projectData.push(new Project(
   'google-translator', 
   './images/projects/google-translator.jpg',
   'Google Translator',
-  'Uses an API to translate phrases into 14 languages.',
+  'Uses an API to translate phrases into 28 languages.',
   ['express', 'node', 'ejs', 'bootstrap'],
   [
     { play: 'https://express-google-translate-api-with-ejs.rjlevy.repl.co/'},
@@ -89,7 +89,7 @@ projectData.push(new Project(
   'analogue-clock', 
   './images/projects/analogue-clock.jpg',
   'Analogue Clock',
-  'An analogue clock which accurately shows the time using pure CSS and a tiny touch of JS',
+  'An analogue clock which accurately shows the time',
   ['css','javascript'],
   [
     { play: 'https://css-analogue-clock.rjlevy.repl.co'},
@@ -117,7 +117,7 @@ projectData.push(new Project(
   'portfolio-website', 
   './images/projects/portfolio-website.jpg',
   'Portfolio Website',
-  'Showcases my projects. All designed and coded from scratch, without frameworks.',
+  'Showcases my projects. All designed and coded from scratch.',
   ['javascript','css'],
   [
     { play: 'https://rolandlevy.co.uk/'},
@@ -131,7 +131,7 @@ projectData.push(new Project(
   'colour-creator', 
   './images/projects/colour-creator.jpg',
   'Colour Creator',
-  'RGB colour sliders create swatches with rgb and hex colour values displayed.',
+  'Create swatches with rgb and hex colour values displayed.',
   ['vue','css'],
   [
     { play: 'https://vue-colour-creator.rjlevy.repl.co'},

@@ -210,11 +210,12 @@
 }
 
 .project > .info > li > a > i {
-  color: var(--theme-bg-colour-120);
+  color: #fff;
+  transition: all 0.2s ease;
 }
 
 .project > .info > li:hover > a > i {
-  color: var(--theme-text-colour-150);
+  color: var(--theme-bg-colour-120);
   transition: all 0.2s ease;
 }
 

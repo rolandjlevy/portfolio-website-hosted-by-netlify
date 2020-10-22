@@ -2,6 +2,7 @@
 
 ## Fixes
 - Selected bg colour of language buttons is confusing in mobile view
+- add a blog section: https://hashnode.com
 - Improve design of project blocks. 
 See: https://www.dmmediasolutions.co.uk/about
 See images/bbc-feature-block.png and footer of https://www.bbc.co.uk/news/uk-54344961 and https://www.bbc.co.uk/food/collections/healthy_recipes_on_a_budget_and_in_under_30_minutes

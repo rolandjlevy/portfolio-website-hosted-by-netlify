@@ -42,6 +42,20 @@ projectData.push(new Project(
   ]
 ));
 
+// All-in-one Search
+projectData.push(new Project(
+  'all-in-one-search', 
+  './images/projects/all-in-one-search.jpg',
+  'All-in-one Search',
+  'A verstile tool which makes searching in multiple channels quick and easy.',
+  ['javascript', 'css'],
+  [
+    { play: 'https://js-all-in-one-search-with-autocomplete.rolandjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/js-all-in-one-search-with-autocomplete'},
+    { code: '(https://repl.it/@RolandJLevy/js-all-in-one-search-with-autocomplete'}
+  ]
+));
+
 // Google Translator
 projectData.push(new Project(
   'google-translator', 
@@ -67,6 +81,20 @@ projectData.push(new Project(
     { play: 'https://js-text-to-speech-api.rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/js-text-to-speech-api'},
     { code: 'https://repl.it/@rjlevy/js-text-to-speech-api'}
+  ]
+));
+
+// Fluid grid of images
+projectData.push(new Project(
+  'fluid-grid-of-images', 
+  './images/projects/fluid-grid-of-images.jpg',
+  'Fluid grid of images',
+  'A fluid grid of random Unsplash images which is fully responsive on any device',
+  ['javascript','css'],
+  [
+    { play: 'https://js-fluid-grid-of-images.rjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/js-fluid-grid-of-images'},
+    { code: 'https://repl.it/@rjlevy/js-fluid-grid-of-images'}
   ]
 ));
 

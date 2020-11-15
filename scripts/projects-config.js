@@ -84,6 +84,20 @@ projectData.push(new Project(
   ]
 ));
 
+// Pop 100
+projectData.push(new Project(
+  'pop-100', 
+  './images/projects/pop-100.jpg',
+  'Pop 100 game',
+  'A game of speed and skill to test your reflexes. Try to pop all 100 balloons without missing any',
+  ['javascript','css'],
+  [
+    { play: 'https://js-balloon-popping-game.rolandjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/js-balloon-popping-game'},
+    { code: 'https://repl.it/@RolandJLevy/js-balloon-popping-game'}
+  ]
+));
+
 // Fluid grid of images
 projectData.push(new Project(
   'fluid-grid-of-images', 

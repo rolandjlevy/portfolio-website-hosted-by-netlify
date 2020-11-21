@@ -112,6 +112,20 @@ projectData.push(new Project(
   ]
 ));
 
+// Emoji fruit slot machine
+projectData.push(new Project(
+  'emoji-fruit-slot-machine', 
+  './images/projects/emoji-fruit-slot-machine.png',
+  'Emoji fruit slot machine',
+  'A slot machine simulator made with real emoji fruit',
+  ['javascript','css'],
+  [
+    { play: 'https://js-emoji-slot-machine.rolandjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/js-emoji-fruit-slot-machine'},
+    { code: 'https://js-emoji-fruit-slot-machine.rolandjlevy.repl.co'}
+  ]
+));
+
 // Pixel Grid Draw
 projectData.push(new Project(
   'pixel-grid-draw', 

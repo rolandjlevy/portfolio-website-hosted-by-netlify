@@ -98,6 +98,20 @@ projectData.push(new Project(
   ]
 ));
 
+// HSL Colour controller
+projectData.push(new Project(
+  'hsl-colour-controller ', 
+  './images/projects/hsl-colour-controller.jpg',
+  'HSL Colour controller',
+  'A dynamic HSL colour controller which displays HSL, hex and RGB values',
+  ['node','express','pug','javascript','css'],
+  [
+    { play: 'https://express-hsl-colour-controller-with-pug.rolandjlevy.repl.co/'},
+    { github: 'https://github.com/rolandjlevy/express-hsl-colour-controller-with-pug'},
+    { code: 'https://repl.it/@RolandJLevy/express-hsl-colour-controller-with-pug'}
+  ]
+));
+
 // Fluid grid of images
 projectData.push(new Project(
   'fluid-grid-of-images', 
@@ -109,6 +123,20 @@ projectData.push(new Project(
     { play: 'https://js-fluid-grid-of-images.rjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/js-fluid-grid-of-images'},
     { code: 'https://repl.it/@rjlevy/js-fluid-grid-of-images'}
+  ]
+));
+
+// Word Randomiser
+projectData.push(new Project(
+  'fluid-grid-of-images', 
+  './images/projects/word-randomiser.jpg',
+  'Word Randomiser',
+  'Type some words and see the letters randomise until they resolve',
+  ['javascript','css'],
+  [
+    { play: 'https://js-word-randomiser.rolandjlevy.repl.co?speed=25&msg=hello+world...'},
+    { github: 'https://github.com/rolandjlevy/js-word-randomiser'},
+    { code: 'https://repl.it/@RolandJLevy/js-word-randomiser'}
   ]
 ));
 

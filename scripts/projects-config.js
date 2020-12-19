@@ -126,6 +126,34 @@ projectData.push(new Project(
   ]
 ));
 
+// CSS Analogue Clock
+projectData.push(new Project(
+  'analogue-clock', 
+  './images/projects/analogue-clock.jpg',
+  'Analogue Clock',
+  'An analogue clock which accurately shows the time',
+  ['css','javascript'],
+  [
+    { play: 'https://css-analogue-clock.rjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
+    { code: 'https://repl.it/@rjlevy/css-analogue-clock/'}
+  ]
+));
+
+// Grid of Interactive circles
+projectData.push(new Project(
+  'interactive-circles', 
+  './images/projects/interactive-circles.jpg',
+  'Interactive Circles',
+  'A grid of interactive coloured circles that change size and opacity based on the position of the cursor',
+  ['css','javascript'],
+  [
+    { play: 'https://js-interactive-coloured-circles.rolandjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/js-interactive-coloured-circles'},
+    { code: 'https://repl.it/@RolandJLevy/js-interactive-coloured-circles'}
+  ]
+));
+
 // Word Randomiser
 projectData.push(new Project(
   'fluid-grid-of-images', 
@@ -137,20 +165,6 @@ projectData.push(new Project(
     { play: 'https://js-word-randomiser.rolandjlevy.repl.co?speed=25&msg=hello+world...'},
     { github: 'https://github.com/rolandjlevy/js-word-randomiser'},
     { code: 'https://repl.it/@RolandJLevy/js-word-randomiser'}
-  ]
-));
-
-// Emoji fruit slot machine
-projectData.push(new Project(
-  'emoji-fruit-slot-machine', 
-  './images/projects/emoji-fruit-slot-machine.png',
-  'Emoji fruit slot machine',
-  'A slot machine simulator made with real emoji fruit',
-  ['javascript','css'],
-  [
-    { play: 'https://js-emoji-slot-machine.rolandjlevy.repl.co'},
-    { github: 'https://github.com/rolandjlevy/js-emoji-fruit-slot-machine'},
-    { code: 'https://js-emoji-fruit-slot-machine.rolandjlevy.repl.co'}
   ]
 ));
 
@@ -168,17 +182,17 @@ projectData.push(new Project(
   ]
 ));
 
-// CSS Analogue Clock
+// Emoji fruit slot machine
 projectData.push(new Project(
-  'analogue-clock', 
-  './images/projects/analogue-clock.jpg',
-  'Analogue Clock',
-  'An analogue clock which accurately shows the time',
-  ['css','javascript'],
+  'emoji-fruit-slot-machine', 
+  './images/projects/emoji-fruit-slot-machine.png',
+  'Emoji fruit slot machine',
+  'A slot machine simulator made with real emoji fruit',
+  ['javascript','css'],
   [
-    { play: 'https://css-analogue-clock.rjlevy.repl.co'},
-    { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
-    { code: 'https://repl.it/@rjlevy/css-analogue-clock/'}
+    { play: 'https://js-emoji-slot-machine.rolandjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/js-emoji-fruit-slot-machine'},
+    { code: 'https://js-emoji-fruit-slot-machine.rolandjlevy.repl.co'}
   ]
 ));
 

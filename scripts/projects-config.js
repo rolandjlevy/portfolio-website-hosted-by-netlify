@@ -176,7 +176,7 @@ projectData.push(new Project(
   'Type some words and see the letters randomise until they resolve',
   ['javascript','css'],
   [
-    { play: 'https://js-word-randomiser.rolandjlevy.repl.co?speed=25&msg=hello+world...'},
+    { play: 'https://js-word-randomiser.rolandjlevy.repl.co?speed=25&msg=hello+world!'},
     { github: 'https://github.com/rolandjlevy/js-word-randomiser'},
     { code: 'https://repl.it/@RolandJLevy/js-word-randomiser'}
   ]

@@ -98,6 +98,20 @@ projectData.push(new Project(
   ]
 ));
 
+// JavaScript Digital / Analogue Clock
+projectData.push(new Project(
+  'js-digital-analogue-javascript-clock', 
+  './images/projects/javascript-clock.jpg',
+  'JavaScript Clock',
+  'A digital and analogue clock made with just 20 lines of JavaScript',
+  ['javascript', 'css'],
+  [
+    { play: 'https://js-clock.rjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/js-clock'},
+    { code: 'https://repl.it/@rjlevy/js-clock'}
+  ]
+));
+
 // Pop 100
 projectData.push(new Project(
   'pop-100', 
@@ -140,12 +154,26 @@ projectData.push(new Project(
   ]
 ));
 
+// Word Randomiser
+projectData.push(new Project(
+  'fluid-grid-of-images', 
+  './images/projects/word-randomiser.jpg',
+  'Word Randomiser',
+  'Type some words and see the letters randomise until they resolve',
+  ['javascript','css'],
+  [
+    { play: 'https://js-word-randomiser.rolandjlevy.repl.co?speed=25&msg=hello+world!'},
+    { github: 'https://github.com/rolandjlevy/js-word-randomiser'},
+    { code: 'https://repl.it/@RolandJLevy/js-word-randomiser'}
+  ]
+));
+
 // CSS Analogue Clock
 projectData.push(new Project(
   'analogue-clock', 
-  './images/projects/analogue-clock.jpg',
-  'Analogue Clock',
-  'An analogue clock which accurately shows the time',
+  './images/projects/css-clock.jpg',
+  'CSS Clock',
+  'A CSS analogue clock which accurately shows the time',
   ['css','javascript'],
   [
     { play: 'https://css-analogue-clock.rjlevy.repl.co'},
@@ -165,20 +193,6 @@ projectData.push(new Project(
     { play: 'https://js-interactive-coloured-circles.rolandjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/js-interactive-coloured-circles'},
     { code: 'https://repl.it/@RolandJLevy/js-interactive-coloured-circles'}
-  ]
-));
-
-// Word Randomiser
-projectData.push(new Project(
-  'fluid-grid-of-images', 
-  './images/projects/word-randomiser.jpg',
-  'Word Randomiser',
-  'Type some words and see the letters randomise until they resolve',
-  ['javascript','css'],
-  [
-    { play: 'https://js-word-randomiser.rolandjlevy.repl.co?speed=25&msg=hello+world!'},
-    { github: 'https://github.com/rolandjlevy/js-word-randomiser'},
-    { code: 'https://repl.it/@RolandJLevy/js-word-randomiser'}
   ]
 ));
 

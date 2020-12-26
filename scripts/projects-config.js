@@ -112,6 +112,20 @@ projectData.push(new Project(
   ]
 ));
 
+// Infinite Image Scroller
+projectData.push(new Project(
+  'js-digital-analogue-javascript-clock', 
+  './images/projects/infinite-scroller.jpg',
+  'Infinite Scroller',
+  'Infinite scrolling to load unsplash images continuously ',
+  ['javascript', 'css'],
+  [
+    { play: 'https://js-infinite-image-scroller-with-unsplash-api.rolandjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/js-infinite-scrolling-with-unsplash-api'},
+    { code: 'https://repl.it/@RolandJLevy/js-infinite-image-scroller-with-unsplash-api'}
+  ]
+));
+
 // Pop 100
 projectData.push(new Project(
   'pop-100', 

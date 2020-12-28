@@ -54,7 +54,7 @@
 
 .project-scroller > .project > img {
   position: absolute;
-  top: 40px;
+  top: 50px;
   object-fit: cover;
   width: 300px;
   height: 300px;
@@ -116,7 +116,7 @@
 
 .project > .toggle ~ .details {
   position: absolute;
-  height: 40px;
+  height: 50px;
   width: 100%;
   /* background: var(--theme-bg-colour-120); */
   background: linear-gradient(to bottom, #333333cc 0%, var(--theme-bg-colour-120) 100%);
@@ -155,7 +155,7 @@
 .project > .details > li:first-child {
   letter-spacing: 0.25px;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 10px;
   cursor: pointer;
@@ -171,7 +171,7 @@
 
 /* details hading angle */
 .project > .details > li > .fa-angle-up {
-  font-size: 1rem;
+  font-size: 1.25rem;
   transform: rotate(0);
   transition: all 0.2s 0.3s ease;
 }

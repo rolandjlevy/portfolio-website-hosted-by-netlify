@@ -40,6 +40,7 @@
   --theme-text-colour-20: #b9b9b9;
   --theme-text-colour-10: #b0b0b0;
   --theme-text-colour-0: #aaa;
+  --scrollbar-offset: 6px;
 }
 
 * {
@@ -55,6 +56,8 @@ html, body {
   color: var(--theme-text-colour-100);
   line-height: 1.75;
   touch-action: manipulation;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
@@ -69,10 +72,12 @@ html, body {
   background: var(--accent-colour);
 }
 
+/* project-scroller */
+
 .project-scroller::-webkit-scrollbar-thumb {
   min-width: 80px;
 }
 
-.project-scroller::-webkit-scrollbar-thumb {
-  height: 1rem;
+.project-scroller::-webkit-scrollbar-track {
+  height: 0.5rem;
 }

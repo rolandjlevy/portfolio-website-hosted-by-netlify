@@ -114,7 +114,7 @@ projectData.push(new Project(
 
 // Infinite Image Scroller
 projectData.push(new Project(
-  'js-digital-analogue-javascript-clock', 
+  'infinite-image-scroller', 
   './images/projects/infinite-scroller.jpg',
   'Infinite Scroller',
   'Infinite scrolling to load unsplash images continuously ',
@@ -170,7 +170,7 @@ projectData.push(new Project(
 
 // Word Randomiser
 projectData.push(new Project(
-  'fluid-grid-of-images', 
+  'word-randomiser', 
   './images/projects/word-randomiser.jpg',
   'Word Randomiser',
   'Type some words and see the letters randomise until they resolve',

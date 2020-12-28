@@ -21,6 +21,14 @@
   margin: 0 auto;
 }
 
+.section.projects {
+  padding: 40px 0 60px 0;
+}
+
+.p-rl-lr-40 {
+  padding: 0 40px;
+}
+
 .section > .content-area {
   width: fit-content;
   height: fit-content;

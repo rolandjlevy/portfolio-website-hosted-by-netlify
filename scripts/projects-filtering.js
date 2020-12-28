@@ -17,11 +17,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
   };
 
   const projectContainer = document.querySelector('.project-container');
+  const projectScroller = document.querySelector('.project-scroller');
+  const scroller = false;
 
   projectData.forEach(project => {
     const liNode = document.createElement('li');
     liNode.insertAdjacentHTML('afterbegin', project.getInnerHtml());
-    projectContainer.appendChild(liNode.firstElementChild);
+    if (scroller) {
+      projectScroller.appendChild(liNode.firstElementChild);
+      projectContainer.style.display = 'none';
+    } else {
+      projectContainer.appendChild(liNode.firstElementChild);
+      projectScroller.style.display = 'none';
+    }
   });
 
   const projects = document.querySelectorAll('.project');

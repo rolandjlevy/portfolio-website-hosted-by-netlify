@@ -37,6 +37,8 @@
   scroll-snap-type: x mandatory;
   margin-top: 20px;
   margin-bottom: 80px;
+  scroll-snap-align: start;
+  scroll-margin-left: 20px;
 }
 
 .project-scroller > .project {
@@ -48,8 +50,6 @@
   min-width: 300px;
   border: none;
   overflow: hidden;
-  scroll-snap-align: start;
-  scroll-margin-left: 20px;
 }
 
 .project-scroller > .project > img {

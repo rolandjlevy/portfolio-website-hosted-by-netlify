@@ -87,6 +87,11 @@ html[data-theme="light"] .project {
   border: 10px solid white;
 }
 
+html[data-theme="light"] .project-scroller > .project {
+  border: none;
+}
+
+
 html[data-theme="light"] .project > .toggle ~ .details {
   /* background: var(--theme-bg-colour-130); */
   background: linear-gradient(to bottom, #eeeeeedd 0%, var(--theme-bg-colour-130) 100%);

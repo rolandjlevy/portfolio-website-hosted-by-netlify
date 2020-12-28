@@ -9,6 +9,12 @@
   max-width: calc(var(--project-container-w) + var(--project-padding) * 2);
 }
 
+.limit-projects {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
 /********************/
 /* sections         */
 /********************/
@@ -26,6 +32,21 @@
   height: fit-content;
   border-radius: 3px;
 }
+
+/* Full width for projects scroller */
+
+.section.projects {
+  padding-bottom: 0;
+}
+
+/* 
+.section.projects > .content-area > *:not(.project-scroller) {
+  padding: 0 40px;
+}
+
+div.projects-bg > section.section.projects > div.limit.content-area {
+  max-width: auto;
+} */
 
 .section-anchor {
   width: 100%;

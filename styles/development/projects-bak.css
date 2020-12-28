@@ -25,46 +25,9 @@
   object-position: 50%;
 }
 
-.project-scroller {
-  display: flex;
-  justify-content: row;
-  min-height: 316px;
-  overflow-x: scroll;
-  scroll-behavior: smooth;
-  overscroll-behavior-x: contain;
-  scrollbar-width: none;
-  -ms-scroll-snap-type: x mandatory;
-  scroll-snap-type: x mandatory;
-  margin-top: 40px;
-  margin-bottom: 80px;
-}
-
-.project-scroller > .project {
-  position: relative;
-  display: block;
-  margin: 0 10px;
-  letter-spacing: 0.25px;
-  transition: all 0.3s ease;
-  min-width: 300px;
-  border: none;
-  overflow: hidden;
-  scroll-snap-align: start;
-  scroll-margin-left: 20px;
-}
-
-.project-scroller > .project > img {
-  position: absolute;
-  top: 40px;
-  object-fit: cover;
-  width: 300px;
-  height: 300px;
-  transition: all 0.2s ease;
-  object-position: 50%;
-}
-
 .project.hover > img {
   /* transform: scale(1.1); */
-  filter: blur(2px) brightness(75%) saturate(75%);
+  filter: blur(2px) brightness(120%) saturate(120%);
   transition: all 0.3s ease;
 }
 
@@ -116,6 +79,7 @@
 
 .project > .toggle ~ .details {
   position: absolute;
+  bottom: 0;
   height: 40px;
   width: 100%;
   /* background: var(--theme-bg-colour-120); */
@@ -132,14 +96,6 @@
   font-family: 'Open Sans', sans-serif;
   transition: all 0.2s 0.1s ease;
   overflow: hidden;
-}
-
-.project > .toggle ~ .details {
-  bottom: 0;
-}
-
-.project-scroller > .project > .toggle ~ .details {
-  top: 0;
 }
 
 .project > .toggle:checked ~ .details {
@@ -239,20 +195,13 @@
   width: 45px;
   height: 45px;
   background-color: var(--accent-colour);
+  bottom: 90px;
   left: 12px;
   border-radius: 5px;
   cursor: pointer;
   margin: 0 10px 0 0;
   transition: all 0.2s ease;
   box-shadow: 0 5px 5px -5px #00000099;
-}
-
-.project-container > .project > .info > li {
-  bottom: 90px;
-}
-
-.project-scroller > .project > .info > li {
-  top: 210px;
 }
 
 .project > .info > li:hover {
@@ -269,6 +218,19 @@
   color: var(--theme-bg-colour-120);
   transition: all 0.2s ease;
 }
+
+
+/* .project:hover > .info > li:nth-child(1) {
+  transition-delay: 0.3s;
+}
+
+.project:hover > .info > li:nth-child(2) {
+  transition-delay: 0.35s;
+}
+
+.project:hover > .info > li:nth-child(3) {
+  transition-delay: 0.4s;
+} */
 
 .project > .info > li::before {
   display: inline-block;

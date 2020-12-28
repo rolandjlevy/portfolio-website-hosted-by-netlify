@@ -57,14 +57,22 @@ html, body {
   touch-action: manipulation;
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 1rem;
 }
 
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   background: var(--theme-bg-colour-110);
 }
 
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background: var(--accent-colour);
+}
+
+.project-scroller::-webkit-scrollbar-thumb {
+  min-width: 80px;
+}
+
+.project-scroller::-webkit-scrollbar-thumb {
+  height: 1rem;
 }

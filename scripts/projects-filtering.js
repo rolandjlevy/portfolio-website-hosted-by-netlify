@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   const projectContainer = document.querySelector('.project-container');
   const projectScroller = document.querySelector('.project-scroller');
-  const scroller = false;
+  const scroller = true;
 
   projectData.forEach(project => {
     const liNode = document.createElement('li');

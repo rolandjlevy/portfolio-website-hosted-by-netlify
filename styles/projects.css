@@ -35,7 +35,7 @@
   scrollbar-width: none;
   -ms-scroll-snap-type: x mandatory;
   scroll-snap-type: x mandatory;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 80px;
 }
 

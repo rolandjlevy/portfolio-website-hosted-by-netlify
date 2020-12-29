@@ -75,7 +75,7 @@
 
 .project.hover > img {
   /* transform: scale(1.1); */
-  filter: blur(2px) brightness(75%) saturate(75%);
+  filter: blur(2px) brightness(85%) saturate(85%);
   transition: all 0.3s ease;
 }
 
@@ -130,7 +130,7 @@
   height: 50px;
   width: 100%;
   /* background: var(--theme-bg-colour-120); */
-  background: linear-gradient(to bottom, #333333cc 0%, var(--theme-bg-colour-120) 100%);
+  background: linear-gradient(to bottom, #333333aa 0%, var(--theme-bg-colour-120) 100%);
   opacity: 1;
   background-position: center;
   color: var(--theme-text-colour-150);

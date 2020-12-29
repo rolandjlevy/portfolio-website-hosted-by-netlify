@@ -129,7 +129,6 @@
   position: absolute;
   height: 50px;
   width: 100%;
-  /* background: var(--theme-bg-colour-120); */
   background: linear-gradient(to bottom, #333333aa 0%, var(--theme-bg-colour-120) 100%);
   opacity: 1;
   background-position: center;

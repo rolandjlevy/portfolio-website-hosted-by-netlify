@@ -330,7 +330,6 @@
   content: 'Code';
 }
 
-
 @keyframes fadein {
   from {
     opacity: 0;
@@ -339,7 +338,6 @@
     opacity: 1;
   }
 }
-
 
 p > .fa-play,
 p > .fa-external-link-alt,

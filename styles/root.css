@@ -1,13 +1,17 @@
 :root {
 
   --accent-colour: #ff3d77;
+  --accent-colour-heading:hsl(342, 100%, 97%);
   --accent-colour-faded: #ff3d7744;
+  --accent-colour-btn: hsla(342, 80%, 60%, 0.6);
+  --accent-colour-btn-hover: hsla(342, 40%, 95%, 0.9);
   --nav-height: 80px;
   --project-container-w: 960px;
   --project-padding: 20px;
   transition: all 0.5s ease;
 
   --theme-bg-colour-150: #000;
+  --theme-bg-colour-150-red: #330000;
   --theme-bg-colour-140: #111;
   --theme-bg-colour-130: #222;
   --theme-bg-colour-120: #333;

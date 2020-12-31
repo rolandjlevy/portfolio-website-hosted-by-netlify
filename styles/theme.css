@@ -1,7 +1,10 @@
 html[data-theme="light"] {
 
   --accent-colour:  #1692f8;
+  --accent-colour-heading:  #002d81;
   --accent-colour-faded: #d6edff;
+  --accent-colour-btn: hsla(207, 93%, 80%, 0.8);
+  --accent-colour-btn-hover: hsl(207, 98%, 57%);
 
   --theme-bg-colour-150: #fff;
   --theme-bg-colour-140: #fcfcfc;
@@ -24,6 +27,7 @@ html[data-theme="light"] {
   --theme-text-colour-140: #111;
   --theme-text-colour-130: #222;
   --theme-text-colour-120: #333;
+  --theme-text-colour-120-blue: #333366;
   --theme-text-colour-110: #444;
   --theme-text-colour-100: #555;
   --theme-text-colour-90: #666;
@@ -40,7 +44,8 @@ html[data-theme="light"] {
 }
 
 html[data-theme="light"] nav {
-  border-bottom: 2px solid var(--accent-colour-faded);
+  /* border-bottom: 2px solid var(--accent-colour-faded);*/
+  box-shadow: 0 1px 7px 0px #bbbbbb66; 
 }
 
 section {
@@ -101,6 +106,21 @@ html[data-theme="light"] .about-bg::before,
 html[data-theme="light"] .projects-bg::before {
   background: none;
 }
+
+html[data-theme="light"] .btn{
+  color: var(--theme-text-colour-120-blue);
+}
+
+html[data-theme="light"] .btn:hover {
+  color: #fff;
+}
+
+html[data-theme="light"] .btn:hover img,
+html[data-theme="light"] .btn:hover i {
+  filter: saturate(0) brightness(10);
+  transition: all 0.2s ease;
+}
+
 
 /*****************************/
 /* Light theme for recaptcha */

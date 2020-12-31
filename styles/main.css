@@ -76,13 +76,15 @@ button.btn  {
 }
 
 .btn.dark {
-  background-color: var(--theme-bg-colour-110);
+  /* background-color: var(--theme-bg-colour-110); */
+  background-color: var(--accent-colour-btn);
   color: var(--theme-text-colour-120);
 }
 
 .btn.dark:hover {
-  background-color: var(--theme-bg-colour-30);
-  color: var(--theme-bg-colour-150);
+  /* background-color: var(--theme-bg-colour-30); */
+  background-color: var(--accent-colour-btn-hover);
+  color: var(--theme-bg-colour-150-red);
   transition: all 0.2s ease;
 }
 
@@ -158,7 +160,7 @@ h2 {
   font-size: 2.5rem;
   font-weight: 800;
   margin: 10px 0;
-  color: var(--accent-colour);
+  color: var(--accent-colour-heading);
 }
 
 p {

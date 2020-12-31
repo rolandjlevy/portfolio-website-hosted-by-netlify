@@ -99,6 +99,7 @@ footer {
 
 footer > p {
   text-align: center;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 600px) {

@@ -98,8 +98,8 @@ html[data-theme="light"] .project-scroller > .project {
 
 
 html[data-theme="light"] .project > .toggle ~ .details {
-  /* background: var(--theme-bg-colour-130); */
-  background: linear-gradient(to bottom, #eeeeeedd 0%, var(--theme-bg-colour-130) 100%);
+  background: var(--theme-bg-colour-130);
+  /* background: linear-gradient(to bottom, #eeeeeedd 0%, var(--theme-bg-colour-130) 100%); */
 }
 
 html[data-theme="light"] .about-bg::before,
@@ -121,6 +121,15 @@ html[data-theme="light"] .btn:hover i {
   transition: all 0.2s ease;
 }
 
+.project > .info > li > a > i {
+  color: var(--theme-text-colour-100);
+  transition: all 0.2s ease;
+}
+
+.project > .info > li::before {
+  color: var(--theme-text-colour-100);
+  transition: all 0.2s ease;
+}
 
 /*****************************/
 /* Light theme for recaptcha */

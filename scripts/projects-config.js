@@ -47,7 +47,7 @@ projectData.push(new Project(
   'snow-quotes', 
   './images/projects/snow-quotes.jpg',
   'Snow Quotes',
-  'Create a sky of snowflakes, each of which reveals an inspirational quote you can share with your friends.',
+  'Create a sky of snowflakes. Each one reveals an inspirational quote you can share with your friends.',
   ['node','express','pug','javascript','css'],
   [
     { play: 'https://snow-quotes.rolandjlevy.repl.co'},

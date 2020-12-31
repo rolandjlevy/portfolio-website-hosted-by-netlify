@@ -42,6 +42,7 @@ class Project {
           <li><i class="fas fa-angle-up m-r-5"></i>${this.heading}</li>
           <li><i class="fas fa-info-circle m-r-5"></i>${this.details}</li>
           <li><i class="fas fa-cog m-r-5"></i>Built with ${this.getLanguages()}.</li>
+          <li></li>
         </ul>
         ${this.getInfoButtons()}
       </li>

@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     css: false
   };
 
-  const scroller = true;
+  const scroller = false;
   const projectContainer = document.querySelector('.project-container');
   const projectScroller = document.querySelector('.project-scroller');
 

@@ -28,7 +28,7 @@
 .project-scroller {
   display: flex;
   justify-content: row;
-  min-height: 316px;
+  min-height: 416px;
   overflow-x: scroll;
   scroll-behavior: smooth;
   overscroll-behavior-x: contain;
@@ -37,8 +37,6 @@
   scroll-snap-type: x mandatory;
   margin-top: 20px;
   margin-bottom: 80px;
-  scroll-snap-align: start;
-  scroll-margin-left: 20px;
 }
 
 .project-scroller > .project {
@@ -50,6 +48,8 @@
   min-width: 300px;
   border: none;
   overflow: hidden;
+  scroll-snap-align: start;
+  scroll-margin-left: 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -68,7 +68,7 @@
   top: 50px;
   object-fit: cover;
   width: 300px;
-  height: 300px;
+  height: 400px;
   transition: all 0.2s ease;
   object-position: 50%;
 }
@@ -129,7 +129,8 @@
   position: absolute;
   height: 50px;
   width: 100%;
-  background: linear-gradient(to bottom, #333333aa 0%, var(--theme-bg-colour-120) 100%);
+  /* background: linear-gradient(to bottom, #333333aa 0%, var(--theme-bg-colour-120) 100%); */
+  background-color: var(--theme-bg-colour-120);
   opacity: 1;
   background-position: center;
   color: var(--theme-text-colour-150);
@@ -162,12 +163,18 @@
 /* project details */
 /*******************/
 
+
+.project > .details > li {
+  margin-top: 10px;
+}
+
 .project > .details > li:first-child {
   letter-spacing: 0.25px;
   font-weight: 700;
   font-size: 1.25rem;
   line-height: 1.5;
   margin-bottom: 10px;
+  margin-top: 0;
   cursor: pointer;
 }
 
@@ -176,14 +183,33 @@
   height: 100%;
   bottom: 0;
   padding: 10px 15px 15px 15px;
-  transition: all 0.2s 0.1s ease;
+  transition: all 0.2s ease;
+}
+
+.project > .details > li:last-child {
+  width: 100%;
+  position: absolute;
+  background: var(--theme-bg-colour-110);
+  margin: 0;
+  padding: 0;
+  left: 0;
+  opacity: 0;
+  bottom: -70%;
+  height: 100%;
+  margin-top: 0;
+  transition: all 0.2s ease;
+}
+
+.project.hover > .details > li:last-child {
+  opacity: 1;
+  transition: all 0.2s ease;
 }
 
 /* details hading angle */
 .project > .details > li > .fa-angle-up {
   font-size: 1.25rem;
   transform: rotate(0);
-  transition: all 0.2s 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 /* .project > .details > li:first-child:hover > .fa-angle-up,
@@ -204,7 +230,7 @@
 .project > .toggle:checked ~ .details > li > .fa-angle-up
  {
   transform: rotate(180deg);
-  transition: all 0.2s 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 /************************/
@@ -223,7 +249,7 @@
 .project > .toggle:not(:checked) ~ .info {
   opacity: 0;
   pointer-events: none;
-  transition: opacity 0.2s 0.1s ease;
+  transition: opacity 0.2s ease;
 }
 
 .project > .toggle:checked ~ .info {
@@ -246,15 +272,16 @@
 
 .project > .info > li {
   position: relative;
-  width: 45px;
-  height: 45px;
-  background-color: var(--accent-colour);
+  width: 35px;
+  height: 35px;
+  /* background-color: var(--theme-bg-colour-80); */
+  background-color: transparent;
   left: 12px;
   border-radius: 5px;
   cursor: pointer;
   margin: 0 10px 0 0;
   transition: all 0.2s ease;
-  box-shadow: 0 5px 5px -5px #00000099;
+  /* box-shadow: 0 5px 5px -5px #00000099; */
 }
 
 .project-container > .project > .info > li {
@@ -262,21 +289,21 @@
 }
 
 .project-scroller > .project > .info > li {
-  top: 210px;
+  top: 325px;
 }
 
 .project > .info > li:hover {
   transition: all 0.2s ease;
-  transform: scale(1);
+  /* transform: scale(1); */
 }
 
 .project > .info > li > a > i {
-  color: #fff;
+  color: var(--theme-bg-colour-10);
   transition: all 0.2s ease;
 }
 
 .project > .info > li:hover > a > i {
-  color: var(--theme-bg-colour-120);
+  color: var(--accent-colour);
   transition: all 0.2s ease;
 }
 
@@ -284,10 +311,10 @@
   display: inline-block;
   font-size: 0.875rem;
   font-weight: 600;
-  color: var(--accent-colour);
+  color: var(--theme-bg-colour-10);
   position: absolute;
   text-align: center;
-  top: 100%;
+  top: 90%;
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.2s ease;
@@ -299,23 +326,23 @@
 
 .project > .info > .play > a > i {
   position: absolute;
-  font-size: 1.75rem;
-  top: 8px;
-  left: 9px;
+  font-size: 1.5rem;
+  top: 4px;
+  left: 7px;
 }
 
 .project > .info > .github > a > i {
   position: absolute;
-  font-size: 2rem;
-  top: 7px;
-  left: 7px;
+  font-size: 1.75rem;
+  top: 4px;
+  left: 4px;
 }
 
 .project > .info > .code > a > i {
   position: absolute;
-  font-size: 1.7rem;
-  top: 9px;
-  left: 5px;
+  font-size: 1.4rem;
+  top: 7px;
+  left: 4px;
 }
 
 .project > .info > .play::before {
@@ -386,7 +413,7 @@ p > .fa-code {
   li.project > .details > li {
     font-size: 1rem;
   }
-
+  
   li.project > .details > li:first-child {
     font-size: 1.25rem;
   }

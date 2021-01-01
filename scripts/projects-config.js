@@ -66,7 +66,7 @@ projectData.push(new Project(
   [
     { play: 'https://js-all-in-one-search-with-autocomplete.rolandjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/js-all-in-one-search-with-autocomplete'},
-    { code: '(https://repl.it/@RolandJLevy/js-all-in-one-search-with-autocomplete'}
+    { code: 'https://repl.it/@RolandJLevy/js-all-in-one-search-with-autocomplete'}
   ]
 ));
 

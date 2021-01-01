@@ -131,6 +131,10 @@ html[data-theme="light"] .btn:hover i {
   transition: all 0.2s ease;
 }
 
+html[data-theme="light"] .project > .details > li:last-child {
+  background: var(--theme-bg-colour-100);
+}
+
 /*****************************/
 /* Light theme for recaptcha */
 /* not working               */

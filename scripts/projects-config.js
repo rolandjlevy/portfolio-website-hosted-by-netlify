@@ -112,6 +112,20 @@ projectData.push(new Project(
   ]
 ));
 
+// Animated Light Show Loop
+projectData.push(new Project(
+  'animated-light-show-loop', 
+  './images/projects/animated-light-show.jpg',
+  'Animated Light Show',
+  'Using basic Maths with Pug and CSS to animate lights which loop infinitely',
+  ['pug', 'css'],
+  [
+    { play: 'https://express-pug-animated-light-show-loop.rolandjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/express-pug-animated-light-show-loop'},
+    { code: 'https://repl.it/@RolandJLevy/express-pug-animated-light-show-loop'}
+  ]
+));
+
 // Infinite Image Scroller
 projectData.push(new Project(
   'infinite-image-scroller', 

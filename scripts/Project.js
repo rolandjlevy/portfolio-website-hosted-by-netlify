@@ -33,7 +33,7 @@ class Project {
   getInnerHtml() {
     return `
       <li id="${this.id}" class="project">
-        <img src="${this.image}" />
+        <img src="${this.image}" loading="lazy" />
         <input id="${this.id}-checkbox" class="toggle" type="checkbox" />
         <label for="${this.id}-checkbox" class="toggle-overlay">
           <i class="fas fa-thumbtack"></i>

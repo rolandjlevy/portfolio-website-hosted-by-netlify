@@ -3,6 +3,7 @@
   --accent-colour: #ff3d77;
   --accent-colour-heading:hsl(342, 100%, 97%);
   --accent-colour-faded: #ff3d7744;
+  --accent-colour-faded-lighter: #ff3d77aa;
   --accent-colour-btn: hsla(342, 80%, 60%, 0.6);
   --accent-colour-btn-hover: hsla(342, 40%, 95%, 0.9);
   --nav-height: 80px;
@@ -44,7 +45,9 @@
   --theme-text-colour-20: #b9b9b9;
   --theme-text-colour-10: #b0b0b0;
   --theme-text-colour-0: #aaa;
-  --scrollbar-offset: 6px;
+  --scrollbar-offset: 3px;
+  --scrolltrack-height: 14px;
+  --colour-bg: var(--theme-bg-colour-140);
 }
 
 * {
@@ -64,24 +67,31 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-::-webkit-scrollbar {
+body::-webkit-scrollbar {
   width: 1rem;
 }
 
-::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track {
   background: var(--theme-bg-colour-110);
 }
 
-::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb {
   background: var(--accent-colour);
 }
 
 /* project-scroller */
 
-.project-scroller::-webkit-scrollbar-thumb {
-  min-width: 80px;
+.project-scroller::-webkit-scrollbar {
+  background-color: var(--accent-colour-faded-lighter);
+  -webkit-box-shadow: inset var(--colour-bg) 0 0 0 var(--scrollbar-offset);
+  box-shadow: inset var(--colour-bg) 0 0 0 var(--scrollbar-offset);
+  height: var(--scrolltrack-height);
 }
 
-.project-scroller::-webkit-scrollbar-track {
-  height: 0.5rem;
+.project-scroller::-webkit-scrollbar-thumb {
+  background-color: var(--accent-colour);
+  border-left: var(--scrollbar-offset) solid var(--colour-bg);
+  border-right: var(--scrollbar-offset) solid var(--colour-bg);
+  min-width: 100px;
+  max-width: 200px;
 }

@@ -26,9 +26,11 @@
 }
 
 .project-scroller {
+  --scroller-padding: 20px;
+  --project-height: 400px;
   display: flex;
   justify-content: row;
-  min-height: 416px;
+  min-height: calc(var(--project-height) + var(--scroller-padding) + var(--scrolltrack-height));
   overflow-x: scroll;
   scroll-behavior: smooth;
   overscroll-behavior-x: contain;
@@ -37,6 +39,7 @@
   scroll-snap-type: x mandatory;
   margin-top: 20px;
   margin-bottom: 80px;
+  padding-bottom: var(--scroller-padding);
 }
 
 .project-scroller > .project {

@@ -232,9 +232,9 @@ projectData.push(new Project(
   'A slot machine simulator made with real emoji fruit',
   ['javascript','css'],
   [
-    { play: 'https://js-emoji-slot-machine.rolandjlevy.repl.co'},
+    { play: 'https://js-emoji-fruit-slot-machine.rolandjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/js-emoji-fruit-slot-machine'},
-    { code: 'https://js-emoji-fruit-slot-machine.rolandjlevy.repl.co'}
+    { code: 'https://repl.it/@RolandJLevy/js-emoji-fruit-slot-machine'}
   ]
 ));
 

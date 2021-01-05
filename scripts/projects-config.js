@@ -34,7 +34,7 @@ projectData.push(new Project(
   './images/projects/photo-finder.jpg',
   'Photo Finder',
   'Uses the Unsplash API to search for and favourite photos.',
-  ['express','ejs','bootstrap','javascript'],
+  ['node','express','ejs','javascript','bootstrap'],
   [
     { play: 'https://express-photo-finder-using-unsplash-api.rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/express-photo-finder-using-unsplash-api'},
@@ -76,7 +76,7 @@ projectData.push(new Project(
   './images/projects/google-translator.jpg',
   'Google Translator',
   'Uses an API to translate phrases into 28 languages.',
-  ['express', 'node', 'ejs', 'bootstrap'],
+  ['node', 'express', 'ejs', 'bootstrap'],
   [
     { play: 'https://express-google-translate-api-with-ejs.rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/express-google-translate-api-with-ejs'},
@@ -90,7 +90,7 @@ projectData.push(new Project(
   './images/projects/text-to-speech.png',
   'Text to Speech',
   'Choose a language, type some text and hear it spoken',
-  ['javascript','css'],
+  ['javascript', 'css'],
   [
     { play: 'https://js-text-to-speech-api.rjlevy.repl.co/'},
     { github: 'https://github.com/rolandjlevy/js-text-to-speech-api'},
@@ -202,7 +202,7 @@ projectData.push(new Project(
   './images/projects/css-clock.jpg',
   'CSS Clock',
   'A CSS analogue clock which accurately shows the time',
-  ['css','javascript'],
+  ['javascript', 'css'],
   [
     { play: 'https://css-analogue-clock.rjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
@@ -216,7 +216,7 @@ projectData.push(new Project(
   './images/projects/interactive-circles.jpg',
   'Interactive Circles',
   'A grid of interactive coloured circles that change size and opacity based on the position of the cursor',
-  ['css','javascript'],
+  ['javascript', 'css'],
   [
     { play: 'https://js-interactive-coloured-circles.rolandjlevy.repl.co'},
     { github: 'https://github.com/rolandjlevy/js-interactive-coloured-circles'},

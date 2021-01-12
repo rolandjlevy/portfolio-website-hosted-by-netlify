@@ -140,7 +140,7 @@ projectData.push(new Project(
   ]
 ));
 
-// Pop 100
+// Pop 100 game
 projectData.push(new Project(
   'pop-100', 
   './images/projects/pop-100.jpg',
@@ -181,6 +181,21 @@ projectData.push(new Project(
     { code: 'https://repl.it/@rjlevy/js-fluid-grid-of-images'}
   ]
 ));
+
+// Psychedelic avocados
+projectData.push(new Project(
+  'psychedelic-avocados', 
+  './images/projects/psychedelic-avocados.jpg',
+  'Psychedelic Avocados',
+  'A hypnotic wave of animated, psychedelic avocados which is fully responsive',
+  ['css'],
+  [
+    { play: 'https://css-hypnotic-wave-of-psychedelic-avocados.rolandjlevy.repl.co'},
+    { github: 'https://github.com/rolandjlevy/css-hypnotic-wave-of-psychedelic-avocados'},
+    { code: 'https://repl.it/@RolandJLevy/css-hypnotic-wave-of-psychedelic-avocados'}
+  ]
+));
+// 
 
 // Word Randomiser
 projectData.push(new Project(

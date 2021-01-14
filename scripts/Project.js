@@ -3,11 +3,20 @@
 ///////////////////
 
 class Project {
-  constructor(id, image, heading, details, languages, infoButtons) {
+  constructor({
+      id, 
+      image, 
+      heading, 
+      details, 
+      category, 
+      languages, 
+      infoButtons
+    }) {
     this.id = id;
     this.image = image;
     this.heading = heading;
     this.details = details;
+    this.category = category;
     this.languages = languages;
     this.infoButtons = infoButtons;
   }

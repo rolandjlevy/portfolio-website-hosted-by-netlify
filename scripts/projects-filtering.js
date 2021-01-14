@@ -61,6 +61,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   function updateProjectsSelection() {
     projects.forEach(project => {
       const data = getProjectById(project.id);
+      console.log('category: ', data.category, ', id: ', data.id);
       const exists = projectLanguagesExist(data.languages);
       if (exists || allFalse() && project.style.display !== 'block') project.style.display = 'block';
       if (!exists && !allFalse() && project.style.display !== 'none') project.style.display = 'none';

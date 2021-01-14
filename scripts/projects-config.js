@@ -60,6 +60,21 @@ window.projectData = [];
     ]
   }));
 
+  // Psychedelic avocados
+  projectData.push(new Project({
+    id: 'psychedelic-avocados', 
+    image: './images/projects/psychedelic-avocados.jpg',
+    heading: 'Psychedelic Avocados',
+    details: 'A hypnotic wave of animated, psychedelic avocados which is fully responsive',
+    category: 'Animation',
+    languages: ['css'],
+    infoButtons: [
+      { play: 'https://css-hypnotic-wave-of-psychedelic-avocados.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/css-hypnotic-wave-of-psychedelic-avocados'},
+      { code: 'https://repl.it/@RolandJLevy/css-hypnotic-wave-of-psychedelic-avocados'}
+    ]
+  }));
+
   // All-in-one Search
   projectData.push(new Project({
     id: 'all-in-one-search', 
@@ -135,51 +150,6 @@ window.projectData = [];
     ]
   }));
 
-  // Infinite Image Scroller
-  projectData.push(new Project({
-    id: 'infinite-image-scroller', 
-    image: './images/projects/infinite-scroller.jpg',
-    heading: 'Infinite Scroller',
-    details: 'Infinite scrolling to load unsplash images continuously ',
-    category: 'Widget',
-    languages: ['javascript', 'css'],
-    infoButtons: [
-      { play: 'https://js-infinite-image-scroller-with-unsplash-api.rolandjlevy.repl.co'},
-      { github: 'https://github.com/rolandjlevy/js-infinite-scrolling-with-unsplash-api'},
-      { code: 'https://repl.it/@RolandJLevy/js-infinite-image-scroller-with-unsplash-api'}
-    ]
-  }));
-
-  // Pop 100 game
-  projectData.push(new Project({
-    id: 'pop-100', 
-    image: './images/projects/pop-100.jpg',
-    heading: 'Pop 100 game',
-    details: 'A game of speed and skill to test your reflexes. Try to pop all 100 balloons without missing any',
-    category: 'Game',
-    languages: ['javascript','css'],
-    infoButtons: [
-      { play: 'https://js-balloon-popping-game.rolandjlevy.repl.co/'},
-      { github: 'https://github.com/rolandjlevy/js-balloon-popping-game'},
-      { code: 'https://repl.it/@RolandJLevy/js-balloon-popping-game'}
-    ]
-  }));
-
-  // HSL Colour controller
-  projectData.push(new Project({
-    id: 'hsl-colour-controller ', 
-    image: './images/projects/hsl-colour-controller.jpg',
-    heading: 'HSL Colour controller',
-    details: 'A dynamic HSL colour controller which displays HSL, hex and RGB values',
-    category: 'Colour Utility',
-    languages: ['node','express','pug','javascript','css'],
-    infoButtons: [
-      { play: 'https://express-hsl-colour-controller-with-pug.rolandjlevy.repl.co/'},
-      { github: 'https://github.com/rolandjlevy/express-hsl-colour-controller-with-pug'},
-      { code: 'https://repl.it/@RolandJLevy/express-hsl-colour-controller-with-pug'}
-    ]
-  }));
-
   // Fluid grid of images
   projectData.push(new Project({
     id: 'fluid-grid-of-images', 
@@ -194,22 +164,6 @@ window.projectData = [];
       { code: 'https://repl.it/@rjlevy/js-fluid-grid-of-images'}
     ]
   }));
-
-  // Psychedelic avocados
-  projectData.push(new Project({
-    id: 'psychedelic-avocados', 
-    image: './images/projects/psychedelic-avocados.jpg',
-    heading: 'Psychedelic Avocados',
-    details: 'A hypnotic wave of animated, psychedelic avocados which is fully responsive',
-    category: 'Animation',
-    languages: ['css'],
-    infoButtons: [
-      { play: 'https://css-hypnotic-wave-of-psychedelic-avocados.rolandjlevy.repl.co'},
-      { github: 'https://github.com/rolandjlevy/css-hypnotic-wave-of-psychedelic-avocados'},
-      { code: 'https://repl.it/@RolandJLevy/css-hypnotic-wave-of-psychedelic-avocados'}
-    ]
-  }));
-  // 
 
   // Word Randomiser
   projectData.push(new Project({
@@ -268,6 +222,51 @@ window.projectData = [];
       { play: 'https://css-google-loading-animation.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/css-google-loading-animation'},
       { code: 'https://repl.it/@RolandJLevy/css-google-loading-animation'}
+    ]
+  }));
+
+  // HSL Colour controller
+  projectData.push(new Project({
+    id: 'hsl-colour-controller ', 
+    image: './images/projects/hsl-colour-controller.jpg',
+    heading: 'HSL Colour controller',
+    details: 'A dynamic HSL colour controller which displays HSL, hex and RGB values',
+    category: 'Colour Utility',
+    languages: ['node','express','pug','javascript','css'],
+    infoButtons: [
+      { play: 'https://express-hsl-colour-controller-with-pug.rolandjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/express-hsl-colour-controller-with-pug'},
+      { code: 'https://repl.it/@RolandJLevy/express-hsl-colour-controller-with-pug'}
+    ]
+  }));
+
+  // Infinite Image Scroller
+  projectData.push(new Project({
+    id: 'infinite-image-scroller', 
+    image: './images/projects/infinite-scroller.jpg',
+    heading: 'Infinite Scroller',
+    details: 'Infinite scrolling to load unsplash images continuously ',
+    category: 'Widget',
+    languages: ['javascript', 'css'],
+    infoButtons: [
+      { play: 'https://js-infinite-image-scroller-with-unsplash-api.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/js-infinite-scrolling-with-unsplash-api'},
+      { code: 'https://repl.it/@RolandJLevy/js-infinite-image-scroller-with-unsplash-api'}
+    ]
+  }));
+
+  // Pop 100 game
+  projectData.push(new Project({
+    id: 'pop-100', 
+    image: './images/projects/pop-100.jpg',
+    heading: 'Pop 100 game',
+    details: 'A game of speed and skill to test your reflexes. Try to pop all 100 balloons without missing any',
+    category: 'Game',
+    languages: ['javascript','css'],
+    infoButtons: [
+      { play: 'https://js-balloon-popping-game.rolandjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/js-balloon-popping-game'},
+      { code: 'https://repl.it/@RolandJLevy/js-balloon-popping-game'}
     ]
   }));
 

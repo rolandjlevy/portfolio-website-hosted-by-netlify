@@ -256,6 +256,21 @@ window.projectData = [];
     ]
   }));
 
+  // Google Loader
+  projectData.push(new Project({
+    id: 'google-loading-screen', 
+    image: './images/projects/google-loading-screen.png',
+    heading: 'Google Loader',
+    details: 'A looping animation for a Google loading screen with adjustable animation speed using a slider',
+    category: 'Widget',
+    languages: ['javascript', 'css'],
+    infoButtons: [
+      { play: 'https://css-google-loading-animation.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/css-google-loading-animation'},
+      { code: 'https://repl.it/@RolandJLevy/css-google-loading-animation'}
+    ]
+  }));
+
   // Pixel Grid Draw
   projectData.push(new Project({
     id: 'pixel-grid-draw', 

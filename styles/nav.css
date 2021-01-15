@@ -59,8 +59,9 @@ ul > li > a.new-window::after {
 
 .navbar > .links > ul > li > a:hover,
 .navbar > .links > ul > li > label:hover {
-  background: var(--theme-bg-colour-110);
+  background: var(--theme-bg-colour-120);
   transition: all 0.2s ease;
+  color: #ff3d77;
 }
 
 .navbar > .links > ul > li > img.logo {

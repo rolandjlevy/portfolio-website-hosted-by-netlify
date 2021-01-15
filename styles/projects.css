@@ -28,7 +28,7 @@
 
 .project-scroller {
   --scroller-padding: 20px;
-  --project-height: 400px;
+  --project-height: 445px;
   display: flex;
   justify-content: row;
   min-height: calc(var(--project-height) + var(--scroller-padding) + var(--scrolltrack-height));
@@ -79,8 +79,8 @@
 
 .project.hover > img {
   /* transform: scale(1.1); */
-  filter: blur(2px) brightness(85%) saturate(85%);
-  transition: all 0.3s ease;
+  filter: blur(0px) opacity(0.2) brightness(100%) saturate(85%);
+  transition: all 0.2s ease;
 }
 
 .project > .toggle-overlay {
@@ -145,7 +145,7 @@
   padding: 10px 15px 15px 15px;
   /* font-size: 0.75rem; */
   font-family: 'Open Sans', sans-serif;
-  transition: all 0.2s 0.1s ease;
+  transition: all 0.2s ease;
   overflow: hidden;
 }
 
@@ -159,7 +159,7 @@
 
 .project > .toggle:checked ~ .details {
   height: 100%;
-  transition: all 0.2s 0.1s ease;
+  transition: all 0.2s 0s ease;
   bottom: 0;
 }
 
@@ -182,9 +182,9 @@
   cursor: pointer;
 }
 
-.project.hover > .details {
+li.project.hover > .details {
   font-size: 1rem;
-  height: 100%;
+  height: calc(100% - 15px);
   bottom: 0;
   padding: 10px 15px 15px 15px;
   transition: all 0.2s ease;
@@ -259,19 +259,19 @@
 .project > .toggle:checked ~ .info {
   opacity: 1;
   pointer-events: initial;
-  transition: opacity 0.2s 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .project.hover > .toggle:checked ~ .info {
   opacity: 1;
   pointer-events: initial;
-  transition: opacity 0.2s 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .project.hover > .toggle:not(:checked) ~ .info {
   opacity: 1;
   pointer-events: initial;
-  transition: opacity 0.2s 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .project > .info > li {
@@ -293,7 +293,7 @@
 }
 
 .project-scroller > .project > .info > li {
-  top: 325px;
+  top: 355px;
 }
 
 .project > .info > li:hover {
@@ -424,6 +424,7 @@ p > .fa-code {
   
   li.project > .details {
     min-height: 50px;
+    transition: all 0.2s ease;
   }
 
   li.project > .details > li > .fa-angle-up {

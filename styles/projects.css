@@ -322,6 +322,8 @@ li.project.hover > .details {
   left: 50%;
   transform: translateX(-50%);
   transition: all 0.2s ease;
+  pointer-events: none;
+  opacity: 0.6;
 }
 
 .project > .info > li:hover::before {

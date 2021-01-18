@@ -18,7 +18,7 @@ window.projectData = [];
   // Solitaire Game
   projectData.push(new Project({
     id: 'solitaire-game', 
-    image: './images/projects/solitaire-game.png',
+    image: './images/projects/solitaire-game.jpg',
     heading: 'Solitaire Game',
     details: 'Remove the marbles and finish with one remaining to acheive \'Solitaire\'.',
     category: 'Game',

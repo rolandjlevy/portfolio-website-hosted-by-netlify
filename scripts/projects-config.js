@@ -90,18 +90,18 @@ window.projectData = [];
     ]
   }));
 
-  // Google Translator
+  // Language Translator
   projectData.push(new Project({
-    id: 'google-translator', 
-    image: './images/projects/google-translator.jpg',
-    heading: 'Google Translator',
-    details: 'Uses an API to translate phrases into 28 languages.',
+    id: 'language-translator', 
+    image: './images/projects/language-translator.jpg',
+    heading: 'Language Translator',
+    details: 'Uses an API to translate any text into 28 languages.',
     category: 'App with API',
     languages: ['node', 'express', 'ejs', 'bootstrap'],
     infoButtons: [
-      { play: 'https://express-google-translate-api-with-ejs.rjlevy.repl.co/'},
-      { github: 'https://github.com/rolandjlevy/express-google-translate-api-with-ejs'},
-      { code: 'https://repl.it/@rjlevy/express-google-translate-api-with-ejs'}
+      { play: 'https://express-language-translator.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/express-language-translator'},
+      { code: 'https://repl.it/@RolandJLevy/express-language-translator'}
     ]
   }));
 

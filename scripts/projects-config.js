@@ -210,6 +210,21 @@ window.projectData = [];
     ]
   }));
 
+  // Pixel Grid Draw
+  projectData.push(new Project({
+    id: 'pixel-grid-draw', 
+    image: './images/projects/pixel-grid.jpg',
+    heading: 'Pixel Grid Draw',
+    details: 'Draw coloured pixels on a customizable grid.',
+    category: 'Colour Utility',
+    languages: ['vue','css'],
+    infoButtons: [
+      { play: 'https://vue-pixel-grid-draw.rjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/vue-pixel-grid-draw/'},
+      { code: 'https://repl.it/@rjlevy/vue-pixel-grid-draw/'}
+    ]
+  }));
+
   // Google Loader
   projectData.push(new Project({
     id: 'google-loading-screen', 
@@ -267,21 +282,6 @@ window.projectData = [];
       { play: 'https://js-balloon-popping-game.rolandjlevy.repl.co/'},
       { github: 'https://github.com/rolandjlevy/js-balloon-popping-game'},
       { code: 'https://repl.it/@RolandJLevy/js-balloon-popping-game'}
-    ]
-  }));
-
-  // Pixel Grid Draw
-  projectData.push(new Project({
-    id: 'pixel-grid-draw', 
-    image: './images/projects/pixel-grid.jpg',
-    heading: 'Pixel Grid Draw',
-    details: 'Draw coloured pixels on a customizable grid.',
-    category: 'Colour Utility',
-    languages: ['vue','css'],
-    infoButtons: [
-      { play: 'https://vue-pixel-grid-draw.rjlevy.repl.co/'},
-      { github: 'https://github.com/rolandjlevy/vue-pixel-grid-draw/'},
-      { code: 'https://repl.it/@rjlevy/vue-pixel-grid-draw/'}
     ]
   }));
 

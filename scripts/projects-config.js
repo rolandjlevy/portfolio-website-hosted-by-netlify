@@ -273,7 +273,7 @@ window.projectData = [];
   // Pixel Grid Draw
   projectData.push(new Project({
     id: 'pixel-grid-draw', 
-    image: './images/projects/pixels.gif',
+    image: './images/projects/pixel-grid.jpg',
     heading: 'Pixel Grid Draw',
     details: 'Draw coloured pixels on a customizable grid.',
     category: 'Colour Utility',

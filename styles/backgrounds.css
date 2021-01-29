@@ -90,18 +90,6 @@
   opacity: 0.16;
 }
 
-footer {
-  padding: 20px 30px;
-  background: var(--theme-bg-colour-140);
-  color: var(--theme-text-colour-80);
-  min-height: var(--footer-height);
-}
-
-footer > p {
-  text-align: center;
-  font-size: 1rem;
-}
-
 @media screen and (max-width: 600px) {
 
   .home-bg {

@@ -278,6 +278,28 @@ p {
   display: block;
 }
 
+footer {
+  padding: 20px 30px;
+  background: var(--theme-bg-colour-140);
+  color: var(--theme-text-colour-80);
+  min-height: var(--footer-height);
+}
+
+footer > p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+footer > p > a {
+  /* text-decoration: underline; */
+  border-bottom: 2px dotted var(--theme-text-colour-10);
+  transition: border 0.2s ease;
+}
+
+footer > p > a:hover {
+  border-bottom: 2px dotted var(--accent-colour);
+}
+
 /*/////////////////
 // media queries // 
 /////////////////*/

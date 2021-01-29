@@ -316,19 +316,19 @@ window.projectData = [];
   }));
 
   // Portfolio Website
-  projectData.push(new Project({
-    id: 'portfolio-website', 
-    image: './images/projects/portfolio-website.jpg',
-    heading: 'Portfolio Website',
-    details: 'Showcases my projects. All designed and coded from scratch.',
-    category: 'Website',
-    languages: ['javascript','css'],
-    infoButtons: [
-      { play: 'https://rolandlevy.co.uk/'},
-      { github: 'https://github.com/rolandjlevy/portfolio-website'},
-      { code: 'https://repl.it/@rjlevy/portfolio-website'}
-    ]
-  }));
+  // projectData.push(new Project({
+  //   id: 'portfolio-website', 
+  //   image: './images/projects/portfolio-website.jpg',
+  //   heading: 'Portfolio Website',
+  //   details: 'Showcases my projects. All designed and coded from scratch.',
+  //   category: 'Website',
+  //   languages: ['javascript','css'],
+  //   infoButtons: [
+  //     { play: 'https://rolandlevy.co.uk/'},
+  //     { github: 'https://github.com/rolandjlevy/portfolio-website'},
+  //     { code: 'https://repl.it/@rjlevy/portfolio-website'}
+  //   ]
+  // }));
 
   // Colour Creator
   projectData.push(new Project({

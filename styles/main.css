@@ -144,6 +144,45 @@ button.btn img  {
   object-position: 0;
 }
 
+/*************/
+/* hand wave */
+/*************/
+
+.hand-header {
+  cursor: pointer;
+}
+
+.hand-header > .hand {
+  display: inline-block;
+  animation-name: wave;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+  animation-timing-function: ease-out;
+  animation-play-state: paused;
+  transform-origin: 100% 75%;
+}
+
+.hand-header > .hand.init {
+  animation-play-state: running;
+  animation-iteration-count: 1;
+}
+
+.hand-header:hover > .hand {
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: rotate(0deg); }
+  10% { transform: rotate(30deg); }
+  15% { transform: rotate(0deg); }
+  20% { transform: rotate(30deg); }
+  25% { transform: rotate(0deg); }
+  30% { transform: rotate(30deg); }
+  40% { transform: rotate(0deg); }
+}
 
 /********************/
 /* general settings */

@@ -9,6 +9,7 @@ const themeEmojis = document.querySelectorAll('label[for*="theme"] > .emoji');
 const mediaQueryMobile = 600;
 const burgerCheckBox = document.querySelector('.burger-checkbox-class');
 const contactForm = document.querySelector('#contact-form');
+const more = document.querySelector('.more');
 
 const myObserver = new ResizeObserver(entries => {
   entries.forEach(entry => {
@@ -65,3 +66,12 @@ function invertEmojiColour(customTheme) {
     }
   });
 }
+
+const hiddenParas = document.querySelectorAll('p[data-visible]');
+
+more.addEventListener('click', (e) => {
+  hiddenParas.forEach(item => {
+    const state = item.dataset.visible == 'true' ? 'false' : 'true';
+    item.dataset.visible = state;
+  });
+})

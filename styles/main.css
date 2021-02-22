@@ -329,14 +329,31 @@ footer > p {
   font-size: 1rem;
 }
 
-footer > p > a {
-  /* text-decoration: underline; */
+footer > p > a,
+.content-area > p > .more {
   border-bottom: 2px dotted var(--theme-text-colour-10);
   transition: border 0.2s ease;
+  cursor: pointer;
 }
 
-footer > p > a:hover {
+footer > p > a:hover,
+.content-area > p > .more:hover {
   border-bottom: 2px dotted var(--accent-colour);
+}
+
+.content-area > p[data-visible=false] {
+  opacity: 0;
+  height: 1px;
+  transition: all 0.25s ease;
+  pointer-events: none;
+}
+
+.content-area > p[data-visible=true] {
+  opacity: 1;
+  height: 100%;
+  transition: all 0.25s ease;
+  margin-bottom: 20px;
+  pointer-events: initial;
 }
 
 /*/////////////////

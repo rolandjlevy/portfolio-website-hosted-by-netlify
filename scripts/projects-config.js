@@ -9,9 +9,9 @@ window.projectData = [];
     category: 'Game',
     languages: ['javascript','css','firebase'],
     infoButtons: [
-      { play: 'https://js-sliders-game.rjlevy.repl.co/'},
+      { play: 'https://js-sliders-game.rolandjlevy.repl.co/'},
       { github: 'https://github.com/rolandjlevy/js-sliders-game'},
-      { code: 'https://repl.it/@rjlevy/js-sliders-game'}
+      { code: 'https://repl.it/@RolandJLevy/js-sliders-game'}
     ]
   }));
 
@@ -24,9 +24,9 @@ window.projectData = [];
     category: 'Game',
     languages: ['javascript','css','firebase'],
     infoButtons: [
-      { play: 'https://js-solitaire-game.rjlevy.repl.co/'},
+      { play: 'https://js-solitaire-game.rolandjlevy.repl.co/'},
       { github: 'https://github.com/rolandjlevy/js-solitaire-game'},
-      { code: 'https://repl.it/@rjlevy/js-solitaire-game'}
+      { code: 'https://repl.it/@RolandJLevy/js-solitaire-game'}
     ]
   }));
 
@@ -39,9 +39,9 @@ window.projectData = [];
     category: 'App with API',
     languages: ['node','express','ejs','javascript','bootstrap'],
     infoButtons: [
-      { play: 'https://express-photo-finder-using-unsplash-api.rjlevy.repl.co/'},
+      { play: 'https://express-photo-finder-using-unsplash-api.rolandjlevy.repl.co/'},
       { github: 'https://github.com/rolandjlevy/express-photo-finder-using-unsplash-api'},
-      { code: 'https://repl.it/@rjlevy/express-photo-finder-using-unsplash-api'}
+      { code: 'https://repl.it/@RolandJLevy/express-photo-finder-using-unsplash-api'}
     ]
   }));
 
@@ -114,9 +114,9 @@ window.projectData = [];
     category: 'App with API',
     languages: ['javascript', 'css'],
     infoButtons: [
-      { play: 'https://js-text-to-speech-api.rjlevy.repl.co/'},
+      { play: 'https://js-text-to-speech-api.rolandjlevy.repl.co/'},
       { github: 'https://github.com/rolandjlevy/js-text-to-speech-api'},
-      { code: 'https://repl.it/@rjlevy/js-text-to-speech-api'}
+      { code: 'https://repl.it/@RolandJLevy/js-text-to-speech-api'}
     ]
   }));
 
@@ -129,9 +129,9 @@ window.projectData = [];
     category: 'Widget',
     languages: ['javascript', 'css'],
     infoButtons: [
-      { play: 'https://js-clock.rjlevy.repl.co'},
+      { play: 'https://js-clock.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/js-clock'},
-      { code: 'https://repl.it/@rjlevy/js-clock'}
+      { code: 'https://repl.it/@RolandJLevy/js-clock'}
     ]
   }));
 
@@ -159,9 +159,9 @@ window.projectData = [];
     category: 'App with API',
     languages: ['javascript','css'],
     infoButtons: [
-      { play: 'https://js-fluid-grid-of-images.rjlevy.repl.co'},
+      { play: 'https://js-fluid-grid-of-images.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/js-fluid-grid-of-images'},
-      { code: 'https://repl.it/@rjlevy/js-fluid-grid-of-images'}
+      { code: 'https://repl.it/@RolandJLevy/js-fluid-grid-of-images'}
     ]
   }));
 
@@ -189,9 +189,9 @@ window.projectData = [];
     category: 'Widget',
     languages: ['javascript', 'css'],
     infoButtons: [
-      { play: 'https://css-analogue-clock.rjlevy.repl.co'},
+      { play: 'https://css-analogue-clock.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
-      { code: 'https://repl.it/@rjlevy/css-analogue-clock/'}
+      { code: 'https://repl.it/@RolandJLevy/css-analogue-clock/'}
     ]
   }));
 
@@ -219,9 +219,9 @@ window.projectData = [];
     category: 'Colour Utility',
     languages: ['vue','css'],
     infoButtons: [
-      { play: 'https://vue-pixel-grid-draw.rjlevy.repl.co/'},
+      { play: 'https://vue-pixel-grid-draw.rolandjlevy.repl.co/'},
       { github: 'https://github.com/rolandjlevy/vue-pixel-grid-draw/'},
-      { code: 'https://repl.it/@rjlevy/vue-pixel-grid-draw/'}
+      { code: 'https://repl.it/@RolandJLevy/vue-pixel-grid-draw/'}
     ]
   }));
 
@@ -309,9 +309,9 @@ window.projectData = [];
     category: 'Colour Utility',
     languages: ['javascript','css'],
     infoButtons: [
-      { play: 'https://js-random-hex-colour-swatch-generator-oop.rjlevy.repl.co'},
+      { play: 'https://js-random-hex-colour-swatch-generator-oop.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/js-random-hex-colour-swatch-generator-oop'},
-      { code: 'https://repl.it/@rjlevy/js-random-hex-colour-swatch-generator-oop'}
+      { code: 'https://repl.it/@RolandJLevy/js-random-hex-colour-swatch-generator-oop'}
     ]
   }));
 
@@ -326,7 +326,7 @@ window.projectData = [];
   //   infoButtons: [
   //     { play: 'https://rolandlevy.co.uk/'},
   //     { github: 'https://github.com/rolandjlevy/portfolio-website'},
-  //     { code: 'https://repl.it/@rjlevy/portfolio-website'}
+  //     { code: 'https://repl.it/@RolandJLevy/portfolio-website'}
   //   ]
   // }));
 
@@ -339,9 +339,9 @@ window.projectData = [];
     category: 'Colour Utility',
     languages: ['vue','css'],
     infoButtons: [
-      { play: 'https://vue-colour-creator.rjlevy.repl.co'},
+      { play: 'https://vue-colour-creator.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/vue-colour-creator/'},
-      { code: 'https://repl.it/@rjlevy/vue-colour-creator/'}
+      { code: 'https://repl.it/@RolandJLevy/vue-colour-creator/'}
     ]
   }));
 

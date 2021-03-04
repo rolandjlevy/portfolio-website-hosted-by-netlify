@@ -20,7 +20,7 @@ window.projectData = [];
     id: 'solitaire-game', 
     image: './images/projects/solitaire-game.jpg',
     heading: 'Solitaire Game',
-    details: 'Remove the marbles and finish with one remaining to acheive \'Solitaire\'.',
+    details: 'Remove all the marbles to finish with one remaining and acheive \'Solitaire\'.',
     category: 'Game',
     languages: ['javascript','css','firebase'],
     infoButtons: [
@@ -35,7 +35,7 @@ window.projectData = [];
     id: 'photo-finder', 
     image: './images/projects/photo-finder.jpg',
     heading: 'Photo Finder',
-    details: 'Uses the Unsplash API to search for and favourite photos.',
+    details: 'Search for and favourite photos using the Unsplash API.',
     category: 'App with API',
     languages: ['node','express','ejs','javascript','bootstrap'],
     infoButtons: [
@@ -80,7 +80,7 @@ window.projectData = [];
     id: 'all-in-one-search', 
     image: './images/projects/all-in-one-search.jpg',
     heading: 'All-in-one Search',
-    details: 'A verstile tool which makes searching in multiple channels quick and easy.',
+    details: 'A verstile tool which makes searching multiple channels quick and easy.',
     category: 'Widget',
     languages: ['javascript', 'css'],
     infoButtons: [
@@ -95,7 +95,7 @@ window.projectData = [];
     id: 'language-translator', 
     image: './images/projects/language-translator.jpg',
     heading: 'Language Translator',
-    details: 'Uses an API to translate any text into 28 languages.',
+    details: 'Translate text into 28 languages using the Google Translate API.',
     category: 'App with API',
     languages: ['node', 'express', 'ejs', 'bootstrap'],
     infoButtons: [

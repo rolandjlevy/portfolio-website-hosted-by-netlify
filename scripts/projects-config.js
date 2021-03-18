@@ -225,6 +225,21 @@ window.projectData = [];
     ]
   }));
 
+  // Drumkit
+  projectData.push(new Project({
+    id: 'drumkit', 
+    image: './images/projects/drumkit.jpg',
+    heading: 'Drumkit',
+    details: 'Play various percussion instruments on the keyboard or on your phone',
+    category: 'Widget',
+    languages: ['javascript', 'css'],
+    infoButtons: [
+      { play: 'https://js-drumkit.rolandjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/js-drumkit'},
+      { code: 'https://repl.it/@RolandJLevy/js-drumkit'}
+    ]
+  }));
+
   // Google Loader
   projectData.push(new Project({
     id: 'google-loading-screen', 

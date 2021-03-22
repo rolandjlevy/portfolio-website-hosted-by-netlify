@@ -165,6 +165,21 @@ window.projectData = [];
     ]
   }));
 
+  // Pixel randomiser
+  projectData.push(new Project({
+    id: 'pixel-randomiser',
+    image: './images/projects/pixel-randomiser.jpg',
+    heading: 'Pixel Randomiser',
+    details: 'A pixel continuously changes colour and position randomly in the grid',
+    category: 'Widget',
+    languages: ['javascript', 'css'],
+    infoButtons: [
+      { play: 'https://js-pixel-randomiser.rolandjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/js-pixel-randomiser'},
+      { code: 'https://replit.com/@RolandJLevy/js-pixel-randomiser'}
+    ]
+  }));
+
   // Word Randomiser
   projectData.push(new Project({
     id: 'word-randomiser', 

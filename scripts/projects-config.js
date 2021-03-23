@@ -240,18 +240,18 @@ window.projectData = [];
     ]
   }));
 
-  // Drumkit
+  // Keydrums
   projectData.push(new Project({
-    id: 'drumkit', 
-    image: './images/projects/drumkit.jpg',
-    heading: 'Drumkit',
+    id: 'keydrums', 
+    image: './images/projects/keydrums.jpg',
+    heading: 'Keydrums',
     details: 'Play various percussion instruments on the keyboard or on your phone',
     category: 'Widget',
     languages: ['javascript', 'css'],
     infoButtons: [
-      { play: 'https://js-drumkit.rolandjlevy.repl.co/'},
-      { github: 'https://github.com/rolandjlevy/js-drumkit'},
-      { code: 'https://repl.it/@RolandJLevy/js-drumkit'}
+      { play: 'https://js-key-drums.rolandjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/js-key-drums'},
+      { code: 'https://replit.com/@RolandJLevy/js-key-drums'}
     ]
   }));
 

@@ -150,6 +150,21 @@ window.projectData = [];
     ]
   }));
 
+  // Wave-pool Simulator
+  projectData.push(new Project({
+    id: 'wave-pool-simulator', 
+    image: './images/projects/wave-pool-simulator.jpg',
+    heading: 'Wave-pool Simulator',
+    details: 'A fun CSS animation experiment using spinning conic gradient circles with sliders to control speed, colour, corners and shape',
+    category: 'Widget',
+    languages: ['css', 'javascript'],
+    infoButtons: [
+      { play: 'https://css-conic-gradient-wave-pattern.rolandjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/express-pug-animated-light-show-loop'},
+      { code: 'https://github.com/rolandjlevy/css-conic-gradient-wave-pattern'}
+    ]
+  }));
+
   // Fluid grid of images
   projectData.push(new Project({
     id: 'fluid-grid-of-images', 

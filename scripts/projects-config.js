@@ -160,7 +160,7 @@ window.projectData = [];
     languages: ['css', 'javascript'],
     infoButtons: [
       { play: 'https://css-conic-gradient-wave-pattern.rolandjlevy.repl.co/'},
-      { github: 'https://github.com/rolandjlevy/express-pug-animated-light-show-loop'},
+      { github: 'https://github.com/rolandjlevy/css-conic-gradient-wave-pattern'},
       { code: 'https://github.com/rolandjlevy/css-conic-gradient-wave-pattern'}
     ]
   }));

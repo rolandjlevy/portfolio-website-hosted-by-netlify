@@ -240,6 +240,21 @@ window.projectData = [];
     ]
   }));
 
+  // Traffic lights animation
+  projectData.push(new Project({
+    id: 'traffic-lights-animation', 
+    image: './images/projects/traffic-lights-animation.jpg',
+    heading: 'Traffic lights',
+    details: 'Using the power of the CSS animation property to animate a set of traffic lights at night',
+    category: 'Animation',
+    languages: ['css'],
+    infoButtons: [
+      { play: 'https://css-traffic-lights-animation.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/css-conic-gradient-wave-pattern'},
+      { code: 'https://replit.com/@RolandJLevy/css-traffic-lights-animation'}
+    ]
+  }));
+
   // Pixel Grid Draw
   projectData.push(new Project({
     id: 'pixel-grid-draw', 

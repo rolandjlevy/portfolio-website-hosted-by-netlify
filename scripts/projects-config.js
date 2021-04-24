@@ -165,6 +165,21 @@ window.projectData = [];
     ]
   }));
 
+  // BackChat messaging app
+  projectData.push(new Project({
+    id: 'backchat',
+    image: './images/projects/backchat-300-400.jpg',
+    heading: 'BackChat',
+    details: 'Getting practical experience of websockets by building a messaging app',
+    category: 'Widget',
+    languages: ['node', 'express', 'javascript', 'css'],
+    infoButtons: [
+      { play: 'https://chat-app-with-socket-io.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/chat-app-with-socket-io'},
+      { code: 'https://replit.com/@RolandJLevy/chat-app-with-socket-io'}
+    ]
+  }));
+
   // Fluid grid of images
   projectData.push(new Project({
     id: 'fluid-grid-of-images', 

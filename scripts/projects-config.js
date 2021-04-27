@@ -1,34 +1,5 @@
 window.projectData = [];
 
-  // Sliders Game
-  projectData.push(new Project({
-    id: 'sliders-game', 
-    image: './images/projects/sliders-game.png',
-    heading: 'Sliders Game',
-    details: 'Slide pieces into the correct order in the fewest possible moves.',
-    category: 'Game',
-    languages: ['javascript','css','firebase'],
-    infoButtons: [
-      { play: 'https://js-sliders-game.rolandjlevy.repl.co/'},
-      { github: 'https://github.com/rolandjlevy/js-sliders-game'},
-      { code: 'https://repl.it/@RolandJLevy/js-sliders-game'}
-    ]
-  }));
-
-  // Solitaire Game
-  projectData.push(new Project({
-    id: 'solitaire-game', 
-    image: './images/projects/solitaire-game.jpg',
-    heading: 'Solitaire Game',
-    details: 'Remove all the marbles to finish with one remaining and acheive \'Solitaire\'.',
-    category: 'Game',
-    languages: ['javascript','css','firebase'],
-    infoButtons: [
-      { play: 'https://js-solitaire-game.rolandjlevy.repl.co/'},
-      { github: 'https://github.com/rolandjlevy/js-solitaire-game'},
-      { code: 'https://repl.it/@RolandJLevy/js-solitaire-game'}
-    ]
-  }));
 
   // Photo Finder
   projectData.push(new Project({
@@ -72,6 +43,36 @@ window.projectData = [];
       { play: 'https://css-hypnotic-wave-of-psychedelic-avocados.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/css-hypnotic-wave-of-psychedelic-avocados'},
       { code: 'https://repl.it/@RolandJLevy/css-hypnotic-wave-of-psychedelic-avocados'}
+    ]
+  }));
+
+  // Sliders Game
+  projectData.push(new Project({
+    id: 'sliders-game', 
+    image: './images/projects/sliders-game.png',
+    heading: 'Sliders Game',
+    details: 'Slide pieces into the correct order in the fewest possible moves.',
+    category: 'Game',
+    languages: ['javascript','css','firebase'],
+    infoButtons: [
+      { play: 'https://js-sliders-game.rolandjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/js-sliders-game'},
+      { code: 'https://repl.it/@RolandJLevy/js-sliders-game'}
+    ]
+  }));
+
+  // Solitaire Game
+  projectData.push(new Project({
+    id: 'solitaire-game', 
+    image: './images/projects/solitaire-game.jpg',
+    heading: 'Solitaire Game',
+    details: 'Remove all the marbles to finish with one remaining and acheive \'Solitaire\'.',
+    category: 'Game',
+    languages: ['javascript','css','firebase'],
+    infoButtons: [
+      { play: 'https://js-solitaire-game.rolandjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/js-solitaire-game'},
+      { code: 'https://repl.it/@RolandJLevy/js-solitaire-game'}
     ]
   }));
 
@@ -180,21 +181,6 @@ window.projectData = [];
     ]
   }));
 
-  // Fluid grid of images
-  projectData.push(new Project({
-    id: 'fluid-grid-of-images', 
-    image: './images/projects/fluid-grid-of-images.jpg',
-    heading: 'Fluid grid of images',
-    details: 'A fluid grid of random Unsplash images which is fully responsive on any device',
-    category: 'App with API',
-    languages: ['javascript','css'],
-    infoButtons: [
-      { play: 'https://js-fluid-grid-of-images.rolandjlevy.repl.co'},
-      { github: 'https://github.com/rolandjlevy/js-fluid-grid-of-images'},
-      { code: 'https://repl.it/@RolandJLevy/js-fluid-grid-of-images'}
-    ]
-  }));
-
   // Pixel randomiser
   projectData.push(new Project({
     id: 'pixel-randomiser',
@@ -222,21 +208,6 @@ window.projectData = [];
       { play: 'https://js-word-randomiser.rolandjlevy.repl.co?speed=25&msg=hello+world!'},
       { github: 'https://github.com/rolandjlevy/js-word-randomiser'},
       { code: 'https://repl.it/@RolandJLevy/js-word-randomiser'}
-    ]
-  }));
-
-  // CSS Analogue Clock
-  projectData.push(new Project({
-    id: 'analogue-clock', 
-    image: './images/projects/css-clock.jpg',
-    heading: 'CSS Clock',
-    details: 'A CSS analogue clock which accurately shows the time',
-    category: 'Widget',
-    languages: ['javascript', 'css'],
-    infoButtons: [
-      { play: 'https://css-analogue-clock.rolandjlevy.repl.co'},
-      { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
-      { code: 'https://repl.it/@RolandJLevy/css-analogue-clock/'}
     ]
   }));
 
@@ -285,6 +256,21 @@ window.projectData = [];
     ]
   }));
 
+  // Fluid grid of images
+  projectData.push(new Project({
+    id: 'fluid-grid-of-images', 
+    image: './images/projects/fluid-grid-of-images.jpg',
+    heading: 'Fluid grid of images',
+    details: 'A fluid grid of random Unsplash images which is fully responsive on any device',
+    category: 'App with API',
+    languages: ['javascript','css'],
+    infoButtons: [
+      { play: 'https://js-fluid-grid-of-images.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/js-fluid-grid-of-images'},
+      { code: 'https://repl.it/@RolandJLevy/js-fluid-grid-of-images'}
+    ]
+  }));
+
   // Keydrums
   projectData.push(new Project({
     id: 'keydrums', 
@@ -312,6 +298,21 @@ window.projectData = [];
       { play: 'https://css-google-loading-animation.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/css-google-loading-animation'},
       { code: 'https://repl.it/@RolandJLevy/css-google-loading-animation'}
+    ]
+  }));
+
+  // CSS Analogue Clock
+  projectData.push(new Project({
+    id: 'analogue-clock', 
+    image: './images/projects/css-clock.jpg',
+    heading: 'CSS Clock',
+    details: 'A CSS analogue clock which accurately shows the time',
+    category: 'Widget',
+    languages: ['javascript', 'css'],
+    infoButtons: [
+      { play: 'https://css-analogue-clock.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/css-analogue-clock/'},
+      { code: 'https://repl.it/@RolandJLevy/css-analogue-clock/'}
     ]
   }));
 

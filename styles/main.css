@@ -330,6 +330,7 @@ footer > p {
 }
 
 footer > p > a,
+section p > a,
 .content-area > p > .more {
   border-bottom: 2px dotted var(--theme-text-colour-10);
   transition: border 0.2s ease;
@@ -337,6 +338,7 @@ footer > p > a,
 }
 
 footer > p > a:hover,
+section p > a:hover,
 .content-area > p > .more:hover {
   border-bottom: 2px dotted var(--accent-colour);
 }

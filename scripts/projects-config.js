@@ -31,6 +31,36 @@ window.projectData = [];
     ]
   }));
 
+  // Wave-pool Simulator
+  projectData.push(new Project({
+    id: 'wave-pool-simulator', 
+    image: './images/projects/wave-pool-simulator.jpg',
+    heading: 'Wave-pool Simulator',
+    details: 'A fun CSS animation experiment using spinning conic gradient circles with sliders to control speed, colour, corners and shape',
+    category: 'Widget',
+    languages: ['css', 'javascript'],
+    infoButtons: [
+      { play: 'https://css-conic-gradient-wave-pattern.rolandjlevy.repl.co/'},
+      { github: 'https://github.com/rolandjlevy/css-conic-gradient-wave-pattern'},
+      { code: 'https://github.com/rolandjlevy/css-conic-gradient-wave-pattern'}
+    ]
+  }));
+
+  // BackChat messaging app
+  projectData.push(new Project({
+    id: 'backchat',
+    image: './images/projects/backchat-300-400.jpg',
+    heading: 'BackChat',
+    details: 'Getting practical experience of websockets by building a messaging app',
+    category: 'Widget',
+    languages: ['node', 'express', 'javascript', 'css'],
+    infoButtons: [
+      { play: 'https://chat-app-with-socket-io.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/chat-app-with-socket-io'},
+      { code: 'https://replit.com/@RolandJLevy/chat-app-with-socket-io'}
+    ]
+  }));
+
   // Psychedelic avocados
   projectData.push(new Project({
     id: 'psychedelic-avocados', 
@@ -76,21 +106,6 @@ window.projectData = [];
     ]
   }));
 
-  // All-in-one Search
-  projectData.push(new Project({
-    id: 'all-in-one-search', 
-    image: './images/projects/all-in-one-search.jpg',
-    heading: 'All-in-one Search',
-    details: 'A verstile tool which makes searching multiple channels quick and easy.',
-    category: 'Widget',
-    languages: ['javascript', 'css'],
-    infoButtons: [
-      { play: 'https://js-all-in-one-search-with-autocomplete.rolandjlevy.repl.co'},
-      { github: 'https://github.com/rolandjlevy/js-all-in-one-search-with-autocomplete'},
-      { code: 'https://repl.it/@RolandJLevy/js-all-in-one-search-with-autocomplete'}
-    ]
-  }));
-
   // Language Translator
   projectData.push(new Project({
     id: 'language-translator', 
@@ -103,6 +118,21 @@ window.projectData = [];
       { play: 'https://express-language-translator.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/express-language-translator'},
       { code: 'https://repl.it/@RolandJLevy/express-language-translator'}
+    ]
+  }));
+
+  // All-in-one Search
+  projectData.push(new Project({
+    id: 'all-in-one-search', 
+    image: './images/projects/all-in-one-search.jpg',
+    heading: 'All-in-one Search',
+    details: 'A verstile tool which makes searching multiple channels quick and easy.',
+    category: 'Widget',
+    languages: ['javascript', 'css'],
+    infoButtons: [
+      { play: 'https://js-all-in-one-search-with-autocomplete.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/js-all-in-one-search-with-autocomplete'},
+      { code: 'https://repl.it/@RolandJLevy/js-all-in-one-search-with-autocomplete'}
     ]
   }));
 
@@ -151,36 +181,6 @@ window.projectData = [];
     ]
   }));
 
-  // Wave-pool Simulator
-  projectData.push(new Project({
-    id: 'wave-pool-simulator', 
-    image: './images/projects/wave-pool-simulator.jpg',
-    heading: 'Wave-pool Simulator',
-    details: 'A fun CSS animation experiment using spinning conic gradient circles with sliders to control speed, colour, corners and shape',
-    category: 'Widget',
-    languages: ['css', 'javascript'],
-    infoButtons: [
-      { play: 'https://css-conic-gradient-wave-pattern.rolandjlevy.repl.co/'},
-      { github: 'https://github.com/rolandjlevy/css-conic-gradient-wave-pattern'},
-      { code: 'https://github.com/rolandjlevy/css-conic-gradient-wave-pattern'}
-    ]
-  }));
-
-  // BackChat messaging app
-  projectData.push(new Project({
-    id: 'backchat',
-    image: './images/projects/backchat-300-400.jpg',
-    heading: 'BackChat',
-    details: 'Getting practical experience of websockets by building a messaging app',
-    category: 'Widget',
-    languages: ['node', 'express', 'javascript', 'css'],
-    infoButtons: [
-      { play: 'https://chat-app-with-socket-io.rolandjlevy.repl.co'},
-      { github: 'https://github.com/rolandjlevy/chat-app-with-socket-io'},
-      { code: 'https://replit.com/@RolandJLevy/chat-app-with-socket-io'}
-    ]
-  }));
-
   // Pixel randomiser
   projectData.push(new Project({
     id: 'pixel-randomiser',
@@ -223,6 +223,21 @@ window.projectData = [];
       { play: 'https://js-interactive-coloured-circles.rolandjlevy.repl.co'},
       { github: 'https://github.com/rolandjlevy/js-interactive-coloured-circles'},
       { code: 'https://repl.it/@RolandJLevy/js-interactive-coloured-circles'}
+    ]
+  }));
+  
+  // Trailing Spiral
+  projectData.push(new Project({
+    id: 'trailing-spiral', 
+    image: './images/projects/trailing-spiral.jpg',
+    heading: 'Trailing spiral',
+    details: 'Click and drag to see a trail of fading circles, like a slinky! Made with just 18 lines of JavaScript.',
+    category: 'Widget',
+    languages: ['javascript', 'css'],
+    infoButtons: [
+      { play: 'https://js-interactive-trailing-spiral.rolandjlevy.repl.co'},
+      { github: 'https://github.com/rolandjlevy/js-interactive-trailing-spiral'},
+      { code: 'https://replit.com/@RolandJLevy/js-interactive-trailing-spiral'}
     ]
   }));
 

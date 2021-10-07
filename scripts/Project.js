@@ -5,6 +5,7 @@
 class Project {
   constructor({
       id, 
+      sortOrder, 
       image, 
       heading, 
       details, 
@@ -13,6 +14,7 @@ class Project {
       infoButtons
     }) {
     this.id = id;
+    this.sortOrder = sortOrder;
     this.image = image;
     this.heading = heading;
     this.details = details;
@@ -26,9 +28,7 @@ class Project {
   getInfoButtons() {
     if (!this.infoButtons) return '';
     let html = `<ul class="info">`;
-    this.infoButtons.forEach(item => {
-      const key = Object.keys(item).shift();
-      const value = Object.values(item).shift();
+    Object.entries(this.infoButtons).forEach(([key, value]) => {
       const fa = key === 'github' ? 'fab' : 'fas';
       const theKey = key === 'play' ? 'external-link-alt' : key;
       html += `

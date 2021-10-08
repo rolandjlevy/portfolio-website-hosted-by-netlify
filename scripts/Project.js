@@ -3,24 +3,10 @@
 ///////////////////
 
 class Project {
-  constructor({
-      id, 
-      sortOrder, 
-      image, 
-      heading, 
-      details, 
-      category, 
-      languages, 
-      infoButtons
-    }) {
-    this.id = id;
-    this.sortOrder = sortOrder;
-    this.image = image;
-    this.heading = heading;
-    this.details = details;
-    this.category = category;
-    this.languages = languages;
-    this.infoButtons = infoButtons;
+  constructor(props) {
+    Object.entries(props).forEach(([key, value]) => {
+      this[key] = value;
+    });
   }
   getLanguages() {
     return this.languages.map(word => this.amendCase(word)).join(', ');
@@ -42,7 +28,7 @@ class Project {
   getInnerHtml() {
     return `
       <li id="${this.id}" class="project">
-        <img src="${this.image}" loading="lazy" />
+        <img src="./images/projects/${this.image}" loading="lazy" />
         <input id="${this.id}-checkbox" class="toggle" type="checkbox" />
         <label for="${this.id}-checkbox" class="toggle-overlay">
           <i class="fas fa-thumbtack"></i>

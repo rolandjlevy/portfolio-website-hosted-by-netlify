@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     const allFalse = () => Object.values(languages).every(item => !item);
     
-    const languagesExist = (languages) => languages.some(id => languages[id]);
+    const languagesExist = (projectLanguages) => projectLanguages.some(id => languages[id]);
       
   });
 

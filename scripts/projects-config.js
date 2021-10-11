@@ -5,17 +5,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
   const scroller = true;
   window.projectData = [];
 
-  const languages = {
-    javascript: false, 
-    node: false,
-    express: false,
-    mysql: false,
-    vue: false,
-    react: false,
-    bootstrap: false,
-    sass: false,
-    css: false
-  };
+  const languageProps = [ 'javascript', 'node', 'express', 'mysql', 'vue', 'react', 'bootstrap', 'sass', 'css'];
+
+  const languages = languageProps.reduce((acc, prop) => {
+    acc[prop] = false;
+    return acc;
+  }, {});
+
+  const categoryProps = ['animation', 'app', 'app-with-api', 'colour-utility', 'game', 'widget'];
+
+  const categories = categoryProps.reduce((acc, prop) => {
+    acc[prop] = false;
+    return acc;
+  }, {});
 
   // fetch data from api
   const baseUrl = 'https://express-portfolio-api.rolandjlevy.repl.co';

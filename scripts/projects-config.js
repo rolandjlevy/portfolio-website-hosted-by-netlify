@@ -19,6 +19,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     return acc;
   }, {});
 
+  const filters = { languages, categories };
+  const type = 'languages';
+
   // fetch data from api
   const baseUrl = 'https://express-portfolio-api.rolandjlevy.repl.co';
 
@@ -46,23 +49,21 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 
     $$('.project').forEach(div => {
-      div.addEventListener('click', (e) => {
-        e.currentTarget.classList.toggle('hover');
-      });
+      div.addEventListener('click', (e) => e.currentTarget.classList.toggle('hover'));
     });
 
     const setProjectFilter = (e) => {
       const id = e.currentTarget.id;
-      if (languages[id]) {
+      if (filters[type][id]) {
         e.currentTarget.classList.remove('selected');
-        languages[id] = false;
+        filters[type][id] = false;
       } else {
         e.currentTarget.classList.add('selected');
-        languages[id] = true;
+        filters[type][id] = true;
       }
     }
 
-    Object.keys(languages).forEach(key => {
+    Object.keys(filters[type]).forEach(key => {
       $(`#${key}`).addEventListener('click', (e) => {
         setProjectFilter(e);
         updateProjectsSelection();
@@ -72,17 +73,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const updateProjectsSelection = () => {
       $$('.project').forEach(project => {
         const data = getProjectById(project.id);
-        const exists = languagesExist(data.languages);
+        console.log({data, type})
+        console.log(typeof data);
+        console.log(data[type]);
+        const exists = filtersExist(data[type]);
         if (exists || allFalse() && project.style.display !== 'block') project.style.display = 'block';
         if (!exists && !allFalse() && project.style.display !== 'none') project.style.display = 'none';
       });
     }
 
     const getProjectById = (id) => projectData.find(project => project.id == id);
+    const allFalse = () => Object.values(filters[type]).every(item => !item);
+    const filtersExist = (projectFilters) => projectFilters.some(id => filters[type][id]);
 
-    const allFalse = () => Object.values(languages).every(item => !item);
-    
-    const languagesExist = (projectLanguages) => projectLanguages.some(id => languages[id]);
       
   });
 

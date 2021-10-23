@@ -24,8 +24,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
   // fetch data from api
   const baseUrl = 'https://express-portfolio-api.rolandjlevy.repl.co';
+  const url = `${baseUrl}/api/routes/projects?origin=${window.origin}`;
 
-  fetch(`${baseUrl}/api/projects?origin=${window.origin}`)
+  fetch(url)
   .then(res => res.json())
   .then(data => {
 

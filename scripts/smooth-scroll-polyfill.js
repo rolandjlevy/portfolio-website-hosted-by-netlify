@@ -1,5 +1,3 @@
-// From https://embed.plnkr.co/plunk/29jeYo
-
 document.addEventListener('DOMContentLoaded', (event) => {
 
   const navlinks = document.querySelectorAll('.navlink');

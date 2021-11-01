@@ -77,7 +77,6 @@ document.addEventListener('DOMContentLoaded', async (event) => {
   }
 
   Object.keys(filters[type]).forEach(key => {
-    console.log($(`#${key}`))
     $(`#${key}`).addEventListener('click', (e) => {
       setProjectFilter(e);
       updateProjectsSelection();

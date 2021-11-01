@@ -398,6 +398,11 @@ p > .fa-code {
   padding: 5px 3px
 }
 
+.loading-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
 /*/////////////////
 // media queries // 
 /////////////////*/

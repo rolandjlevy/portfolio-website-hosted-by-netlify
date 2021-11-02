@@ -67,6 +67,10 @@
   }
 }
 
+.scroll-reset {
+  scroll-snap-align: unset;
+}
+
 .project-scroller > .project > img {
   position: absolute;
   top: 50px;

@@ -5,9 +5,11 @@ document.addEventListener('DOMContentLoaded', async (event) => {
   const scroller = true;
   window.projectData = [];
 
-  const languageProps = [ 'javascript', 'node', 'express', 'mysql', 'vue', 'react', 'bootstrap', 'sass', 'css', 'mongodb'];
+  const response = await fetch('./scripts/language-links.json');
+  const languageLinks = await response.json();
 
-  const languages = languageProps.reduce((acc, prop) => {
+  const languages = Object.keys(languageLinks)
+    .reduce((acc, prop) => {
     acc[prop] = false;
     return acc;
   }, {});
@@ -25,9 +27,6 @@ document.addEventListener('DOMContentLoaded', async (event) => {
   // fetch data from api
   const baseUrl = 'https://express-portfolio-api.rolandjlevy.repl.co';
   const url = `${baseUrl}/api/routes/projects?origin=${window.origin}`;
-
-  const response = await fetch('./scripts/language-links.json');
-  const languageLinks = await response.json();
 
   const renderLanguages = () => {
     return Object.entries(languageLinks).map(([key, value]) => {
@@ -65,6 +64,12 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     div.addEventListener('click', (e) => e.currentTarget.classList.toggle('hover'));
   });
 
+  const resetScroller = () => {
+    const el = $('.project-scroller');
+    const pos = el.getBoundingClientRect();
+    el.scrollTo(pos.left, 0);
+  }
+
   const setProjectFilter = (e) => {
     const id = e.currentTarget.id;
     if (filters[type][id]) {
@@ -80,6 +85,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     $(`#${key}`).addEventListener('click', (e) => {
       setProjectFilter(e);
       updateProjectsSelection();
+      resetScroller();
     });
   });
 

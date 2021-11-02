@@ -50,6 +50,7 @@
   letter-spacing: 0.25px;
   transition: all 0.3s ease;
   min-width: 300px;
+  max-width: 300px;
   border: none;
   overflow: hidden;
   scroll-snap-align: start;

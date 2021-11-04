@@ -30,9 +30,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
   const renderLanguages = () => {
     return Object.entries(languageLinks).map(([key, value]) => {
-      return Object.entries(value).map(([name, link]) => {
-        return `<li><a id="${key}"><img alt="${name}" src="${link}">${name}</a></li>\n`
-      }).join('');
+      return Object.entries(value).map(([name, link]) => (`<li><a id="${key}"><img alt="${name}" src="${link}" width="18">${name}</a></li>\n`)).join('');
     }).join('');
   }
 

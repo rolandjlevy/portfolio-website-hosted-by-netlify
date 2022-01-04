@@ -2,7 +2,8 @@
 const $ = (elem) => document.querySelector(elem);
 const $$ = (elem) => document.querySelectorAll(elem);
 const mediaQueryMobile = 600;
-const more = document.querySelector('.more');
+
+$('#year').textContent = new Date().getFullYear();
 
 const myObserver = new ResizeObserver(entries => {
   entries.forEach(entry => {

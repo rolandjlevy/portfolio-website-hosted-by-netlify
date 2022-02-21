@@ -7,4 +7,4 @@
 + [Source code on repl.it](https://replit.com/@RolandJLevy/portfolio-website-hosted-by-netlify) 
 + [Github repo](https://github.com/rolandjlevy/portfolio-website-hosted-by-netlify/)
 
-![Netlify logo](/images/Netlify-logo-100x100.png)
+![Netlify logo](/images/icons/Netlify-logo-100x100.png)

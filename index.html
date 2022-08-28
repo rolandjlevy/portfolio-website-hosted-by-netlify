@@ -2,179 +2,206 @@
 <html data-theme="dark">
 
 <head>
-	<title>Roland's portfolio - hosted by Netlify 👨‍💻</title>
+  <title>Roland's portfolio - hosted by Netlify 👨‍💻</title>
   <meta property="og:url" content="https://rolandlevy.co.uk/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Roland's portfolio 👨‍💻" />
-  <meta property="og:description" content="full-stack software developer specialising in front-end: JavaScript, React, Node, Express, etc..." />
+  <meta property="og:description"
+    content="full-stack software developer specialising in front-end: JavaScript, React, Node, Express, etc..." />
   <meta property="og:image" content="https://rolandlevy.co.uk/images/profile-photo-600-600.png" />
-	<meta charset="utf-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-	<link href="styles/import.css" rel="stylesheet" type="text/css" />
-	<link href="styles/root.css" rel="stylesheet" type="text/css" />
-	<link href="styles/reset.css" rel="stylesheet" type="text/css" />
-	<link href="styles/normalize.css" rel="stylesheet" type="text/css" />
-	<link href="styles/backgrounds.css" rel="stylesheet" type="text/css" />
-	<link href="styles/form.css" rel="stylesheet" type="text/css" />
-	<link href="styles/main.css" rel="stylesheet" type="text/css" />
-	<link href="styles/projects.css" rel="stylesheet" type="text/css" />
-	<link href="styles/tags.css" rel="stylesheet" type="text/css" />
-	<link href="styles/nav.css" rel="stylesheet" type="text/css" />
-	<link href="styles/burger-menu.css" rel="stylesheet" type="text/css" />
-	<link href="styles/theme.css" rel="stylesheet" type="text/css" />
+  <link href="styles/import.css" rel="stylesheet" type="text/css" />
+  <link href="styles/root.css" rel="stylesheet" type="text/css" />
+  <link href="styles/reset.css" rel="stylesheet" type="text/css" />
+  <link href="styles/normalize.css" rel="stylesheet" type="text/css" />
+  <link href="styles/backgrounds.css" rel="stylesheet" type="text/css" />
+  <link href="styles/form.css" rel="stylesheet" type="text/css" />
+  <link href="styles/loading.css" rel="stylesheet" type="text/css" />
+  <link href="styles/main.css" rel="stylesheet" type="text/css" />
+  <link href="styles/projects.css" rel="stylesheet" type="text/css" />
+  <link href="styles/tags.css" rel="stylesheet" type="text/css" />
+  <link href="styles/nav.css" rel="stylesheet" type="text/css" />
+  <link href="styles/burger-menu.css" rel="stylesheet" type="text/css" />
+  <link href="styles/theme.css" rel="stylesheet" type="text/css" />
   <link rel="icon" type="image/png" href="/favicon.png" />
 </head>
 
 <body>
 
-	<nav class="navbg"></nav>
-	<nav class="navbar">
-		<div class="links limit">
-			<ul>
-				<li><a href="#home" class="navlink">Home</a></li>
-				<li><a href="#about" class="navlink">About</a></li>
+  <nav class="navbg"></nav>
+  <nav class="navbar">
+    <div class="links limit">
+      <ul>
+        <li><a href="#home" class="navlink">Home</a></li>
+        <li><a href="#about" class="navlink">About</a></li>
         <li><a href="#projects" class="navlink">Projects</a></li>
         <li><a href="https://github.com/rolandjlevy" class="new-window navlink" target="_blank">Github</a></li>
         <li><a href="#contact" class="navlink">Contact</a></li>
         <li>
-          <label for="theme-nav"><input type="checkbox" id="theme-nav" class="theme" checked="false"><span class="emoji">🌓</span></label>
+          <label for="theme-nav"><input type="checkbox" id="theme-nav" class="theme" checked="false"><span
+              class="emoji">🌓</span></label>
         </li>
       </ul>
     </div>
   </nav>
 
-    <input type="checkbox" id="burger-checkbox" class="burger-checkbox-class" />
-    <label for="burger-checkbox" class="hamburger-label"><i class="fas fa-hamburger"></i></label>
-    <label for="burger-checkbox" class="modal-overlay"></label>
-    
-    <div class="burger">
-      <div class="burger-side-panel">
-        <ul>
-          <li><a href="#home" class="navlink">Home <span class="emoji">👋</span></a></li>
-          <li><a href="#about" class="navlink">About <span class="emoji">👨</span></a></li>
-          <li><a href="#projects" class="navlink">Projects <span class="emoji">👨‍💻</span></a></li>
-          <li><a href="#contact" class="navlink">Contact <span class="emoji">✏️</span></a></li>
-          <li>
-            <input type="checkbox" id="theme-burger" class="theme"><label for="theme-burger">Mode <span class="emoji">🌓</span></label>
-          </li>
-        </ul>
-      </div>
+  <input type="checkbox" id="burger-checkbox" class="burger-checkbox-class" />
+  <label for="burger-checkbox" class="hamburger-label"><i class="fas fa-hamburger"></i></label>
+  <label for="burger-checkbox" class="modal-overlay"></label>
+
+  <div class="burger">
+    <div class="burger-side-panel">
+      <ul>
+        <li><a href="#home" class="navlink">Home <span class="emoji">👋</span></a></li>
+        <li><a href="#about" class="navlink">About <span class="emoji">👨</span></a></li>
+        <li><a href="#projects" class="navlink">Projects <span class="emoji">👨‍💻</span></a></li>
+        <li><a href="#contact" class="navlink">Contact <span class="emoji">✏️</span></a></li>
+        <li>
+          <input type="checkbox" id="theme-burger" class="theme"><label for="theme-burger">Mode <span
+              class="emoji">🌓</span></label>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <main class="container">
+
+    <div class="home-bg">
+      <section class="section-anchor home">
+        <div id="home"></div>
+      </section>
+      <section class="section">
+
+        <div class="limit panel border-radius-5px p-30">
+          <h2 class="hand-header">Hi, I'm Roland <span class="hand init">👋</span></h2>
+          <p class="paragraph m-b-20">a full-stack developer, specialising in front-end. I work with JavaScript, React,
+            Node, Express and other languages - as shown in the projects below.</p>
+          <p class="paragraph">I am based in Leicester and work as a full-stack JavaScript developer at <a
+              href="https://www.cromwell.co.uk" target="_blank">Cromwell</a>, a supplier of industrial tools. This
+            website features side projects I have made in my spare time. Each project has been built from scratch.</p>
+        </div>
+
+        <div class="limit m-t-30">
+          <a href="#contact" class="btn dark vertical-align">
+            <div>Get in touch</div>
+            <div><img src="/images/icons/send-arrow-pink.png"></div>
+          </a>
+        </div>
+
+        <div class="burger-icon display-none">
+          <img src="/images/svgs/pink-3d-bar-filled.svg" height="8" width="42" alt="3d bar for burger menu icon" />
+          <img src="/images/svgs/pink-3d-bar-filled.svg" height="8" width="42" alt="3d bar for burger menu icon" />
+          <img src="/images/svgs/pink-3d-bar-filled.svg" height="8" width="42" alt="3d bar for burger menu icon" />
+        </div>
+
+      </section>
     </div>
 
-    <main class="container">
+    <div class="about-bg">
+      <section class="section-anchor">
+        <div id="about"></div>
+      </section>
+      <section class="section">
+        <div class="limit vertical-align">
+          <h2>About me</h2>
+          <div class="profile-image-wrapper">
+            <img src="/images/profile-photo-150-150.png">
+          </div>
+        </div>
+        <div class="content-area limit">
+          <p class="m-b-20">I enjoy bringing new ideas to life. With a keen eye for design and writing robust code, I
+            thrive on building user-centric interfaces which aim to solve real-word problems. <span class="more">Read
+              more 👇</span></p>
+          <p data-visible="false">I’ve always been curious about technology and how things work. As a kid I loved
+            spending time with my Dad solving DIY problems, and used to spend hours solving puzzles like the Rubik’s
+            Cube. Figuring things out is what inspired me to learn how to code.</p>
+          <div>
+            <a href="/files/roland-levy-cv-2020.pdf" download class="btn dark vertical-align">
+              <div>Download my CV</div>
+              <div><i class="fas fa-file-download"></i></div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
 
-      <div class="home-bg">
-        <section class="section-anchor home">
-          <div id="home"></div>
-        </section>
-        <section class="section">
+    <div class="projects-bg">
+      <section class="section-anchor">
+        <div id="projects"></div>
+      </section>
+      <section class="section projects">
+        <h2 class="limit m-b-20">Projects 👨‍💻</h2>
+        <div class="content-area limit">
+          <p class="m-b-20">A collection of side projects built from scratch using various languages and frameworks.
+            Filter by language and view the project <i class="fas fas fa-external-link-alt"></i>, Github repo <i
+              class="fab fa-github"></i> or source code <i class="fas fa-code"></i>.</p>
+          <ul class="tags m-b-20"></ul>
+          <ul class="project-container">
+            <li>
+              <div class="loading">
+                <h2 class="loading-text">Loading projects</h2>
+                <div class="loading-dots">
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <ul class="project-scroller"></ul>
+    </div>
 
-          <div class="limit panel border-radius-5px p-30">
-            <h2 class="hand-header">Hi, I'm Roland <span class="hand init">👋</span></h2>
-            <p class="paragraph m-b-20">a full-stack developer, specialising in front-end. I work with JavaScript, React, Node, Express and other languages - as shown in the projects below.</p>
-            <p class="paragraph">I am based in Leicester and work as a full-stack JavaScript developer at <a href="https://www.cromwell.co.uk" target="_blank">Cromwell</a>, a supplier of industrial tools. This website features side projects I have made in my spare time. Each project has been built from scratch.</p>
+    <div class="contact-bg">
+      <section class="section-anchor">
+        <div id="contact"></div>
+      </section>
+      <section class="section">
+        <h2 class="limit">Contact me ✏️</h2>
+
+        <div class="limit m-t-20 m-b-20">
+          <p class="paragraph">Any questions? Drop me an email, it will be great to hear from you.</p>
+        </div>
+
+        <form name="contact" id="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true"
+          action="/success.html">
+
+          <div class="limit border-radius-5px m-t-20 mb-20">
+            <input type="text" id="name" name="name" placeholder="name" required class="m-r-15">
+            <input type="email" id="email" name="email" placeholder="email" required
+              oninvalid="this.setCustomValidity('Please enter valid email')" oninput="setCustomValidity('')">
+            <textarea id="message" name="message" placeholder="message..." required></textarea>
+            <div data-netlify-recaptcha="true" class="m-b-20"></div>
           </div>
 
           <div class="limit m-t-30">
-            <a href="#contact" class="btn dark vertical-align">
-              <div>Get in touch</div>
-              <div><img src="/images/icons/send-arrow-pink.png"></div>
-            </a>
+            <button class="btn dark vertical-align" type="submit">
+              Send <img src="/images/icons/send-arrow-pink.png">
+            </button>
           </div>
 
-          <div class="burger-icon display-none">
-            <img src="/images/svgs/pink-3d-bar-filled.svg" height="8" width="42" alt="3d bar for burger menu icon"/>
-            <img src="/images/svgs/pink-3d-bar-filled.svg" height="8" width="42" alt="3d bar for burger menu icon"/>
-            <img src="/images/svgs/pink-3d-bar-filled.svg" height="8" width="42" alt="3d bar for burger menu icon"/>
-          </div>
+        </form>
 
-        </section>
-      </div>
+      </section>
+    </div>
 
-      <div class="about-bg">
-        <section class="section-anchor">
-          <div id="about"></div>
-        </section>
-        <section class="section">
-          <div class="limit vertical-align">
-            <h2>About me</h2>
-            <div class="profile-image-wrapper">
-              <img src="/images/profile-photo-150-150.png">
-            </div>
-          </div>
-          <div class="content-area limit">
-            <p class="m-b-20">I enjoy bringing new ideas to life. With a keen eye for design and writing robust code, I thrive on building user-centric interfaces which aim to solve real-word problems. <span class="more">Read more 👇</span></p>
-            <p data-visible="false">I’ve always been curious about technology and how things work. As a kid I loved spending time with my Dad solving DIY problems, and used to spend hours solving puzzles like the Rubik’s Cube. Figuring things out is what inspired me to learn how to code.</p>
-            <div>
-              <a href="/files/roland-levy-cv-2020.pdf" download class="btn dark vertical-align">
-                <div>Download my CV</div>
-                <div><i class="fas fa-file-download"></i></div>
-              </a>
-            </div>
-          </div>
-        </section>
-      </div>
+  </main>
+  <footer>
+    <p>&copy; Roland Levy <span id="year"></span>. <a href="https://repl.it/@RolandJLevy/portfolio-website"
+        target="_blank">Homemade</a> with vanilla JavaScript and CSS &#9889;</p>
+  </footer>
 
-      <div class="projects-bg">
-        <section class="section-anchor">
-          <div id="projects"></div>
-        </section>
-        <section class="section projects">
-          <h2 class="limit m-b-20">Projects 👨‍💻</h2>
-          <div class="content-area limit">
-            <p class="m-b-20">A collection of side projects built from scratch using various languages and frameworks. Filter by language and view the project <i class="fas fas fa-external-link-alt"></i>, Github repo <i class="fab fa-github"></i> or source code <i class="fas fa-code"></i>.</p>
-            <ul class="tags m-b-20"></ul>      
-            <ul class="project-container">
-              <li>
-                <h2 class="loading-text">Loading projects...</h2>
-              </li>
-            </ul>
-          </div>
-        </section>
-        <ul class="project-scroller"></ul>
-      </div>
+  <script src="/scripts/utils.js" defer></script>
+  <script src="/scripts/Project.js" defer></script>
+  <script src="/scripts/projects-config.js" defer></script>
+  <script src="/scripts/smooth-scroll-polyfill.js" defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
 
-      <div class="contact-bg">
-        <section class="section-anchor">
-          <div id="contact"></div>
-        </section>
-        <section class="section">
-          <h2 class="limit">Contact me ✏️</h2>
-          
-          <div class="limit m-t-20 m-b-20">
-            <p class="paragraph">Any questions? Drop me an email, it will be great to hear from you.</p>
-          </div>
+</body>
 
-          <form name="contact" id="contact-form" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="/success.html">
-
-            <div class="limit border-radius-5px m-t-20 mb-20">
-              <input type="text" id="name" name="name" placeholder="name" required class="m-r-15">
-              <input type="email" id="email" name="email" placeholder="email" required  oninvalid="this.setCustomValidity('Please enter valid email')" oninput="setCustomValidity('')">
-              <textarea id="message" name="message" placeholder="message..." required></textarea>
-              <div data-netlify-recaptcha="true" class="m-b-20"></div>
-            </div>
-
-            <div class="limit m-t-30">
-              <button class="btn dark vertical-align" type="submit">
-                Send <img src="/images/icons/send-arrow-pink.png">
-              </button>
-            </div>
-
-          </form>
-
-        </section>
-      </div>
-      
-    </main>
-    <footer>
-      <p>&copy; Roland Levy <span id="year"></span>. <a href="https://repl.it/@RolandJLevy/portfolio-website" target="_blank">Homemade</a> with vanilla JavaScript and CSS &#9889;</p>
-    </footer>
-
-    <script src="/scripts/utils.js" defer></script>
-    <script src="/scripts/Project.js" defer></script>
-    <script src="/scripts/projects-config.js" defer></script>
-    <script src="/scripts/smooth-scroll-polyfill.js" defer></script>
-    <script src="https://www.google.com/recaptcha/api.js?render=explicit" async defer></script>
-    
-  </body>
 </html>

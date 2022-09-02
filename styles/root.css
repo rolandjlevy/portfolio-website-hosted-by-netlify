@@ -68,6 +68,7 @@ html, body {
   touch-action: manipulation;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scrollbar-color: var(--accent-colour)  var(--accent-colour-faded-lighter);
 }
 
 body::-webkit-scrollbar {
@@ -80,21 +81,5 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background: var(--accent-colour);
-}
+} 
 
-/* project-scroller */
-
-.project-scroller::-webkit-scrollbar {
-  background-color: var(--accent-colour-faded-lighter);
-  -webkit-box-shadow: inset var(--colour-bg) 0 0 0 var(--scrollbar-offset);
-  box-shadow: inset var(--colour-bg) 0 0 0 var(--scrollbar-offset);
-  height: var(--scrolltrack-height);
-}
-
-.project-scroller::-webkit-scrollbar-thumb {
-  background-color: var(--accent-colour);
-  border-left: var(--scrollbar-offset) solid var(--colour-bg);
-  border-right: var(--scrollbar-offset) solid var(--colour-bg);
-  min-width: 100px;
-  max-width: 200px;
-}

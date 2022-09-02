@@ -43,6 +43,28 @@
   /* padding-bottom: var(--scroller-padding); */
 }
 
+.project-scroller::-webkit-scrollbar {
+  background-color: var(--accent-colour-faded-lighter);
+  -webkit-box-shadow: inset var(--colour-bg) 0 0 0 var(--scrollbar-offset);
+  box-shadow: inset var(--colour-bg) 0 0 0 var(--scrollbar-offset);
+  height: var(--scrolltrack-height);
+}
+
+.project-scroller::-webkit-scrollbar-thumb {
+  background-color: var(--accent-colour);
+  border-left: var(--scrollbar-offset) solid var(--colour-bg);
+  border-right: var(--scrollbar-offset) solid var(--colour-bg);
+  min-width: 100px;
+  max-width: 200px;
+}
+
+@-moz-document url-prefix() { 
+  .project-scroller {
+    scrollbar-color: var(--accent-colour)  var(--accent-colour-faded-lighter);
+    scrollbar-width: auto;
+  }
+}
+
 .project-scroller > .project {
   position: relative;
   display: block;

@@ -40,7 +40,7 @@
   scroll-snap-type: x mandatory;
   margin-top: 20px;
   margin-bottom: 80px;
-  /* padding-bottom: var(--scroller-padding); */
+  padding-bottom: var(--scroller-padding);
 }
 
 .project-scroller::-webkit-scrollbar {

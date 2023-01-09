@@ -333,7 +333,7 @@ li.project.hover > .details {
   transition: all 0.2s ease;
 }
 
-.project > .info > li:hover > a > i {
+.project > .info > li:hover > a > i:not(.disabled) {
   color: var(--accent-colour);
   transition: all 0.2s ease;
 }
@@ -353,7 +353,7 @@ li.project.hover > .details {
   opacity: 0.6;
 }
 
-.project > .info > li:hover::before {
+.project > .info > li:not(.disabled):hover::before {
   color: var(--accent-colour);
 }
 
@@ -428,6 +428,10 @@ p > .fa-code {
 .loading-text {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.project > .info > li > a > i.disabled {
+  opacity: 0.5;
 }
 
 /*/////////////////

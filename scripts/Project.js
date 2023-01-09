@@ -17,9 +17,11 @@ class Project {
     Object.entries(this.infoButtons).forEach(([key, value]) => {
       const fa = key === 'github' ? 'fab' : 'fas';
       const theKey = key === 'play' ? 'external-link-alt' : key;
+      const labelStyle = value.includes('http') ? '' : ' disabled'
+      const icon = value.includes('http') ? `<a href="${value}" target="_blank"><i class="${fa} fa-${theKey}"></i></a>` : `<a href="javascript:void(0)" target="_self"><i class="${fa} fa-${theKey} disabled"></i></a>`;
       html += `
-      <li class="${key}">
-        <a href="${value}" target="_blank"><i class="${fa} fa-${theKey}"></i></a>
+      <li class="${key}${labelStyle}">
+        ${icon}
       </li>`;
     });
     html += `</ul>`;

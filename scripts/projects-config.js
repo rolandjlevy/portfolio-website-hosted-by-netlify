@@ -14,7 +14,9 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     return acc;
   }, {});
 
-  const categoryProps = ['animation', 'app', 'app-with-api', 'colour-utility', 'game', 'widget'];
+  const blackListed = ['app'];
+  
+  const categoryProps = ['animation', 'app', 'app-with-api', 'colour-utility', 'game', 'widget'].filter(item => !blackListed.includes(item));
 
   const categories = categoryProps.reduce((acc, prop) => {
     acc[prop] = false;
@@ -39,19 +41,17 @@ document.addEventListener('DOMContentLoaded', async (event) => {
 
   data.sort((a, b) => (a.sortOrder > b.sortOrder) ? 1 : -1);
 
-  data.forEach(item => {
+  data.forEach((item, index) => {
     const project = new Project(item);
     if (project.active) {
       projectData.push(project);
       const liNode = document.createElement('li');
       const html = project.getInnerHtml();
       liNode.insertAdjacentHTML('afterbegin', html);
-      if (scroller) {
-        $('.project-scroller').appendChild(liNode.firstElementChild);
-        $('.project-container').style.display = 'none';
-      } else {
-        $('.project-container').appendChild(liNode.firstElementChild);
-        $('.project-scroller').style.display = 'none';
+      const [a, b] = scroller ? ['scroller', 'container'] :  ['container', 'scroller'];
+      if (categoryProps.includes(project.category)) {
+        $(`.project-${a}.${project.category}`).appendChild(liNode.firstElementChild);
+        $(`.project-${b}`).style.display = 'none';
       }
     }
   });

@@ -6,6 +6,12 @@
   /* padding: 0; */
 }
 
+.tags.hidden {
+  visibility: hidden;
+  height: 0px;
+  /* padding: 0; */
+}
+
 .tags > li {
   display: inline-block;
   margin: 10px 4px;

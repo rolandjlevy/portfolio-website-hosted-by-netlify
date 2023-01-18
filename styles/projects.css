@@ -425,9 +425,14 @@ p > .fa-code {
   padding: 5px 3px
 }
 
-.loading-text {
+.loading-text,
+.project-heading {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.project-heading {
+  color: var(--accent-colour-heading-darker);
 }
 
 .project > .info > li > a > i.disabled {

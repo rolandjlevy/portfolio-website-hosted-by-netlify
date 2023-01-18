@@ -2,6 +2,7 @@
 
   --accent-colour: #ff3d77;
   --accent-colour-heading:hsl(342, 100%, 97%);
+  --accent-colour-heading-darker:hsl(342, 10%, 70%);
   --accent-colour-faded: #ff3d7744;
   --accent-colour-faded-lighter: #ff3d77aa;
   --accent-colour-btn: hsla(342, 80%, 60%, 0.6);

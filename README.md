@@ -1,9 +1,9 @@
-# Portfolio website (Netlify)
+# Portfolio website (previous hosted on Netlify)
 
 > Roland Levy's projects / contact details / downloadable CV
 
-+ [Live website - hosted by Netlify](https://rolandlevy.co.uk)
-+ [Subdomain on Netlify: rolandlevy.netlify.app](https://rolandlevy.netlify.app)
++ Live website - no longer hosted by Netlify](https://rolandlevy.co.uk)
++ [rolandlevy.co.uk hosted by Vercel](https://rolandlevy.co.uk)
 + [Source code on repl.it](https://replit.com/@RolandJLevy/portfolio-website-hosted-by-netlify) 
 + [Github repo](https://github.com/rolandjlevy/portfolio-website-hosted-by-netlify/)
 
